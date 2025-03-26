@@ -28,7 +28,7 @@
 
   "crct_epochs": 1,
   "ca_lr": 0.005,
-  "ca_storage_efficient_method": "covariance",
+  "ca_storage_efficient_method": "variance",
   "ca_storage_efficient_method_choices": ["covariance", "multi-centroid", "variance"],
   "n_centroids": 10,
 

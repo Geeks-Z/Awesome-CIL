@@ -1177,9 +1177,9 @@ class LAE(nn.Module):
             for i, b in enumerate(self.adapt_blocks):
                 self.backbone.blocks[b].attn.attach_adapter(attn=pets[i])
             return
-        if self.cfg.pet_cls == "LoRA":
-            for i, b in enumerate(self.cfg.adapt_blocks):
-                self.model.backbone.blocks[b].attn.attach_adapter(qkv=pets[i])
+        if self.pet_cls == "LoRA":
+            for i, b in enumerate(self.adapt_blocks):
+                self.backbone.blocks[b].attn.attach_adapter(qkv=pets[i])
             return
 
     def extract_vector(self, x):

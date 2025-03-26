@@ -25,7 +25,7 @@
   "drop_path": 0.0,
   "ema_decay": 0.9999,
   "num_freeze_epochs": 3,
-  "pet_cls": "Adapter",
+  "pet_cls": "LoRA",
   "pet_length": 10,
   "down_sample_dim": 5
 }

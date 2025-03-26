@@ -122,7 +122,8 @@ def _train(args):
             logging.info("Average Accuracy (CNN): {} \n".format(round(sum(cnn_curve["top1"])/len(cnn_curve["top1"]),2)))
             # logging.info("Train Time: {}".format(model.train_time))
             # logging.info("Test Time: {} \n".format(model.test_time))
-
+    print("Finished ", args["dataset"])
+    print('-' * 60)
     if len(cnn_matrix) > 0:
         np_acctable = np.zeros([task + 1, task + 1])
         for idxx, line in enumerate(cnn_matrix):

@@ -16,7 +16,7 @@ def load_json(setting_path):
     return param
 def setup_parser():
     parser = argparse.ArgumentParser(description='Reproduce of multiple pre-trained incremental learning algorthms.')
-    parser.add_argument('--config', type=str, default='./scripts/mos/mos_cifar_B0_Inc5_debug.json',
+    parser.add_argument('--config', type=str, default='./scripts/lae/lae_cifar_B0_Inc5.json',
                         help='Json file of settings.')
     return parser
 

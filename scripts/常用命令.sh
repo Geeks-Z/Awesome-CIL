@@ -1,5 +1,5 @@
 cd Code/Research/Awesome-CIL&&
-conda activate cil
+conda activate peft
 # 4090
 cd lrh/Code/Research/CIL/LAMDA-PILOT/ &&
 conda activate cil
@@ -7,9 +7,8 @@ conda activate cil
 cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
-TODO
 nohup ./scripts/train_memory.sh > ./res/memory-inr-supp.out 2>&1 &
-nohup ./scripts/train_lae.sh > ./res/3rd-lae.out 2>&1 &
+nohup ./scripts/train_lae.sh > ./res/B0-lae-lora10.out 2>&1 &
 ----------------------------------------------------------------------------------------------------------
 #cifar
 nohup ./train_cifar.sh > ./log/cifar-stdout.log 2> ./log/cifar-stderr.log &
