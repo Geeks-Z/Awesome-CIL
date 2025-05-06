@@ -175,7 +175,7 @@ class KVLoRA(nn.Module):
         self,
         in_features,
         out_features,
-        rank: Union[int, Tuple[int]] = 10,
+        rank: Union[int, Tuple[int]] = 16,
         scale: Union[None, float, Tuple[float, float]] = None,
     ):
         super().__init__()

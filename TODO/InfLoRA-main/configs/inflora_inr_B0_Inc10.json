@@ -25,7 +25,7 @@
     "lrate_decay" : 0.1,
     "batch_size" : 128,
     "weight_decay" : 0.000,
-    "rank": 10,
+    "rank": 16,
     "lamb": 0.98,
     "lame": 1.0,
     "num_workers" : 16

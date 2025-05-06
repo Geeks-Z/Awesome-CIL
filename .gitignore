@@ -5,3 +5,4 @@ __pycache__/
 *.py[cod]
 *.ipynb
 *.pdf
+scripts/常用命令.sh

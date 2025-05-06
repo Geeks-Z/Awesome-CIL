@@ -10,7 +10,7 @@
     "model_name": "dualprompt",
     "backbone_type": "vit_base_patch16_224_in21k_dualprompt",
     "get_original_backbone": true,
-    "device": ["10"],
+    "device": ["5"],
     "seed": [1993],
     
     "tuned_epoch": 20,

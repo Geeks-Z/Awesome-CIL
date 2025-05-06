@@ -7,8 +7,45 @@ conda activate cil
 cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
+#nohup ./scripts/train_aper.sh > ./res/aper-adapter-1.out 2>&1 &
+#nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt-1.out 2>&1 &
+#nohup ./scripts/train_der.sh > ./res/der-1.out 2>&1 &
+#nohup ./scripts/train_dualprompt.sh > ./res/dualprompt-1.out 2>&1 &
+nohup ./scripts/train_ease.sh > ./res/ease-1.out 2>&1 &
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
 nohup ./scripts/train_memory.sh > ./res/memory-inr-supp.out 2>&1 &
-nohup ./scripts/train_lae.sh > ./res/B0-lae-lora10.out 2>&1 &
+
+nohup ./scripts/train_lae.sh > ./res/lae-B0-big.out 2>&1 &
+
+
+
+nohup ./scripts/train_coil.sh > ./res/B0-coil-omn.out 2>&1 &
+
+nohup ./aper_loop.sh > ./res/aper_loop_B0.out 2>&1 &
+
+nohup ./lae_loop.sh > ./res/lae_loop_B0.out 2>&1 &
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ----------------------------------------------------------------------------------------------------------
 #cifar
 nohup ./train_cifar.sh > ./log/cifar-stdout.log 2> ./log/cifar-stderr.log &

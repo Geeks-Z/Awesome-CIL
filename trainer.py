@@ -1,6 +1,8 @@
 import sys
 import logging
 import copy
+import time
+
 import torch
 from utils import factory
 from utils.data_manager import DataManager
@@ -70,7 +72,14 @@ def _train(args):
         logging.info(
             "Trainable params: {}".format(count_parameters(model._network, True))
         )
+
+        start_time = time.time()
+
         model.incremental_train(data_manager)
+
+        total_time = time.time() - start_time
+        print('Time for task {}: {}'.format(task, total_time))
+
         cnn_accy, nme_accy = model.eval_task()
         model.after_task()
 
@@ -122,8 +131,10 @@ def _train(args):
             logging.info("Average Accuracy (CNN): {} \n".format(round(sum(cnn_curve["top1"])/len(cnn_curve["top1"]),2)))
             # logging.info("Train Time: {}".format(model.train_time))
             # logging.info("Test Time: {} \n".format(model.test_time))
-    print("Finished ", args["dataset"])
-    print('-' * 60)
+    print("Finished {}_init{}_inc{}: {}  ".format(args["dataset"], args["init_cls"], args["increment"],
+                                                  args["backbone_type"],
+                                                  ))
+    print('-' * 100)
     if len(cnn_matrix) > 0:
         np_acctable = np.zeros([task + 1, task + 1])
         for idxx, line in enumerate(cnn_matrix):
@@ -134,6 +145,7 @@ def _train(args):
         print('Accuracy Matrix (CNN):')
         print(np_acctable)
         logging.info('Forgetting (CNN): {}'.format(forgetting))
+
     if len(nme_matrix) > 0:
         np_acctable = np.zeros([task + 1, task + 1])
         for idxx, line in enumerate(nme_matrix):
