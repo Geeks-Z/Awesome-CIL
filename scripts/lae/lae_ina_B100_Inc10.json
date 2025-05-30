@@ -9,7 +9,7 @@
   "increment": 10,
   "model_name": "lae",
   "backbone_type": "vit_base_patch16_224_in21k_lae",
-  "device": ["4"],
+  "device": ["5"],
   "seed": [1993],
   "tuned_epoch": 50,
   "init_lr": 0.00046875,

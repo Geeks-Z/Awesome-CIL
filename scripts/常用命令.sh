@@ -7,19 +7,25 @@ conda activate cil
 cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
-#nohup ./scripts/train_aper.sh > ./res/aper-adapter-1.out 2>&1 &
-#nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt-1.out 2>&1 &
-#nohup ./scripts/train_der.sh > ./res/der-1.out 2>&1 &
-#nohup ./scripts/train_dualprompt.sh > ./res/dualprompt-1.out 2>&1 &
-nohup ./scripts/train_ease.sh > ./res/ease-1.out 2>&1 &
-
+#nohup ./scripts/train_aper.sh > ./res/aper-adapter.out 2>&1 &
+#nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt.out 2>&1 &
+#nohup ./scripts/train_der.sh > ./res/der.out 2>&1 &
+#nohup ./scripts/train_dualprompt.sh > ./res/dualprompt.out 2>&1 &
+#nohup ./scripts/train_ease.sh > ./res/ease.out 2>&1 &
+#nohup ./scripts/train_finetune.sh > ./res/finetune.out 2>&1 &
+#nohup ./scripts/train_foster.sh > ./res/foster.out 2>&1 &
+#nohup ./scripts/train_icarl.sh > ./res/icarl.out 2>&1 &
+#nohup ./scripts/train_l2p.sh > ./res/l2p.out 2>&1 &
+#nohup ./scripts/train_lae.sh > ./res/lae.out 2>&1 &
+#nohup ./scripts/train_mos.sh > ./res/mos.out 2>&1 &
+#nohup ./scripts/train_simplecil.sh > ./res/simplecil.out 2>&1 &
 
 
 
 
 
 -----------------------------------------------------------------------------------
-nohup ./scripts/train_memory.sh > ./res/memory-inr-supp.out 2>&1 &
+nohup ./scripts/train_memory.sh > ./res/memory-inr.out 2>&1 &
 
 nohup ./scripts/train_lae.sh > ./res/lae-B0-big.out 2>&1 &
 

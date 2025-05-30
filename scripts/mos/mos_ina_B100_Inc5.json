@@ -6,10 +6,10 @@
   "fixed_memory": false,
   "shuffle": true,
   "init_cls": 100,
-  "increment": 20,
+  "increment": 5,
   "model_name": "mos",
   "backbone_type": "vit_base_patch16_224_in21k_mos",
-  "device": ["5"],
+  "device": ["6"],
   "seed": [1993],
 
   "tuned_epoch": 10,
