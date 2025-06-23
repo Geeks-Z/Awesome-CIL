@@ -9,7 +9,7 @@
     "increment": 10,
     "model_name": "ease",
     "backbone_type": "vit_base_patch16_224_in21k_ease",
-    "device": ["6"],
+    "device": ["5"],
     "seed": [1993],
     
     "init_epochs": 20,

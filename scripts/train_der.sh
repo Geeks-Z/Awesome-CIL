@@ -17,7 +17,7 @@
 #python main.py --config=./scripts/der/der_omn_B0_Inc30.json
 #python main.py --config=./scripts/der/der_omn_B150_Inc5.json
 #python main.py --config=./scripts/der/der_omn_B150_Inc10.json
-python main.py --config=./scripts/der/der_omn_B150_Inc30.json
+#python main.py --config=./scripts/der/der_omn_B150_Inc30.json
 
 
 

@@ -8,27 +8,22 @@ cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
 #nohup ./scripts/train_aper.sh > ./res/aper-adapter.out 2>&1 &
-#nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt.out 2>&1 &
+#nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt-vtab.out 2>&1 &
 #nohup ./scripts/train_der.sh > ./res/der.out 2>&1 &
-#nohup ./scripts/train_dualprompt.sh > ./res/dualprompt.out 2>&1 &
+#nohup ./scripts/train_dualprompt.sh > ./res/dualprompt2-ina.out 2>&1 &
 #nohup ./scripts/train_ease.sh > ./res/ease.out 2>&1 &
-#nohup ./scripts/train_finetune.sh > ./res/finetune.out 2>&1 &
+#nohup ./scripts/train_finetune.sh > ./res/finetune-2-cub.out 2>&1 &
 #nohup ./scripts/train_foster.sh > ./res/foster.out 2>&1 &
-#nohup ./scripts/train_icarl.sh > ./res/icarl.out 2>&1 &
+#nohup ./scripts/train_icarl.sh > ./res/icarl-1-cub.out 2>&1 &
 #nohup ./scripts/train_l2p.sh > ./res/l2p.out 2>&1 &
 #nohup ./scripts/train_lae.sh > ./res/lae.out 2>&1 &
-#nohup ./scripts/train_mos.sh > ./res/mos.out 2>&1 &
+#nohup ./scripts/train_mos.sh > ./res/mos-4.out 2>&1 &
 #nohup ./scripts/train_simplecil.sh > ./res/simplecil.out 2>&1 &
 
-
-
-
-
 -----------------------------------------------------------------------------------
-nohup ./scripts/train_memory.sh > ./res/memory-inr.out 2>&1 &
+nohup ./scripts/train_simplecil.sh > ./res/v21.out 2>&1 &
 
 nohup ./scripts/train_lae.sh > ./res/lae-B0-big.out 2>&1 &
-
 
 
 nohup ./scripts/train_coil.sh > ./res/B0-coil-omn.out 2>&1 &
@@ -37,11 +32,14 @@ nohup ./aper_loop.sh > ./res/aper_loop_B0.out 2>&1 &
 
 nohup ./lae_loop.sh > ./res/lae_loop_B0.out 2>&1 &
 
+---------------------------------------------------------------------------------------------------
 
-
-
-
-
+nohup ./scripts/train_l2p.sh > ./res/l2p-time.out 2>&1 &
+nohup ./scripts/train_lae.sh > ./res/lae-time.out 2>&1 &
+nohup ./scripts/train_aper.sh > ./res/aper-adapter-time.out 2>&1 &
+nohup ./scripts/train_coda_prompt.sh > ./res/coda_prompt-time.out 2>&1 &
+nohup ./scripts/train_dualprompt.sh > ./res/dualprompt-time.out 2>&1 &
+nohup ./scripts/train_der.sh > ./res/der1-supp.out 2>&1 &
 
 
 

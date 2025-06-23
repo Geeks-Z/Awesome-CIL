@@ -9,7 +9,7 @@
   "increment": 5,
   "model_name": "der",
   "backbone_type": "vit_base_patch16_224_in21k",
-  "device": ["1"],
+  "device": ["7"],
   "seed": [1993],
 
   "init_epoch": 20,
