@@ -12,6 +12,8 @@
 
 - **论文阅读笔记**：[论文阅读](https://www.zhihu.com/people/icode1024/columns)
 
+---
+
 ## 🚀 Survey
 
 | Title                                                        | Venue | Year | Code                                                   |
@@ -19,6 +21,8 @@
 | [Class-Incremental Learning: A Survey](http://arxiv.org/abs/2302.03648) | TPAMI | 2024 | [Official](https://github.com/zhoudw-zdw/CIL_Surve)    |
 | [Continual Learning with Pre-Trained Models: A Survey](http://arxiv.org/abs/2401.16386) | IJCAI | 2024 | [Official](https://github.com/sun-hailong/LAMDA-PILOT) |
 | [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) |       |      | [Official](https://github.com/G-U-N/PyCIL)              |
+
+---
 
 ## 🌟 Papers
 
@@ -35,6 +39,8 @@
 | [DER: Dynamically Expandable Representation for Class Incremental Learning](2021) | DER         | CVPR  | 2021 | Backbone Expansion | [Official](https://github.com/G-U-N/ECCV22-FOSTER)      |
 | [iCaRL: Incremental Classifier and Representation Learning](https://arxiv.org/abs/1611.07725) | iCaRL       | CVPR  | 2017 | Memory             | [Official](https://github.com/srebuffi/iCaRL)           |
 
+---
+
 ## 📚 Datasets
 
 | Dataset       | training instances | testing instances | Classes | Link                                                         |
@@ -46,6 +52,8 @@
 | ObjectNet     | 26,509             | 6,628             | 200     | [https://objectnet.dev/download.html](https://objectnet.dev/download.html) |
 | Omnibenchmark | 89,697             | 5,983             | 300     |                                                              |
 | VTAB          | 1,796              | 8,619             | 50      |                                                              |
+
+---
 
 ## 📊 Reproduced Results
 
@@ -83,6 +91,24 @@
 
 #### CIFAR-100
 
+<img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/202506240859247.png" alt="image-20250624085958724" style="zoom:67%;" />
+
+|           | B0 Inc5     | B0 Inc10     | B0 Inc20    | B50 Inc5    | B100 Inc10   |
+| --------- | ----------- | ------------ | ----------- | ------------ | ------------ |
+|MOS |93.43 ± 0.01|94.76 ± 0.06|94.8 ± 0.0|94.18 ± 0.02|94.1 ± 0.01|
+|Ease |91.64 ± 0.02| 92.56 ± 0.02| 93.09 ± 0.02| 89.26 ± 0.04| 90.41 ± 0.05|
+|LAE |81.94 ± 0.0|90.54 ± 0.23|91.33 ± 0.0|88.12 ± 0.0|90.4 ± 0.0|
+|CODA-Prompt |87.34 ± 0.0|91.31 ± 0.0|92.72 ± 0.0|82.79 ± 0.0|88.43 ± 0.0|
+|DualPrompt |88.44 ± 0.04|90.32 ± 0.06|91.37 ± 0.01|80.83 ± 0.11|87.42 ± 0.03|
+|L2P |87.57 ± 0.02|89.78 ± 0.01|90.76 ± 0.03|79.46 ± 0.09|87.62 ± 0.04|
+|SimpleCIL |87.57 ± 0.0|87.13 ± 0.0|86.11 ± 0.0|83.79 ± 0.01|83.89 ± 0.01|
+|Finetune |72.32 ± 0.28|76.94 ± 0.02|80.87 ± 0.31|80.29 ± 0.14|82.63 ± 0.12|
+|FOSTER-CNN |94.02 ± 0.0|93.9 ± 0.05|93.61 ± 0.08|92.04 ± 0.02|92.26 ± 0.07|
+|FOSTER-NME |94.19 ± 0.0|94.09 ± 0.01|93.62 ± 0.05|92.19 ± 0.09|92.26 ± 0.07|
+|DER-CNN |88.67 ± 0.15|88.6 ± 0.02|88.68 ± 0.14|86.54 ± 0.03|86.86 ± 0.04|
+|DER-NME |90.95 ± 0.14|91.05 ± 0.06|91.27 ± 0.13|88.92 ± 0.09|89.38 ± 0.0|
+|iCaRL-CNN |84.6 ± 0.02|85.87 ± 0.16|86.91 ± 0.18|81.67 ± 0.03|83.54 ± 0.24|
+|iCaRL-NME |89.52 ± 0.08|90.3 ± 0.05|90.64 ± 0.16|87.55 ± 0.0|88.98 ± 0.02|
 
 
 #### CUB-200
@@ -158,7 +184,7 @@
 |SimpleCIL |91.35 ± 0.0|90.8 ± 0.0|
 |Finetune |60.69 ± 2.02|80.8 ± 1.5|
 
-
+---
 
 
 ## 👨‍🏫 TODO
@@ -185,19 +211,19 @@
 
 ### Parameters
 
-> 20Epoch batch_size=48 memory_size: 2000
+> Params and Time Comparison. Training time refers to the average time per epoch for each incremental task, while inference time  is measured in **milliseconds per image**.  For a fair comparison, all methods are based on pre-trained ViT-B/16-IN21K.
 
-| Method      | Tunable Parameters（Backbone） | All Parameters | Average Accuracy (%)<br />(CIFAR B0 Inc5) |
-| ----------- | ------------------------------ | -------------- | ----------------------------------------- |
-| Ease        |                                |                |                                           |
-| SimpleCIL   |                                |                |                                           |
-| CODA-Prompt |                                |                |                                           |
-| DualPrompt  |                                |                |                                           |
-| L2P         |                                |                |                                           |
-| FOSTER      |                                |                |                                           |
-| DER         |                                |                |                                           |
-| iCaRL       |                                |                |                                           |
-| Finetune    |                                |                |                                           |
+| Method          | CIFAR B0 Inc5                |                  |                    | IN-R B0 Inc5                 |                  |                    |
+| --------------- | ---------------------------- | ---------------- | ------------------ | ---------------------------- | ---------------- | ------------------ |
+|                 | Tunable Parameters(Millions) | Training Time(s) | Inference Time(ms) | Tunable Parameters(Millions) | Training Time(s) | Inference Time(ms) |
+| L2P             | 0.05                         | 102.12           | 3.77               | 0.12                         | 50.12            | 3.84               |
+| DualPrompt      | 0.25                         | 93.21            | 3.44               | 0.39                         | 45.16            | 3.58               |
+| CODA-Prompt     | 3.84                         | 99.42            | 2.99               | 3.98                         | 47.53            | 3.08               |
+| LAE             | 0.31                         | 46.87            | 3.35               | 0.37                         | 24.26            | 3.52               |
+| InfLoRA         | 0.31                         | 72.36            | 2.03               | 0.33                         | 34.96            | 2.24               |
+| APER w/ Adapter | 0.3                          | 16.04            | 3.63               | 0.3                          | 8.92             | 3.71               |
+
+---
 
 ## 🤗 Acknowledgments
 
