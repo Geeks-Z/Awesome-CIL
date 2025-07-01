@@ -32,6 +32,7 @@
 | [InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning](http://arxiv.org/abs/2404.00228) | InfLoRA     | CVPR  | 2024 | PTM                | [Official](https://github.com/liangyanshuo/InfLoRA)     |
 | [Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning](http://arxiv.org/abs/2403.12030) | EASE        | CVPR  | 2024 | PEFT Expansion     | [Official](https://github.com/sun-hailong/CVPR24-Ease)  |
 | [Revisiting Class-Incremental Learning with Pre-Trained Models: Generalizability and Adaptivity are All You Need](https://arxiv.org/pdf/2303.07338) | APER        | IJCV  | 2024 | PEFT Expansion     | [Official](https://github.com/zhoudw-zdw/RevisitingCIL) |
+| [A Unified Continual Learning Framework with General Parameter-Efficient Tuning](http://arxiv.org/abs/2303.10070) | LAE         | ICCV  | 2023 | PEFT Expansion     |                                                         |
 | [CODA-Prompt: COntinual Decomposed Attention-based Prompting for Rehearsal-Free Continual Learning](http://arxiv.org/abs/2211.13218) | CODA-Prompt | CVPR  | 2023 | PEFT Expansion     | [Official](https://github.com/GT-RIPL/CODA-Prompt)      |
 | [DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning](https://arxiv.org/abs/2204.04799) | DualPrompt  | ECCV  | 2022 | PEFT Expansion     | [Official](https://github.com/google-research/l2p)      |
 | [Learning to Prompt for Continual Learning](https://arxiv.org/abs/2112.08654) | L2P         | CVPR  | 2022 | PEFT Expansion     | [Official](https://github.com/google-research/l2p)      |
@@ -43,15 +44,15 @@
 
 ## 📚 Datasets
 
-| Dataset       | training instances | testing instances | Classes | Link                                                         |
-| ------------- | ------------------ | ----------------- | ------- | ------------------------------------------------------------ |
-| CIFAR100      | 50,000             | 10,000            | 100     |                                                              |
-| CUB200        | 9,430              | 2,358             | 200     |                                                              |
-| ImageNet-R    | 24,000             | 6,000             | 200     |                                                              |
-| ImageNet-A    | 5,981              | 1,519             | 200     |                                                              |
-| ObjectNet     | 26,509             | 6,628             | 200     | [https://objectnet.dev/download.html](https://objectnet.dev/download.html) |
-| Omnibenchmark | 89,697             | 5,983             | 300     |                                                              |
-| VTAB          | 1,796              | 8,619             | 50      |                                                              |
+| Dataset            | training instances | testing instances | Classes | Link                                                         | Abstract                                 |
+| ------------------ | ------------------ | ----------------- | ------- | ------------------------------------------------------------ | ---------------------------------------- |
+| CIFAR100           | 50,000             | 10,000            | 100     |                                                              |                                          |
+| CUB（CUB200-2011） | 9,430              | 2,358             | 200     |                                                              | 加州理工学院2010年提出的鸟类细粒度数据集 |
+| ImageNet-R         | 24,000             | 6,000             | 200     |                                                              |                                          |
+| ImageNet-A         | 5,981              | 1,519             | 200     |                                                              |                                          |
+| ObjectNet          | 26,509             | 6,628             | 200     | [https://objectnet.dev/download.html](https://objectnet.dev/download.html) |                                          |
+| Omnibenchmark      | 89,697             | 5,983             | 300     |                                                              |                                          |
+| VTAB               | 1,796              | 8,619             | 50      |                                                              |                                          |
 
 ---
 
@@ -134,12 +135,12 @@
 
 #### ImageNet-R
 
-<img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/202506230917489.png" alt="image-20250623091741407" style="zoom:67%;" />
+<img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/202507011010971.png" alt="image-20250701101023874" style="zoom: 67%;" />
 
 |           | B0 Inc5     | B0 Inc10     | B0 Inc20    | B0 Inc40 | B100 Inc5    | B100 Inc10   | B100 Inc20 |
 | --------- | ----------- | ------------ | ----------- | -------- | ------------ | ------------ | ---------- |
 |MOS |77.13 ± 0.04|81.24 ± 0.07|82.54 ± 0.07|82.72 ± 0.07|81.0 ± 0.02|81.07 ± 0.03|81.05 ± 0.0|
-|Ease |67.81 ± 0.0| 78.96 ± 0.04| 81.01 ± 0.07| 81.53 ± 0.05| 71.4 ± 0.0| 76.59 ± 0.04| 77.98 ± 0.04|
+|Ease |67.81 ± 0.0| 78.94 ± 0.04| 80.95 ± 0.08| 81.53 ± 0.05| 71.4 ± 0.0| 76.59 ± 0.04| 77.98 ± 0.04|
 |LAE |58.91 ± 0.06|70.41 ± 0.0|75.57 ± 0.05|76.57 ± 0.0|60.92 ± 0.0|67.13 ± 0.0|70.7 ± 0.0|
 |CODA-Prompt |59.61 ± 0.0|72.48 ± 0.01|78.17 ± 0.03|80.46 ± 0.04|65.85 ± 0.05|71.61 ± 0.08|75.17 ± 0.04|
 |DualPrompt |63.08 ± 0.12|69.9 ± 0.04|71.03 ± 0.05|73.58 ± 0.05|55.17 ± 0.14|59.69 ± 0.11|64.9 ± 0.06|
@@ -166,6 +167,24 @@
 
 #### Omnibenchmark
 
+<img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/202506300959911.png" alt="image-20250630095933832" style="zoom:67%;" />
+
+|           | B0 Inc5      | B0 Inc10     | B0 Inc20     | B0 Inc30     | B150 Inc5    | B100 Inc10   | B100 Inc30   |
+| --------- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+|MOS |85.92 ± 0.0|85.79 ± 0.0|86.01 ± 0.06|85.88 ± 0.05|83.03 ± 0.02|83.25 ± 0.0|83.5 ± 0.03|
+|Ease |73.89 ± 0.03| 74.31 ± 0.04| 75.43 ± 0.01| 74.81 ± 0.03| 68.86 ± 0.03| 68.05 ± 0.04| 71.69 ± 0.02|
+|LAE |53.43 ± 0.0|68.9 ± 0.29|74.58 ± 0.0|76.17 ± 0.0|59.65 ± 0.0|63.41 ± 0.0|73.53 ± 0.0|
+|CODA-Prompt |69.78 ± 0.0|74.41 ± 0.0|76.9 ± 0.0|77.79 ± 0.0|63.22 ± 0.0|65.65 ± 0.0|72.32 ± 0.0|
+|DualPrompt |69.27 ± 0.05|73.61 ± 0.06|75.88 ± 0.04|74.97 ± 0.03|57.43 ± 0.0|60.18 ± 0.0|71.82 ± 0.07|
+|L2P |69.09 ± 0.05|70.93 ± 0.02|74.08 ± 0.11|74.14 ± 0.03|58.29 ± 0.03|60.34 ± 0.09|70.32 ± 0.09|
+|SimpleCIL |80.53 ± 0.01|80.26 ± 0.01|80.07 ± 0.0|79.35 ± 0.01|75.23 ± 0.0|75.26 ± 0.0|75.43 ± 0.01|
+|Finetune |48.48 ± 0.17|56.93 ± 0.07|63.06 ± 0.09|65.86 ± 0.12|55.78 ± 0.08|63.15 ± 0.02|68.29 ± 0.09|
+|FOSTER-CNN |81.15 ± 0.07|81.55 ± 0.05|80.23 ± 0.02|78.98 ± 0.1|79.9 ± 0.05|80.13 ± 0.1|78.67 ± 0.11|
+|FOSTER-NME |82.01 ± 0.15|83.17 ± 0.12|83.23 ± 0.01|83.32 ± 0.13|80.57 ± 0.16|81.16 ± 0.07|81.61 ± 0.06|
+|DER-CNN |75.73 ± 0.0|76.73 ± 0.01|77.18 ± 0.09|77.61 ± 0.11|76.09 ± 0.1|76.7 ± 0.14|76.56 ± 0.11|
+|DER-NME |77.16 ± 0.0|78.96 ± 0.04|80.36 ± 0.03|80.92 ± 0.25|77.1 ± 0.18|77.72 ± 0.07|79.15 ± 0.02|
+|iCaRL-CNN |71.61 ± 0.12|73.71 ± 0.32|74.93 ± 0.22|75.05 ± 0.3|70.77 ± 0.09|72.07 ± 0.05|74.27 ± 0.17|
+|iCaRL-NME |77.1 ± 0.32|79.69 ± 0.11|81.27 ± 0.02|80.99 ± 0.08|75.79 ± 0.09|77.39 ± 0.01|79.2 ± 0.1|
 
 
 #### VTAB
