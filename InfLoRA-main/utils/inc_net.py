@@ -8,7 +8,8 @@ import timm
 
 def get_convnet(args, pretrained=False):
 
-    name = 'pretrained_vit_b16_224_in21k'
+    # name = 'pretrained_vit_b16_224_in21k'
+    name = 'pretrained_vit_b16_224'
     #SimpleCIL or SimpleCIL w/ Finetune
     if name=="pretrained_vit_b16_224" or name=="vit_base_patch16_224":
         model=timm.create_model("vit_base_patch16_224",pretrained=True, num_classes=0)

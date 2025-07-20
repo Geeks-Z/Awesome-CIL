@@ -145,7 +145,7 @@ class EaseCosineLinear(nn.Module):
             
             out = 0.0
             for j in range((self.in_features // out_dim)):
-                # PTM feature
+                # ptm feature
                 if use_init_ptm and j == 0:
                     input_ptm = F.normalize(input[:, 0:out_dim], p=2, dim=1)
                     weight_ptm = F.normalize(self.weight[start_cls:end_cls, 0:out_dim], p=2, dim=1)

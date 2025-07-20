@@ -1374,10 +1374,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-24 08:06:34,903 [trainer.py] => Average Accuracy (CNN): 89.68
 Finished cifar100_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 38069.26 s
-总测试时间: 415.44 s
-每个任务每个epoch训练时间: 95.17 s
-每个任务平均测试时间: 20.77 s
+Total Train Time: 38069.26 s
+Total Test Time: 415.44 s
+Train Time / (Epoch*Task): 95.17 s
+Test Time / Task: 20.77 s
 Accuracy Matrix (CNN):
 [[99.8 99.  98.6 98.4 98.6 97.6 98.  95.2 93.6 89.4 86.  92.8 92.4 91.2
   90.2 86.4 91.2 89.  88.4 88.4]
@@ -2124,10 +2124,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-24 15:01:11,325 [trainer.py] => Average Accuracy (CNN): 92.14
 Finished cifar100_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 24539.74 s
-总测试时间: 217.43 s
-每个任务每个epoch训练时间: 122.7 s
-每个任务平均测试时间: 21.74 s
+Total Train Time: 24539.74 s
+Total Test Time: 217.43 s
+Train Time / (Epoch*Task): 122.7 s
+Test Time / Task: 21.74 s
 Accuracy Matrix (CNN):
 [[99.1 97.5 96.1 95.2 93.8 93.1 92.4 91.2 91.7 90.7]
  [ 0.  97.  96.1 94.4 92.2 93.2 93.3 92.4 91.9 90.4]
@@ -2511,10 +2511,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-24 18:59:15,206 [trainer.py] => Average Accuracy (CNN): 93.25
 Finished cifar100_init20_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 14104.94 s
-总测试时间: 103.84 s
-每个任务每个epoch训练时间: 141.05 s
-每个任务平均测试时间: 20.77 s
+Total Train Time: 14104.94 s
+Total Test Time: 103.84 s
+Train Time / (Epoch*Task): 141.05 s
+Test Time / Task: 20.77 s
 Accuracy Matrix (CNN):
 [[97.8  95.5  94.05 93.25 91.65]
  [ 0.   95.9  93.1  92.25 91.5 ]
@@ -3293,10 +3293,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-24 23:54:28,813 [trainer.py] => Average Accuracy (CNN): 69.65
 Finished cifar100_init50_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 17345.06 s
-总测试时间: 302.2 s
-每个任务每个epoch训练时间: 78.84 s
-每个任务平均测试时间: 27.47 s
+Total Train Time: 17345.06 s
+Total Test Time: 302.2 s
+Train Time / (Epoch*Task): 78.84 s
+Test Time / Task: 27.47 s
 Accuracy Matrix (CNN):
 [[95.52 94.12 93.22 92.38 91.16 91.04 90.68 90.2  90.24 90.52 88.88]
  [ 0.   92.4  46.6  30.73 22.6  17.56 14.23 11.6  10.55  8.67  8.1 ]
@@ -3747,10 +3747,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 03:19:48,125 [trainer.py] => Average Accuracy (CNN): 74.92
 Finished cifar100_init50_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 12092.92 s
-总测试时间: 164.14 s
-每个任务每个epoch训练时间: 100.77 s
-每个任务平均测试时间: 27.36 s
+Total Train Time: 12092.92 s
+Total Test Time: 164.14 s
+Train Time / (Epoch*Task): 100.77 s
+Test Time / Task: 27.36 s
 Accuracy Matrix (CNN):
 [[95.58 94.   91.66 91.12 90.64 90.08]
  [ 0.   95.1  45.7  28.6  21.65 17.08]
@@ -6441,10 +6441,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 10:46:37,018 [trainer.py] => Average Accuracy (CNN): 69.22
 Finished cub_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 26395.17 s
-总测试时间: 302.66 s
-每个任务每个epoch训练时间: 32.99 s
-每个任务平均测试时间: 7.57 s
+Total Train Time: 26395.17 s
+Total Test Time: 302.66 s
+Train Time / (Epoch*Task): 32.99 s
+Test Time / Task: 7.57 s
 Accuracy Matrix (CNN):
 [[100.   100.   100.   ...  90.57  90.57  90.57]
  [  0.    98.46  98.46 ...  53.85  50.77  50.77]
@@ -7798,10 +7798,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 15:02:56,433 [trainer.py] => Average Accuracy (CNN): 74.82
 Finished cub_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 15171.1 s
-总测试时间: 138.95 s
-每个任务每个epoch训练时间: 37.93 s
-每个任务平均测试时间: 6.95 s
+Total Train Time: 15171.1 s
+Total Test Time: 138.95 s
+Train Time / (Epoch*Task): 37.93 s
+Test Time / Task: 6.95 s
 Accuracy Matrix (CNN):
 [[98.31 88.14 90.68 82.2  82.2  70.34 66.1  66.95 69.49 66.95 64.41 62.71
   65.25 73.73 62.71 64.41 61.02 50.   47.46 48.31]
@@ -8548,10 +8548,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 17:00:37,350 [trainer.py] => Average Accuracy (CNN): 83.59
 Finished cub_init20_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 6925.3 s
-总测试时间: 64.69 s
-每个任务每个epoch训练时间: 34.63 s
-每个任务平均测试时间: 6.47 s
+Total Train Time: 6925.3 s
+Total Test Time: 64.69 s
+Train Time / (Epoch*Task): 34.63 s
+Test Time / Task: 6.47 s
 Accuracy Matrix (CNN):
 [[98.38 94.33 89.07 87.04 83.81 81.38 80.57 77.33 79.76 76.92]
  [ 0.   93.72 91.79 88.41 85.02 82.61 78.74 74.4  75.85 74.88]
@@ -8933,10 +8933,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 18:12:11,621 [trainer.py] => Average Accuracy (CNN): 86.39
 Finished cub_init40_inc40: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 4214.99 s
-总测试时间: 35.54 s
-每个任务每个epoch训练时间: 42.15 s
-每个任务平均测试时间: 7.11 s
+Total Train Time: 4214.99 s
+Total Test Time: 35.54 s
+Train Time / (Epoch*Task): 42.15 s
+Test Time / Task: 7.11 s
 Accuracy Matrix (CNN):
 [[96.04 94.05 91.85 90.09 84.14]
  [ 0.   89.68 81.72 79.35 79.35]
@@ -10362,10 +10362,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-25 21:57:25,464 [trainer.py] => Average Accuracy (CNN): 39.97
 Finished cub_init100_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 13302.95 s
-总测试时间: 149.57 s
-每个任务每个epoch训练时间: 31.67 s
-每个任务平均测试时间: 7.12 s
+Total Train Time: 13302.95 s
+Total Test Time: 149.57 s
+Train Time / (Epoch*Task): 31.67 s
+Test Time / Task: 7.12 s
 Accuracy Matrix (CNN):
 [[ 93.01  88.64  76.68  57.91  51.6   47.39  52.27  45.62  48.32  39.81
    34.85  39.73  49.49  47.98  51.77  36.11  43.6   46.97  48.82  44.95
@@ -11187,10 +11187,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-26 00:06:35,911 [trainer.py] => Average Accuracy (CNN): 54.80
 Finished cub_init100_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 7601.12 s
-总测试时间: 86.61 s
-每个任务每个epoch训练时间: 34.55 s
-每个任务平均测试时间: 7.87 s
+Total Train Time: 7601.12 s
+Total Test Time: 86.61 s
+Train Time / (Epoch*Task): 34.55 s
+Test Time / Task: 7.87 s
 Accuracy Matrix (CNN):
 [[92.68 86.95 74.58 72.64 72.05 62.88 57.41 54.29 59.34 61.03 61.95]
  [ 0.   92.17 45.61 30.15 20.31 15.89 12.09  9.92  8.62  8.4   7.09]
@@ -11639,10 +11639,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-26 01:28:14,315 [trainer.py] => Average Accuracy (CNN): 67.85
 Finished cub_init100_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 4815.78 s
-总测试时间: 39.0 s
-每个任务每个epoch训练时间: 40.13 s
-每个任务平均测试时间: 6.5 s
+Total Train Time: 4815.78 s
+Total Test Time: 39.0 s
+Train Time / (Epoch*Task): 40.13 s
+Test Time / Task: 6.5 s
 Accuracy Matrix (CNN):
 [[91.84 85.52 83.42 81.23 78.03 73.06]
  [ 0.   89.47 43.05 26.03 19.26 14.62]
@@ -16732,10 +16732,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-30 07:54:19,511 [trainer.py] => Average Accuracy (CNN): 72.65
 Finished ImageNet_R_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 124853.59 s
-总测试时间: 918.86 s
-每个任务每个epoch训练时间: 62.43 s
-每个任务平均测试时间: 22.97 s
+Total Train Time: 124853.59 s
+Total Test Time: 918.86 s
+Train Time / (Epoch*Task): 62.43 s
+Test Time / Task: 22.97 s
 Accuracy Matrix (CNN):
 [[97.93 93.79 94.48 ... 79.31 76.55 77.24]
  [ 0.   84.88 83.72 ... 69.19 71.51 71.51]
@@ -19313,10 +19313,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-30 20:50:04,527 [trainer.py] => Average Accuracy (CNN): 80.24
 Finished ImageNet_R_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 46079.82 s
-总测试时间: 316.75 s
-每个任务每个epoch训练时间: 46.08 s
-每个任务平均测试时间: 15.84 s
+Total Train Time: 46079.82 s
+Total Test Time: 316.75 s
+Train Time / (Epoch*Task): 46.08 s
+Test Time / Task: 15.84 s
 Accuracy Matrix (CNN):
 [[95.9  93.06 90.85 90.22 88.01 87.07 84.86 88.33 88.64 89.27 88.33 87.07
   86.75 86.44 85.17 83.28 83.28 83.28 84.86 85.49]
@@ -20659,10 +20659,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-01 03:51:16,443 [trainer.py] => Average Accuracy (CNN): 83.00
 Finished ImageNet_R_init20_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 25015.04 s
-总测试时间: 173.3 s
-每个任务每个epoch训练时间: 50.03 s
-每个任务平均测试时间: 17.33 s
+Total Train Time: 25015.04 s
+Total Test Time: 173.3 s
+Train Time / (Epoch*Task): 50.03 s
+Test Time / Task: 17.33 s
 Accuracy Matrix (CNN):
 [[94.19 92.45 91.29 89.99 87.37 85.34 84.47 84.18 82.73 82.44]
  [ 0.   87.66 85.44 83.7  81.65 81.49 80.7  79.59 79.75 79.43]
@@ -21342,10 +21342,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-01 08:43:24,231 [trainer.py] => Average Accuracy (CNN): 82.91
 Finished ImageNet_R_init40_inc40: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 17379.28 s
-总测试时间: 74.54 s
-每个任务每个epoch训练时间: 69.52 s
-每个任务平均测试时间: 14.91 s
+Total Train Time: 17379.28 s
+Total Test Time: 74.54 s
+Train Time / (Epoch*Task): 69.52 s
+Test Time / Task: 14.91 s
 Accuracy Matrix (CNN):
 [[91.22 87.43 84.56 81.53 80.02]
  [ 0.   83.43 79.18 79.61 77.82]
@@ -24011,10 +24011,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-01 18:58:19,120 [trainer.py] => Average Accuracy (CNN): 51.27
 Finished ImageNet_R_init100_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 36292.19 s
-总测试时间: 468.31 s
-每个任务每个epoch训练时间: 34.56 s
-每个任务平均测试时间: 22.3 s
+Total Train Time: 36292.19 s
+Total Test Time: 468.31 s
+Train Time / (Epoch*Task): 34.56 s
+Test Time / Task: 22.3 s
 Accuracy Matrix (CNN):
 [[84.66 80.64 76.11 72.46 72.6  66.5  66.57 65.86 64.99 63.72 64.42 68.61
   69.68 71.09 69.88 70.95 70.25 69.15 69.08 68.38 68.64]
@@ -25486,10 +25486,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-01 23:25:43,531 [trainer.py] => Average Accuracy (CNN): 58.51
 Finished ImageNet_R_init100_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 11337.85 s
-总测试时间: 194.82 s
-每个任务每个epoch训练时间: 20.61 s
-每个任务平均测试时间: 17.71 s
+Total Train Time: 11337.85 s
+Total Test Time: 194.82 s
+Train Time / (Epoch*Task): 20.61 s
+Test Time / Task: 17.71 s
 Accuracy Matrix (CNN):
 [[84.66 80.67 78.86 78.09 77.25 76.55 76.55 75.01 74.3  73.67 73.43]
  [ 0.   87.68 35.61 24.49 18.47 14.66 11.59 10.65  9.24  8.27  7.23]
@@ -26296,10 +26296,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 02:15:56,899 [trainer.py] => Average Accuracy (CNN): 65.62
 Finished ImageNet_R_init100_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 10091.46 s
-总测试时间: 103.91 s
-每个任务每个epoch训练时间: 33.64 s
-每个任务平均测试时间: 17.32 s
+Total Train Time: 10091.46 s
+Total Test Time: 103.91 s
+Train Time / (Epoch*Task): 33.64 s
+Test Time / Task: 17.32 s
 Accuracy Matrix (CNN):
 [[84.36 81.24 79.8  78.69 78.89 78.19]
  [ 0.   84.7  43.69 26.35 21.1  16.78]
@@ -31422,10 +31422,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 23:32:04,153 [trainer.py] => Average Accuracy (CNN): 40.90
 Finished ImageNet_A_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 6228.49 s
-总测试时间: 193.1 s
-每个任务每个epoch训练时间: 3.11 s
-每个任务平均测试时间: 4.83 s
+Total Train Time: 6228.49 s
+Total Test Time: 193.1 s
+Train Time / (Epoch*Task): 3.11 s
+Test Time / Task: 4.83 s
 Accuracy Matrix (CNN):
 [[85.29 79.41 70.59 ... 67.65 64.71 55.88]
  [ 0.   51.16 44.19 ... 20.93 25.58 25.58]
@@ -34004,10 +34004,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 09:38:44,802 [trainer.py] => Average Accuracy (CNN): 52.03
 Finished ImageNet_A_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 3890.33 s
-总测试时间: 91.28 s
-每个任务每个epoch训练时间: 3.89 s
-每个任务平均测试时间: 4.56 s
+Total Train Time: 3890.33 s
+Total Test Time: 91.28 s
+Train Time / (Epoch*Task): 3.89 s
+Test Time / Task: 4.56 s
 Accuracy Matrix (CNN):
 [[79.22 71.43 63.64 62.34 61.04 57.14 57.14 51.95 51.95 54.55 49.35 54.55
   54.55 58.44 55.84 54.55 50.65 51.95 54.55 51.95]
@@ -35352,10 +35352,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 10:28:35,940 [trainer.py] => Average Accuracy (CNN): 58.21
 Finished ImageNet_A_init20_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 2939.48 s
-总测试时间: 44.79 s
-每个任务每个epoch训练时间: 5.88 s
-每个任务平均测试时间: 4.48 s
+Total Train Time: 2939.48 s
+Total Test Time: 44.79 s
+Train Time / (Epoch*Task): 5.88 s
+Test Time / Task: 4.48 s
 Accuracy Matrix (CNN):
 [[84.   78.29 73.71 69.71 69.14 70.29 65.14 61.71 57.14 57.71]
  [ 0.   61.62 60.   52.43 51.35 48.65 47.03 46.49 47.57 45.95]
@@ -36036,10 +36036,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 11:10:26,072 [trainer.py] => Average Accuracy (CNN): 62.85
 Finished ImageNet_A_init40_inc40: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 2480.5 s
-总测试时间: 23.05 s
-每个任务每个epoch训练时间: 9.92 s
-每个任务平均测试时间: 4.61 s
+Total Train Time: 2480.5 s
+Total Test Time: 23.05 s
+Train Time / (Epoch*Task): 9.92 s
+Test Time / Task: 4.61 s
 Accuracy Matrix (CNN):
 [[76.11 71.39 70.   66.94 66.39]
  [ 0.   63.02 59.47 57.69 55.92]
@@ -38744,10 +38744,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 12:21:58,463 [trainer.py] => Average Accuracy (CNN): 32.78
 Finished ImageNet_A_init100_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 4161.89 s
-总测试时间: 123.24 s
-每个任务每个epoch训练时间: 3.96 s
-每个任务平均测试时间: 5.87 s
+Total Train Time: 4161.89 s
+Total Test Time: 123.24 s
+Train Time / (Epoch*Task): 3.96 s
+Test Time / Task: 5.87 s
 Accuracy Matrix (CNN):
 [[66.59 63.97 58.03 54.93 46.37 44.   40.9  38.64 38.53 40.55 41.02 39.71
   36.15 34.24 32.58 32.58 32.82 31.63 31.15 31.39 35.55]
@@ -40219,10 +40219,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 13:21:24,279 [trainer.py] => Average Accuracy (CNN): 43.75
 Finished ImageNet_A_init100_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 3494.54 s
-总测试时间: 64.22 s
-每个任务每个epoch训练时间: 6.35 s
-每个任务平均测试时间: 5.84 s
+Total Train Time: 3494.54 s
+Total Test Time: 64.22 s
+Train Time / (Epoch*Task): 6.35 s
+Test Time / Task: 5.84 s
 Accuracy Matrix (CNN):
 [[69.8  62.31 59.1  54.93 54.34 54.58 53.39 49.35 49.94 50.06 49.94]
  [ 0.   60.   27.61 16.49  9.64  7.02  6.14  5.08  4.69  4.38  3.24]
@@ -41030,10 +41030,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-03 14:05:22,660 [trainer.py] => Average Accuracy (CNN): 51.10
 Finished ImageNet_A_init100_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 2596.26 s
-总测试时间: 32.9 s
-每个任务每个epoch训练时间: 8.65 s
-每个任务平均测试时间: 5.48 s
+Total Train Time: 2596.26 s
+Total Test Time: 32.9 s
+Train Time / (Epoch*Task): 8.65 s
+Test Time / Task: 5.48 s
 Accuracy Matrix (CNN):
 [[67.54 66.23 61.71 57.67 58.03 59.69]
  [ 0.   55.97 23.93 17.94 12.27  9.73]
@@ -45114,10 +45114,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-26 14:52:56,906 [trainer.py] => Average Accuracy (CNN): 68.13
 Finished omnibenchmark_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 47323.61 s
-总测试时间: 789.94 s
-每个任务每个epoch训练时间: 39.44 s
-每个任务平均测试时间: 13.17 s
+Total Train Time: 47323.61 s
+Total Test Time: 789.94 s
+Train Time / (Epoch*Task): 39.44 s
+Test Time / Task: 13.17 s
 Accuracy Matrix (CNN):
 [[100.   100.    96.   ...  77.    77.    77.  ]
  [  0.    76.    72.   ...  45.    48.    52.  ]
@@ -47175,10 +47175,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-26 22:40:12,989 [trainer.py] => Average Accuracy (CNN): 71.19
 Finished omnibenchmark_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 27528.22 s
-总测试时间: 425.29 s
-每个任务每个epoch训练时间: 45.88 s
-每个任务平均测试时间: 14.18 s
+Total Train Time: 27528.22 s
+Total Test Time: 425.29 s
+Train Time / (Epoch*Task): 45.88 s
+Test Time / Task: 14.18 s
 Accuracy Matrix (CNN):
 [[97.5  86.   89.   83.5  76.5  81.5  76.   79.5  78.5  74.5  74.5  75.
   81.5  77.5  72.   71.   70.5  70.5  71.5  68.5  70.   75.5  74.5  71.5
@@ -48308,10 +48308,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 06:36:24,286 [trainer.py] => Average Accuracy (CNN): 76.33
 Finished omnibenchmark_init20_inc20: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 15396.09 s
-总测试时间: 210.1 s
-每个任务每个epoch训练时间: 51.32 s
-每个任务平均测试时间: 14.01 s
+Total Train Time: 15396.09 s
+Total Test Time: 210.1 s
+Train Time / (Epoch*Task): 51.32 s
+Test Time / Task: 14.01 s
 Accuracy Matrix (CNN):
 [[98.   88.5  84.75 83.5  82.25 80.75 79.75 78.25 77.25 75.25 74.5  74.5
   73.75 74.5  75.5 ]
@@ -49046,10 +49046,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 10:48:21,190 [trainer.py] => Average Accuracy (CNN): 77.44
 Finished omnibenchmark_init30_inc30: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 14951.5 s
-总测试时间: 143.08 s
-每个任务每个epoch训练时间: 74.76 s
-每个任务平均测试时间: 14.31 s
+Total Train Time: 14951.5 s
+Total Test Time: 143.08 s
+Train Time / (Epoch*Task): 74.76 s
+Test Time / Task: 14.31 s
 Accuracy Matrix (CNN):
 [[94.17 82.5  80.17 76.   75.5  74.17 73.   75.17 74.   73.33]
  [ 0.   90.65 85.48 79.47 76.63 73.29 73.62 68.95 69.12 67.95]
@@ -51172,10 +51172,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 15:53:17,198 [trainer.py] => Average Accuracy (CNN): 52.82
 Finished omnibenchmark_init150_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 17667.87 s
-总测试时间: 575.05 s
-每个任务每个epoch训练时间: 28.5 s
-每个任务平均测试时间: 18.55 s
+Total Train Time: 17667.87 s
+Total Test Time: 575.05 s
+Train Time / (Epoch*Task): 28.5 s
+Test Time / Task: 18.55 s
 Accuracy Matrix (CNN):
 [[87.14 85.54 81.1  78.99 74.28 74.95 74.15 76.35 72.51 74.32 75.42 71.91
   73.81 74.92 76.19 74.08 73.61 70.21 70.81 69.14 67.9  68.64 67.84 66.3
@@ -52374,10 +52374,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 20:03:07,718 [trainer.py] => Average Accuracy (CNN): 58.71
 Finished omnibenchmark_init150_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 14681.06 s
-总测试时间: 275.65 s
-每个任务每个epoch训练时间: 45.88 s
-每个任务平均测试时间: 17.23 s
+Total Train Time: 14681.06 s
+Total Test Time: 275.65 s
+Train Time / (Epoch*Task): 45.88 s
+Test Time / Task: 17.23 s
 Accuracy Matrix (CNN):
 [[86.91 84.4  81.83 81.53 79.89 78.89 78.79 80.39 79.16 78.46 78.62 78.92
   77.92 77.15 76.89 74.62]
@@ -52847,10 +52847,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-06-27 03:08:29,385 [trainer.py] => Average Accuracy (CNN): 66.41
 Finished omnibenchmark_init150_inc30: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 15941.27 s
-总测试时间: 108.29 s
-每个任务每个epoch训练时间: 132.84 s
-每个任务平均测试时间: 18.05 s
+Total Train Time: 15941.27 s
+Total Test Time: 108.29 s
+Train Time / (Epoch*Task): 132.84 s
+Test Time / Task: 18.05 s
 Accuracy Matrix (CNN):
 [[87.04 85.14 83.77 84.4  84.24 83.53]
  [ 0.   70.07 31.21 19.45 13.75 10.43]
@@ -53564,10 +53564,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 20:18:13,994 [trainer.py] => Average Accuracy (CNN): 81.85
 Finished vtab_init5_inc5: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 737.36 s
-总测试时间: 149.48 s
-每个任务每个epoch训练时间: 3.69 s
-每个任务平均测试时间: 14.95 s
+Total Train Time: 737.36 s
+Total Test Time: 149.48 s
+Train Time / (Epoch*Task): 3.69 s
+Test Time / Task: 14.95 s
 Accuracy Matrix (CNN):
 [[98.25 96.15 94.41 93.71 93.36 91.96 92.31 92.31 92.66 92.66]
  [ 0.   92.59 92.04 89.63 87.96 87.78 87.22 87.04 85.56 85.  ]
@@ -53950,10 +53950,10 @@ Layer 12 - Projection Matrix shape: torch.Size([768, 768])
 2025-07-02 20:28:05,913 [trainer.py] => Average Accuracy (CNN): 89.54
 Finished vtab_init10_inc10: InfLoRA  
 ----------------------------------------------------------------------------------------------------
-总训练时间: 503.66 s
-总测试时间: 80.25 s
-每个任务每个epoch训练时间: 5.04 s
-每个任务平均测试时间: 16.05 s
+Total Train Time: 503.66 s
+Total Test Time: 80.25 s
+Train Time / (Epoch*Task): 5.04 s
+Test Time / Task: 16.05 s
 Accuracy Matrix (CNN):
 [[98.67 97.34 93.34 91.89 92.13]
  [ 0.   97.77 90.45 87.18 83.82]

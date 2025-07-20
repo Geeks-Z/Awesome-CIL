@@ -76,7 +76,7 @@ class Learner(BaseLearner):
                 if self.moni_adam:
                     if index > self.adapter_num - 1:
                         break
-                # only use the diagonal feature, index = -1 denotes using init PTM, index = self._cur_task denotes the last adapter's feature
+                # only use the diagonal feature, index = -1 denotes using init ptm, index = self._cur_task denotes the last adapter's feature
                 elif self.use_diagonal and index != -1 and index != self._cur_task:
                     continue
 

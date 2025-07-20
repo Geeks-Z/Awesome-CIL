@@ -11,7 +11,7 @@
   "backbone_type": "pretrained_vit_b16_224_in21k_adapter",
   "weight_decay": 0.0005,
   "prompt_token_num": 30,
-  "ffn_num": 16,
+  "ffn_num": 10,
   "optimizer": "sgd",
   "min_lr": 0,
   "device": ["6"],

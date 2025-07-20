@@ -9,7 +9,7 @@
   "increment": 30,
   "model_name": "ease",
   "backbone_type": "vit_base_patch16_224_in21k_ease",
-  "device": ["5"],
+  "device": ["7"],
   "seed": [1993],
 
   "init_epochs": 20,
@@ -24,7 +24,7 @@
   "pretrained": true,
   "vpt_type": "Deep",
   "prompt_token_num": 5,
-  "ffn_num": 16,
+  "ffn_num": 10,
   "use_diagonal": false,
   "recalc_sim": true,
   "alpha": 0.1,

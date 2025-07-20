@@ -158,7 +158,7 @@ class Block(nn.Module):
             adapt_x = adapt(x, add_residual=False)
         else:
             adapt_x = None
-            # print("use PTM backbone without adapter.")
+            # print("use ptm backbone without adapter.")
 
         residual = x
         x = self.mlp_drop(self.act(self.fc1(self.norm2(x))))

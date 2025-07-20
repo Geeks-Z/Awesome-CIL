@@ -104,10 +104,10 @@ def _train(args):
                                                   args["model_name"],
                                                   ))
     print('-' * 100)
-    print('总训练时间:', round(total_train_time, 2), 's')
-    print('总测试时间:', round(total_test_time, 2), 's')
-    print('每个任务每个epoch训练时间:', round(total_train_time / (data_manager.nb_tasks * args['epochs']), 2), 's')
-    print('每个任务平均测试时间:', round(total_test_time / data_manager.nb_tasks, 2), 's')
+    print('Total Train Time:', round(total_train_time, 2), 's')
+    print('Total Test Time:', round(total_test_time, 2), 's')
+    print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['epochs']), 2), 's')
+    print('Test Time / Task:', round(total_test_time / data_manager.nb_tasks, 2), 's')
 
     if len(cnn_matrix) > 0:
         np_acctable = np.zeros([task + 1, task + 1])
