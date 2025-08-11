@@ -1,0 +1,640 @@
+nohup: 忽略输入
+2025-07-17 12:05:03,799 [trainer.py] => config: ./scripts/simplecil/dino/simplecil_cifar_B0_Inc10_DINO16.json
+2025-07-17 12:05:03,800 [trainer.py] => prefix:  
+2025-07-17 12:05:03,800 [trainer.py] => dataset: cifar224
+2025-07-17 12:05:03,800 [trainer.py] => memory_size: 0
+2025-07-17 12:05:03,800 [trainer.py] => memory_per_class: 0
+2025-07-17 12:05:03,800 [trainer.py] => fixed_memory: False
+2025-07-17 12:05:03,800 [trainer.py] => shuffle: True
+2025-07-17 12:05:03,800 [trainer.py] => init_cls: 10
+2025-07-17 12:05:03,800 [trainer.py] => increment: 10
+2025-07-17 12:05:03,800 [trainer.py] => model_name: simplecil
+2025-07-17 12:05:03,800 [trainer.py] => backbone_type: vit_base_patch16_224_dino
+2025-07-17 12:05:03,800 [trainer.py] => device: [device(type='cuda', index=6)]
+2025-07-17 12:05:03,800 [trainer.py] => seed: 1993
+2025-07-17 12:05:03,800 [trainer.py] => tuned_epoch: 0
+2025-07-17 12:05:03,800 [trainer.py] => init_lr: 0.02
+2025-07-17 12:05:03,800 [trainer.py] => batch_size: 48
+2025-07-17 12:05:03,800 [trainer.py] => weight_decay: 0.0005
+2025-07-17 12:05:03,800 [trainer.py] => min_lr: 0
+2025-07-17 12:05:03,800 [trainer.py] => optimizer: sgd
+2025-07-17 12:05:03,800 [trainer.py] => scheduler: cosine
+2025-07-17 12:05:03,800 [trainer.py] => init_milestones: [10]
+2025-07-17 12:05:03,800 [trainer.py] => init_lr_decay: 0.1
+2025-07-17 12:05:06,848 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+This is for the BaseNet initialization.
+2025-07-17 12:05:24,367 [helpers.py] => Loading pretrained weights from url (https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth)
+After BaseNet initialization.
+2025-07-17 12:05:29,977 [trainer.py] => All params: 85798656
+2025-07-17 12:05:29,977 [trainer.py] => Trainable params: 85798656
+2025-07-17 12:05:30,718 [simplecil.py] => Learning on 0-10
+2025-07-17 12:06:06,087 [trainer.py] => No NME accuracy.
+2025-07-17 12:06:06,087 [trainer.py] => CNN: {'total': 87.6, '00-09': 87.6, 'old': 0, 'new': 87.6}
+2025-07-17 12:06:06,087 [trainer.py] => CNN top1 curve: [87.6]
+2025-07-17 12:06:06,087 [trainer.py] => CNN top5 curve: [99.4]
+
+Average Accuracy (CNN): 87.6
+2025-07-17 12:06:06,087 [trainer.py] => Average Accuracy (CNN): 87.6 
+
+2025-07-17 12:06:06,088 [trainer.py] => All params: 85806337
+2025-07-17 12:06:06,088 [trainer.py] => Trainable params: 85806337
+2025-07-17 12:06:06,096 [simplecil.py] => Learning on 10-20
+2025-07-17 12:06:50,415 [trainer.py] => No NME accuracy.
+2025-07-17 12:06:50,416 [trainer.py] => CNN: {'total': 79.1, '00-09': 81.1, '10-19': 77.1, 'old': 81.1, 'new': 77.1}
+2025-07-17 12:06:50,416 [trainer.py] => CNN top1 curve: [87.6, 79.1]
+2025-07-17 12:06:50,416 [trainer.py] => CNN top5 curve: [99.4, 96.25]
+
+Average Accuracy (CNN): 83.35
+2025-07-17 12:06:50,416 [trainer.py] => Average Accuracy (CNN): 83.35 
+
+2025-07-17 12:06:50,417 [trainer.py] => All params: 85814017
+2025-07-17 12:06:50,417 [trainer.py] => Trainable params: 85814017
+2025-07-17 12:06:50,422 [simplecil.py] => Learning on 20-30
+2025-07-17 12:07:35,713 [trainer.py] => No NME accuracy.
+2025-07-17 12:07:35,713 [trainer.py] => CNN: {'total': 75.2, '00-09': 76.8, '10-19': 70.5, '20-29': 78.3, 'old': 73.65, 'new': 78.3}
+2025-07-17 12:07:35,713 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2]
+2025-07-17 12:07:35,713 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67]
+
+Average Accuracy (CNN): 80.63
+2025-07-17 12:07:35,713 [trainer.py] => Average Accuracy (CNN): 80.63 
+
+2025-07-17 12:07:35,714 [trainer.py] => All params: 85821697
+2025-07-17 12:07:35,715 [trainer.py] => Trainable params: 85821697
+2025-07-17 12:07:35,720 [simplecil.py] => Learning on 30-40
+2025-07-17 12:08:26,842 [trainer.py] => No NME accuracy.
+2025-07-17 12:08:26,842 [trainer.py] => CNN: {'total': 71.45, '00-09': 72.8, '10-19': 68.0, '20-29': 75.8, '30-39': 69.2, 'old': 72.2, 'new': 69.2}
+2025-07-17 12:08:26,842 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45]
+2025-07-17 12:08:26,842 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08]
+
+Average Accuracy (CNN): 78.34
+2025-07-17 12:08:26,843 [trainer.py] => Average Accuracy (CNN): 78.34 
+
+2025-07-17 12:08:26,843 [trainer.py] => All params: 85829377
+2025-07-17 12:08:26,844 [trainer.py] => Trainable params: 85829377
+2025-07-17 12:08:26,849 [simplecil.py] => Learning on 40-50
+2025-07-17 12:09:21,753 [trainer.py] => No NME accuracy.
+2025-07-17 12:09:21,754 [trainer.py] => CNN: {'total': 69.46, '00-09': 70.0, '10-19': 63.8, '20-29': 73.9, '30-39': 65.2, '40-49': 74.4, 'old': 68.22, 'new': 74.4}
+2025-07-17 12:09:21,754 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46]
+2025-07-17 12:09:21,754 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9]
+
+Average Accuracy (CNN): 76.56
+2025-07-17 12:09:21,754 [trainer.py] => Average Accuracy (CNN): 76.56 
+
+2025-07-17 12:09:21,755 [trainer.py] => All params: 85837057
+2025-07-17 12:09:21,755 [trainer.py] => Trainable params: 85837057
+2025-07-17 12:09:21,759 [simplecil.py] => Learning on 50-60
+2025-07-17 12:10:25,237 [trainer.py] => No NME accuracy.
+2025-07-17 12:10:25,237 [trainer.py] => CNN: {'total': 67.0, '00-09': 67.1, '10-19': 62.1, '20-29': 71.8, '30-39': 63.2, '40-49': 71.2, '50-59': 66.6, 'old': 67.08, 'new': 66.6}
+2025-07-17 12:10:25,237 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46, 67.0]
+2025-07-17 12:10:25,237 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9, 90.4]
+
+Average Accuracy (CNN): 74.97
+2025-07-17 12:10:25,237 [trainer.py] => Average Accuracy (CNN): 74.97 
+
+2025-07-17 12:10:25,238 [trainer.py] => All params: 85844737
+2025-07-17 12:10:25,239 [trainer.py] => Trainable params: 85844737
+2025-07-17 12:10:25,243 [simplecil.py] => Learning on 60-70
+2025-07-17 12:11:29,596 [trainer.py] => No NME accuracy.
+2025-07-17 12:11:29,596 [trainer.py] => CNN: {'total': 66.27, '00-09': 64.8, '10-19': 60.5, '20-29': 70.6, '30-39': 61.6, '40-49': 69.7, '50-59': 63.5, '60-69': 73.2, 'old': 65.12, 'new': 73.2}
+2025-07-17 12:11:29,596 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46, 67.0, 66.27]
+2025-07-17 12:11:29,596 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9, 90.4, 89.79]
+
+Average Accuracy (CNN): 73.73
+2025-07-17 12:11:29,597 [trainer.py] => Average Accuracy (CNN): 73.73 
+
+2025-07-17 12:11:29,597 [trainer.py] => All params: 85852417
+2025-07-17 12:11:29,598 [trainer.py] => Trainable params: 85852417
+2025-07-17 12:11:29,602 [simplecil.py] => Learning on 70-80
+2025-07-17 12:12:38,083 [trainer.py] => No NME accuracy.
+2025-07-17 12:12:38,084 [trainer.py] => CNN: {'total': 64.22, '00-09': 63.3, '10-19': 59.3, '20-29': 70.0, '30-39': 60.3, '40-49': 67.9, '50-59': 60.7, '60-69': 70.5, '70-79': 61.8, 'old': 64.57, 'new': 61.8}
+2025-07-17 12:12:38,084 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46, 67.0, 66.27, 64.22]
+2025-07-17 12:12:38,084 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9, 90.4, 89.79, 88.76]
+
+Average Accuracy (CNN): 72.54
+2025-07-17 12:12:38,084 [trainer.py] => Average Accuracy (CNN): 72.54 
+
+2025-07-17 12:12:38,085 [trainer.py] => All params: 85860097
+2025-07-17 12:12:38,086 [trainer.py] => Trainable params: 85860097
+2025-07-17 12:12:38,090 [simplecil.py] => Learning on 80-90
+2025-07-17 12:13:52,815 [trainer.py] => No NME accuracy.
+2025-07-17 12:13:52,815 [trainer.py] => CNN: {'total': 62.47, '00-09': 61.0, '10-19': 57.7, '20-29': 68.1, '30-39': 59.9, '40-49': 66.0, '50-59': 59.7, '60-69': 69.0, '70-79': 59.6, '80-89': 61.2, 'old': 62.62, 'new': 61.2}
+2025-07-17 12:13:52,815 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46, 67.0, 66.27, 64.22, 62.47]
+2025-07-17 12:13:52,815 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9, 90.4, 89.79, 88.76, 87.61]
+
+Average Accuracy (CNN): 71.42
+2025-07-17 12:13:52,815 [trainer.py] => Average Accuracy (CNN): 71.42 
+
+2025-07-17 12:13:52,816 [trainer.py] => All params: 85867777
+2025-07-17 12:13:52,817 [trainer.py] => Trainable params: 85867777
+2025-07-17 12:13:52,822 [simplecil.py] => Learning on 90-100
+2025-07-17 12:15:13,868 [trainer.py] => No NME accuracy.
+2025-07-17 12:15:13,869 [trainer.py] => CNN: {'total': 61.6, '00-09': 60.4, '10-19': 55.9, '20-29': 66.8, '30-39': 58.4, '40-49': 65.3, '50-59': 58.0, '60-69': 68.4, '70-79': 57.4, '80-89': 60.1, '90-99': 65.3, 'old': 61.19, 'new': 65.3}
+2025-07-17 12:15:13,869 [trainer.py] => CNN top1 curve: [87.6, 79.1, 75.2, 71.45, 69.46, 67.0, 66.27, 64.22, 62.47, 61.6]
+2025-07-17 12:15:13,869 [trainer.py] => CNN top5 curve: [99.4, 96.25, 94.67, 93.08, 91.9, 90.4, 89.79, 88.76, 87.61, 86.69]
+
+Average Accuracy (CNN): 70.44
+2025-07-17 12:15:13,869 [trainer.py] => Average Accuracy (CNN): 70.44 
+
+Finished cifar224_init10_inc10: vit_base_patch16_224_dino  
+----------------------------------------------------------------------------------------------------
+Total Train Time: 299.19 s
+Total Test Time: 284.69 s
+Traceback (most recent call last):
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 24, in <module>
+    main()
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 11, in main
+    train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 21, in train
+    _train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 143, in _train
+    print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
+ZeroDivisionError: float division by zero
+2025-07-17 12:15:17,742 [trainer.py] => config: ./scripts/simplecil/dino/simplecil_cub_B0_Inc20_DINO16.json
+2025-07-17 12:15:17,742 [trainer.py] => prefix:  
+2025-07-17 12:15:17,742 [trainer.py] => dataset: cub
+2025-07-17 12:15:17,742 [trainer.py] => memory_size: 0
+2025-07-17 12:15:17,742 [trainer.py] => memory_per_class: 0
+2025-07-17 12:15:17,742 [trainer.py] => fixed_memory: False
+2025-07-17 12:15:17,742 [trainer.py] => shuffle: True
+2025-07-17 12:15:17,742 [trainer.py] => init_cls: 20
+2025-07-17 12:15:17,742 [trainer.py] => increment: 20
+2025-07-17 12:15:17,742 [trainer.py] => model_name: simplecil
+2025-07-17 12:15:17,742 [trainer.py] => backbone_type: vit_base_patch16_224_dino
+2025-07-17 12:15:17,742 [trainer.py] => device: [device(type='cuda', index=6)]
+2025-07-17 12:15:17,742 [trainer.py] => seed: 1993
+2025-07-17 12:15:17,742 [trainer.py] => tuned_epoch: 0
+2025-07-17 12:15:17,742 [trainer.py] => init_lr: 0.02
+2025-07-17 12:15:17,742 [trainer.py] => batch_size: 48
+2025-07-17 12:15:17,742 [trainer.py] => weight_decay: 0.0005
+2025-07-17 12:15:17,742 [trainer.py] => min_lr: 0
+2025-07-17 12:15:17,743 [trainer.py] => optimizer: sgd
+2025-07-17 12:15:17,743 [trainer.py] => scheduler: cosine
+2025-07-17 12:15:17,743 [trainer.py] => init_milestones: [10]
+2025-07-17 12:15:17,743 [trainer.py] => init_lr_decay: 0.1
+2025-07-17 12:15:17,798 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+This is for the BaseNet initialization.
+2025-07-17 12:15:26,004 [helpers.py] => Loading pretrained weights from url (https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth)
+After BaseNet initialization.
+2025-07-17 12:15:27,724 [trainer.py] => All params: 85798656
+2025-07-17 12:15:27,724 [trainer.py] => Trainable params: 85798656
+2025-07-17 12:15:28,247 [simplecil.py] => Learning on 0-20
+2025-07-17 12:15:38,671 [trainer.py] => No NME accuracy.
+2025-07-17 12:15:38,671 [trainer.py] => CNN: {'total': 85.83, '00-19': 85.83, 'old': 0, 'new': 85.83}
+2025-07-17 12:15:38,671 [trainer.py] => CNN top1 curve: [85.83]
+2025-07-17 12:15:38,672 [trainer.py] => CNN top5 curve: [99.19]
+
+Average Accuracy (CNN): 85.83
+2025-07-17 12:15:38,672 [trainer.py] => Average Accuracy (CNN): 85.83 
+
+2025-07-17 12:15:38,672 [trainer.py] => All params: 85814017
+2025-07-17 12:15:38,673 [trainer.py] => Trainable params: 85814017
+2025-07-17 12:15:38,677 [simplecil.py] => Learning on 20-40
+2025-07-17 12:15:49,863 [trainer.py] => No NME accuracy.
+2025-07-17 12:15:49,863 [trainer.py] => CNN: {'total': 79.07, '00-19': 80.97, '20-39': 76.81, 'old': 80.97, 'new': 76.81}
+2025-07-17 12:15:49,863 [trainer.py] => CNN top1 curve: [85.83, 79.07]
+2025-07-17 12:15:49,863 [trainer.py] => CNN top5 curve: [99.19, 96.26]
+
+Average Accuracy (CNN): 82.45
+2025-07-17 12:15:49,864 [trainer.py] => Average Accuracy (CNN): 82.45 
+
+2025-07-17 12:15:49,864 [trainer.py] => All params: 85829377
+2025-07-17 12:15:49,865 [trainer.py] => Trainable params: 85829377
+2025-07-17 12:15:49,871 [simplecil.py] => Learning on 40-60
+2025-07-17 12:16:00,077 [trainer.py] => No NME accuracy.
+2025-07-17 12:16:00,078 [trainer.py] => CNN: {'total': 75.0, '00-19': 75.71, '20-39': 72.95, '40-59': 76.15, 'old': 74.45, 'new': 76.15}
+2025-07-17 12:16:00,078 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0]
+2025-07-17 12:16:00,078 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3]
+
+Average Accuracy (CNN): 79.97
+2025-07-17 12:16:00,078 [trainer.py] => Average Accuracy (CNN): 79.97 
+
+2025-07-17 12:16:00,079 [trainer.py] => All params: 85844737
+2025-07-17 12:16:00,079 [trainer.py] => Trainable params: 85844737
+2025-07-17 12:16:00,084 [simplecil.py] => Learning on 60-80
+2025-07-17 12:16:13,058 [trainer.py] => No NME accuracy.
+2025-07-17 12:16:13,062 [trainer.py] => CNN: {'total': 70.95, '00-19': 71.66, '20-39': 68.6, '40-59': 72.48, '60-79': 70.85, 'old': 70.98, 'new': 70.85}
+2025-07-17 12:16:13,062 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95]
+2025-07-17 12:16:13,062 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27]
+
+Average Accuracy (CNN): 77.71
+2025-07-17 12:16:13,063 [trainer.py] => Average Accuracy (CNN): 77.71 
+
+2025-07-17 12:16:13,063 [trainer.py] => All params: 85860097
+2025-07-17 12:16:13,064 [trainer.py] => Trainable params: 85860097
+2025-07-17 12:16:13,070 [simplecil.py] => Learning on 80-100
+2025-07-17 12:16:28,585 [trainer.py] => No NME accuracy.
+2025-07-17 12:16:28,585 [trainer.py] => CNN: {'total': 69.95, '00-19': 69.64, '20-39': 66.18, '40-59': 70.64, '60-79': 70.45, '80-99': 72.12, 'old': 69.31, 'new': 72.12}
+2025-07-17 12:16:28,585 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95]
+2025-07-17 12:16:28,585 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16]
+
+Average Accuracy (CNN): 76.16
+2025-07-17 12:16:28,585 [trainer.py] => Average Accuracy (CNN): 76.16 
+
+2025-07-17 12:16:28,586 [trainer.py] => All params: 85875457
+2025-07-17 12:16:28,587 [trainer.py] => Trainable params: 85875457
+2025-07-17 12:16:28,591 [simplecil.py] => Learning on 100-120
+2025-07-17 12:16:44,441 [trainer.py] => No NME accuracy.
+2025-07-17 12:16:44,441 [trainer.py] => CNN: {'total': 67.09, '00-19': 65.99, '20-39': 63.77, '40-59': 66.51, '60-79': 67.21, '80-99': 71.0, '100-119': 67.11, 'old': 67.09, 'new': 67.11}
+2025-07-17 12:16:44,441 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95, 67.09]
+2025-07-17 12:16:44,441 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16, 89.76]
+
+Average Accuracy (CNN): 74.65
+2025-07-17 12:16:44,441 [trainer.py] => Average Accuracy (CNN): 74.65 
+
+2025-07-17 12:16:44,442 [trainer.py] => All params: 85890817
+2025-07-17 12:16:44,443 [trainer.py] => Trainable params: 85890817
+2025-07-17 12:16:44,448 [simplecil.py] => Learning on 120-140
+2025-07-17 12:17:01,365 [trainer.py] => No NME accuracy.
+2025-07-17 12:17:01,365 [trainer.py] => CNN: {'total': 66.12, '00-19': 65.18, '20-39': 63.77, '40-59': 65.6, '60-79': 66.4, '80-99': 68.03, '100-119': 66.67, '120-139': 66.67, 'old': 66.03, 'new': 66.67}
+2025-07-17 12:17:01,366 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95, 67.09, 66.12]
+2025-07-17 12:17:01,366 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16, 89.76, 88.06]
+
+Average Accuracy (CNN): 73.43
+2025-07-17 12:17:01,366 [trainer.py] => Average Accuracy (CNN): 73.43 
+
+2025-07-17 12:17:01,366 [trainer.py] => All params: 85906177
+2025-07-17 12:17:01,367 [trainer.py] => Trainable params: 85906177
+2025-07-17 12:17:01,373 [simplecil.py] => Learning on 140-160
+2025-07-17 12:17:19,032 [trainer.py] => No NME accuracy.
+2025-07-17 12:17:19,032 [trainer.py] => CNN: {'total': 63.93, '00-19': 63.97, '20-39': 62.8, '40-59': 63.3, '60-79': 64.37, '80-99': 65.43, '100-119': 62.72, '120-139': 64.89, '140-159': 63.6, 'old': 63.99, 'new': 63.6}
+2025-07-17 12:17:19,032 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95, 67.09, 66.12, 63.93]
+2025-07-17 12:17:19,032 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16, 89.76, 88.06, 86.99]
+
+Average Accuracy (CNN): 72.24
+2025-07-17 12:17:19,032 [trainer.py] => Average Accuracy (CNN): 72.24 
+
+2025-07-17 12:17:19,033 [trainer.py] => All params: 85921537
+2025-07-17 12:17:19,034 [trainer.py] => Trainable params: 85921537
+2025-07-17 12:17:19,051 [simplecil.py] => Learning on 160-180
+2025-07-17 12:17:38,955 [trainer.py] => No NME accuracy.
+2025-07-17 12:17:38,955 [trainer.py] => CNN: {'total': 63.02, '00-19': 63.16, '20-39': 62.32, '40-59': 62.84, '60-79': 62.35, '80-99': 63.57, '100-119': 62.72, '120-139': 64.44, '140-159': 60.8, '160-179': 64.98, 'old': 62.77, 'new': 64.98}
+2025-07-17 12:17:38,955 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95, 67.09, 66.12, 63.93, 63.02]
+2025-07-17 12:17:38,955 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16, 89.76, 88.06, 86.99, 85.95]
+
+Average Accuracy (CNN): 71.22
+2025-07-17 12:17:38,955 [trainer.py] => Average Accuracy (CNN): 71.22 
+
+2025-07-17 12:17:38,956 [trainer.py] => All params: 85936897
+2025-07-17 12:17:38,957 [trainer.py] => Trainable params: 85936897
+2025-07-17 12:17:38,964 [simplecil.py] => Learning on 180-200
+2025-07-17 12:17:59,917 [trainer.py] => No NME accuracy.
+2025-07-17 12:17:59,917 [trainer.py] => CNN: {'total': 61.41, '00-19': 62.35, '20-39': 59.42, '40-59': 61.93, '60-79': 60.32, '80-99': 62.83, '100-119': 61.84, '120-139': 63.11, '140-159': 59.6, '160-179': 64.14, '180-199': 58.26, 'old': 61.75, 'new': 58.26}
+2025-07-17 12:17:59,917 [trainer.py] => CNN top1 curve: [85.83, 79.07, 75.0, 70.95, 69.95, 67.09, 66.12, 63.93, 63.02, 61.41]
+2025-07-17 12:17:59,917 [trainer.py] => CNN top5 curve: [99.19, 96.26, 93.3, 92.27, 91.16, 89.76, 88.06, 86.99, 85.95, 84.78]
+
+Average Accuracy (CNN): 70.24
+2025-07-17 12:17:59,917 [trainer.py] => Average Accuracy (CNN): 70.24 
+
+Finished cub_init20_inc20: vit_base_patch16_224_dino  
+----------------------------------------------------------------------------------------------------
+Total Train Time: 76.23 s
+Total Test Time: 75.94 s
+Traceback (most recent call last):
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 24, in <module>
+    main()
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 11, in main
+    train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 21, in train
+    _train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 143, in _train
+    print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
+ZeroDivisionError: float division by zero
+2025-07-17 12:18:03,908 [trainer.py] => config: ./scripts/simplecil/dino/simplecil_inr_B0_Inc40_DINO16.json
+2025-07-17 12:18:03,908 [trainer.py] => prefix:  
+2025-07-17 12:18:03,908 [trainer.py] => dataset: imagenetr
+2025-07-17 12:18:03,908 [trainer.py] => memory_size: 0
+2025-07-17 12:18:03,908 [trainer.py] => memory_per_class: 0
+2025-07-17 12:18:03,908 [trainer.py] => fixed_memory: False
+2025-07-17 12:18:03,908 [trainer.py] => shuffle: True
+2025-07-17 12:18:03,908 [trainer.py] => init_cls: 40
+2025-07-17 12:18:03,908 [trainer.py] => increment: 40
+2025-07-17 12:18:03,908 [trainer.py] => model_name: simplecil
+2025-07-17 12:18:03,908 [trainer.py] => backbone_type: vit_base_patch16_224_dino
+2025-07-17 12:18:03,908 [trainer.py] => device: [device(type='cuda', index=6)]
+2025-07-17 12:18:03,908 [trainer.py] => seed: 1993
+2025-07-17 12:18:03,908 [trainer.py] => tuned_epoch: 0
+2025-07-17 12:18:03,908 [trainer.py] => init_lr: 0.02
+2025-07-17 12:18:03,908 [trainer.py] => batch_size: 48
+2025-07-17 12:18:03,908 [trainer.py] => weight_decay: 0.0005
+2025-07-17 12:18:03,908 [trainer.py] => min_lr: 0
+2025-07-17 12:18:03,909 [trainer.py] => optimizer: sgd
+2025-07-17 12:18:03,909 [trainer.py] => scheduler: cosine
+2025-07-17 12:18:03,909 [trainer.py] => init_milestones: [10]
+2025-07-17 12:18:03,909 [trainer.py] => init_lr_decay: 0.1
+2025-07-17 12:18:04,047 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+This is for the BaseNet initialization.
+2025-07-17 12:18:13,831 [helpers.py] => Loading pretrained weights from url (https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth)
+After BaseNet initialization.
+2025-07-17 12:18:15,507 [trainer.py] => All params: 85798656
+2025-07-17 12:18:15,508 [trainer.py] => Trainable params: 85798656
+2025-07-17 12:18:16,146 [simplecil.py] => Learning on 0-40
+2025-07-17 12:19:12,928 [trainer.py] => No NME accuracy.
+2025-07-17 12:19:12,928 [trainer.py] => CNN: {'total': 63.13, '00-39': 63.13, 'old': 0, 'new': 63.13}
+2025-07-17 12:19:12,928 [trainer.py] => CNN top1 curve: [63.13]
+2025-07-17 12:19:12,928 [trainer.py] => CNN top5 curve: [85.31]
+
+Average Accuracy (CNN): 63.13
+2025-07-17 12:19:12,928 [trainer.py] => Average Accuracy (CNN): 63.13 
+
+2025-07-17 12:19:12,929 [trainer.py] => All params: 85829377
+2025-07-17 12:19:12,929 [trainer.py] => Trainable params: 85829377
+2025-07-17 12:19:12,937 [simplecil.py] => Learning on 40-80
+2025-07-17 12:20:04,368 [trainer.py] => No NME accuracy.
+2025-07-17 12:20:04,369 [trainer.py] => CNN: {'total': 53.76, '00-39': 54.58, '40-79': 52.85, 'old': 54.58, 'new': 52.85}
+2025-07-17 12:20:04,369 [trainer.py] => CNN top1 curve: [63.13, 53.76]
+2025-07-17 12:20:04,369 [trainer.py] => CNN top5 curve: [85.31, 75.06]
+
+Average Accuracy (CNN): 58.44
+2025-07-17 12:20:04,369 [trainer.py] => Average Accuracy (CNN): 58.44 
+
+2025-07-17 12:20:04,370 [trainer.py] => All params: 85860097
+2025-07-17 12:20:04,370 [trainer.py] => Trainable params: 85860097
+2025-07-17 12:20:04,375 [simplecil.py] => Learning on 80-120
+2025-07-17 12:21:03,730 [trainer.py] => No NME accuracy.
+2025-07-17 12:21:03,730 [trainer.py] => CNN: {'total': 48.67, '00-39': 50.95, '40-79': 49.36, '80-119': 45.34, 'old': 50.2, 'new': 45.34}
+2025-07-17 12:21:03,730 [trainer.py] => CNN top1 curve: [63.13, 53.76, 48.67]
+2025-07-17 12:21:03,730 [trainer.py] => CNN top5 curve: [85.31, 75.06, 69.49]
+
+Average Accuracy (CNN): 55.19
+2025-07-17 12:21:03,730 [trainer.py] => Average Accuracy (CNN): 55.19 
+
+2025-07-17 12:21:03,732 [trainer.py] => All params: 85890817
+2025-07-17 12:21:03,733 [trainer.py] => Trainable params: 85890817
+2025-07-17 12:21:03,738 [simplecil.py] => Learning on 120-160
+2025-07-17 12:22:12,233 [trainer.py] => No NME accuracy.
+2025-07-17 12:22:12,233 [trainer.py] => CNN: {'total': 46.71, '00-39': 48.68, '40-79': 46.39, '80-119': 43.42, '120-159': 47.92, 'old': 46.28, 'new': 47.92}
+2025-07-17 12:22:12,233 [trainer.py] => CNN top1 curve: [63.13, 53.76, 48.67, 46.71]
+2025-07-17 12:22:12,233 [trainer.py] => CNN top5 curve: [85.31, 75.06, 69.49, 66.88]
+
+Average Accuracy (CNN): 53.07
+2025-07-17 12:22:12,233 [trainer.py] => Average Accuracy (CNN): 53.07 
+
+2025-07-17 12:22:12,237 [trainer.py] => All params: 85921537
+2025-07-17 12:22:12,237 [trainer.py] => Trainable params: 85921537
+2025-07-17 12:22:12,247 [simplecil.py] => Learning on 160-200
+2025-07-17 12:23:19,278 [trainer.py] => No NME accuracy.
+2025-07-17 12:23:19,278 [trainer.py] => CNN: {'total': 45.03, '00-39': 46.71, '40-79': 44.69, '80-119': 41.41, '120-159': 46.53, '160-199': 45.41, 'old': 44.95, 'new': 45.41}
+2025-07-17 12:23:19,278 [trainer.py] => CNN top1 curve: [63.13, 53.76, 48.67, 46.71, 45.03]
+2025-07-17 12:23:19,278 [trainer.py] => CNN top5 curve: [85.31, 75.06, 69.49, 66.88, 64.55]
+
+Average Accuracy (CNN): 51.46
+2025-07-17 12:23:19,278 [trainer.py] => Average Accuracy (CNN): 51.46 
+
+Finished imagenetr_init40_inc40: vit_base_patch16_224_dino  
+----------------------------------------------------------------------------------------------------
+Total Train Time: 205.29 s
+Total Test Time: 98.47 s
+Traceback (most recent call last):
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 24, in <module>
+    main()
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 11, in main
+    train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 21, in train
+    _train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 143, in _train
+    print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
+ZeroDivisionError: float division by zero
+2025-07-17 12:23:23,383 [trainer.py] => config: ./scripts/simplecil/dino/simplecil_omni_B0_Inc30_DINO16.json
+2025-07-17 12:23:23,384 [trainer.py] => prefix:  
+2025-07-17 12:23:23,384 [trainer.py] => dataset: omnibenchmark
+2025-07-17 12:23:23,384 [trainer.py] => memory_size: 0
+2025-07-17 12:23:23,384 [trainer.py] => memory_per_class: 0
+2025-07-17 12:23:23,384 [trainer.py] => fixed_memory: False
+2025-07-17 12:23:23,384 [trainer.py] => shuffle: True
+2025-07-17 12:23:23,384 [trainer.py] => init_cls: 30
+2025-07-17 12:23:23,384 [trainer.py] => increment: 30
+2025-07-17 12:23:23,384 [trainer.py] => model_name: simplecil
+2025-07-17 12:23:23,384 [trainer.py] => backbone_type: vit_base_patch16_224_dino
+2025-07-17 12:23:23,384 [trainer.py] => device: [device(type='cuda', index=6)]
+2025-07-17 12:23:23,384 [trainer.py] => seed: 1993
+2025-07-17 12:23:23,384 [trainer.py] => tuned_epoch: 0
+2025-07-17 12:23:23,384 [trainer.py] => init_lr: 0.03
+2025-07-17 12:23:23,384 [trainer.py] => batch_size: 48
+2025-07-17 12:23:23,384 [trainer.py] => weight_decay: 0.0005
+2025-07-17 12:23:23,384 [trainer.py] => min_lr: 0
+2025-07-17 12:23:23,384 [trainer.py] => optimizer: sgd
+2025-07-17 12:23:23,384 [trainer.py] => scheduler: cosine
+2025-07-17 12:23:23,384 [trainer.py] => init_milestones: [10]
+2025-07-17 12:23:23,384 [trainer.py] => init_lr_decay: 0.1
+2025-07-17 12:23:23,811 [data_manager.py] => [169, 221, 146, 296, 92, 229, 49, 70, 126, 77, 243, 57, 120, 223, 27, 217, 154, 8, 101, 182, 54, 50, 97, 162, 28, 193, 79, 6, 151, 0, 173, 187, 44, 277, 157, 16, 257, 122, 35, 9, 171, 176, 134, 4, 87, 255, 112, 153, 246, 286, 147, 186, 107, 98, 10, 7, 266, 214, 36, 165, 139, 254, 103, 269, 59, 23, 298, 39, 73, 208, 135, 299, 102, 20, 12, 268, 11, 209, 161, 210, 74, 42, 56, 99, 235, 133, 159, 189, 145, 238, 215, 241, 138, 195, 233, 279, 88, 199, 64, 280, 26, 203, 17, 245, 174, 236, 137, 252, 80, 68, 181, 150, 118, 94, 75, 2, 109, 119, 232, 15, 69, 184, 201, 261, 55, 287, 273, 66, 175, 32, 142, 136, 116, 76, 179, 1, 91, 248, 275, 240, 290, 170, 132, 106, 265, 270, 85, 19, 284, 43, 259, 293, 228, 200, 104, 227, 51, 224, 163, 297, 216, 260, 93, 46, 100, 272, 105, 72, 131, 3, 156, 256, 249, 48, 113, 82, 172, 213, 62, 53, 271, 168, 253, 226, 183, 180, 276, 283, 78, 61, 143, 278, 30, 141, 196, 264, 231, 52, 222, 40, 125, 219, 65, 166, 192, 289, 45, 205, 89, 267, 90, 71, 167, 262, 281, 212, 96, 84, 127, 67, 294, 178, 288, 197, 21, 18, 111, 108, 58, 230, 188, 31, 110, 291, 129, 24, 204, 83, 81, 251, 60, 13, 128, 14, 86, 63, 117, 198, 274, 5, 22, 144, 258, 121, 38, 207, 148, 292, 41, 234, 237, 114, 202, 37, 149, 206, 155, 29, 130, 177, 194, 152, 34, 33, 239, 160, 140, 47, 244, 25, 282, 158, 211, 123, 190, 218, 164, 247, 263, 191, 220, 115, 242, 250, 124, 295, 95, 285, 225, 185]
+This is for the BaseNet initialization.
+2025-07-17 12:23:32,269 [helpers.py] => Loading pretrained weights from url (https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth)
+After BaseNet initialization.
+2025-07-17 12:23:34,071 [trainer.py] => All params: 85798656
+2025-07-17 12:23:34,072 [trainer.py] => Trainable params: 85798656
+2025-07-17 12:23:34,686 [simplecil.py] => Learning on 0-30
+2025-07-17 12:24:33,443 [trainer.py] => No NME accuracy.
+2025-07-17 12:24:33,444 [trainer.py] => CNN: {'total': 78.33, '00-29': 78.33, 'old': 0, 'new': 78.33}
+2025-07-17 12:24:33,444 [trainer.py] => CNN top1 curve: [78.33]
+2025-07-17 12:24:33,444 [trainer.py] => CNN top5 curve: [95.5]
+
+Average Accuracy (CNN): 78.33
+2025-07-17 12:24:33,444 [trainer.py] => Average Accuracy (CNN): 78.33 
+
+2025-07-17 12:24:33,445 [trainer.py] => All params: 85821697
+2025-07-17 12:24:33,446 [trainer.py] => Trainable params: 85821697
+2025-07-17 12:24:33,450 [simplecil.py] => Learning on 30-60
+2025-07-17 12:26:07,110 [trainer.py] => No NME accuracy.
+2025-07-17 12:26:07,110 [trainer.py] => CNN: {'total': 74.4, '00-29': 72.33, '30-59': 76.46, 'old': 72.33, 'new': 76.46}
+2025-07-17 12:26:07,110 [trainer.py] => CNN top1 curve: [78.33, 74.4]
+2025-07-17 12:26:07,110 [trainer.py] => CNN top5 curve: [95.5, 93.66]
+
+Average Accuracy (CNN): 76.37
+2025-07-17 12:26:07,110 [trainer.py] => Average Accuracy (CNN): 76.37 
+
+2025-07-17 12:26:07,111 [trainer.py] => All params: 85844737
+2025-07-17 12:26:07,112 [trainer.py] => Trainable params: 85844737
+2025-07-17 12:26:07,117 [simplecil.py] => Learning on 60-90
+2025-07-17 12:27:35,321 [trainer.py] => No NME accuracy.
+2025-07-17 12:27:35,322 [trainer.py] => CNN: {'total': 70.41, '00-29': 68.83, '30-59': 72.62, '60-89': 69.78, 'old': 70.73, 'new': 69.78}
+2025-07-17 12:27:35,322 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41]
+2025-07-17 12:27:35,322 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71]
+
+Average Accuracy (CNN): 74.38
+2025-07-17 12:27:35,322 [trainer.py] => Average Accuracy (CNN): 74.38 
+
+2025-07-17 12:27:35,323 [trainer.py] => All params: 85867777
+2025-07-17 12:27:35,323 [trainer.py] => Trainable params: 85867777
+2025-07-17 12:27:35,329 [simplecil.py] => Learning on 90-120
+2025-07-17 12:28:46,421 [trainer.py] => No NME accuracy.
+2025-07-17 12:28:46,421 [trainer.py] => CNN: {'total': 67.18, '00-29': 67.83, '30-59': 70.12, '60-89': 65.94, '90-119': 64.82, 'old': 67.96, 'new': 64.82}
+2025-07-17 12:28:46,421 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18]
+2025-07-17 12:28:46,421 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52]
+
+Average Accuracy (CNN): 72.58
+2025-07-17 12:28:46,421 [trainer.py] => Average Accuracy (CNN): 72.58 
+
+2025-07-17 12:28:46,422 [trainer.py] => All params: 85890817
+2025-07-17 12:28:46,423 [trainer.py] => Trainable params: 85890817
+2025-07-17 12:28:46,428 [simplecil.py] => Learning on 120-150
+2025-07-17 12:30:31,948 [trainer.py] => No NME accuracy.
+2025-07-17 12:30:31,948 [trainer.py] => CNN: {'total': 64.46, '00-29': 66.5, '30-59': 66.61, '60-89': 60.93, '90-119': 62.14, '120-149': 66.11, 'old': 64.05, 'new': 66.11}
+2025-07-17 12:30:31,948 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46]
+2025-07-17 12:30:31,948 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37]
+
+Average Accuracy (CNN): 70.96
+2025-07-17 12:30:31,948 [trainer.py] => Average Accuracy (CNN): 70.96 
+
+2025-07-17 12:30:31,949 [trainer.py] => All params: 85913857
+2025-07-17 12:30:31,950 [trainer.py] => Trainable params: 85913857
+2025-07-17 12:30:31,955 [simplecil.py] => Learning on 150-180
+2025-07-17 12:32:27,155 [trainer.py] => No NME accuracy.
+2025-07-17 12:32:27,155 [trainer.py] => CNN: {'total': 62.36, '00-29': 63.5, '30-59': 64.61, '60-89': 59.1, '90-119': 61.47, '120-149': 65.11, '150-179': 60.37, 'old': 62.76, 'new': 60.37}
+2025-07-17 12:32:27,155 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46, 62.36]
+2025-07-17 12:32:27,155 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37, 84.1]
+
+Average Accuracy (CNN): 69.52
+2025-07-17 12:32:27,155 [trainer.py] => Average Accuracy (CNN): 69.52 
+
+2025-07-17 12:32:27,156 [trainer.py] => All params: 85936897
+2025-07-17 12:32:27,157 [trainer.py] => Trainable params: 85936897
+2025-07-17 12:32:27,163 [simplecil.py] => Learning on 180-210
+2025-07-17 12:34:12,588 [trainer.py] => No NME accuracy.
+2025-07-17 12:34:12,589 [trainer.py] => CNN: {'total': 60.23, '00-29': 61.17, '30-59': 64.11, '60-89': 55.09, '90-119': 59.3, '120-149': 64.11, '150-179': 59.2, '180-209': 58.63, 'old': 60.5, 'new': 58.63}
+2025-07-17 12:34:12,589 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46, 62.36, 60.23]
+2025-07-17 12:34:12,589 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37, 84.1, 82.93]
+
+Average Accuracy (CNN): 68.2
+2025-07-17 12:34:12,589 [trainer.py] => Average Accuracy (CNN): 68.2 
+
+2025-07-17 12:34:12,590 [trainer.py] => All params: 85959937
+2025-07-17 12:34:12,590 [trainer.py] => Trainable params: 85959937
+2025-07-17 12:34:12,597 [simplecil.py] => Learning on 210-240
+2025-07-17 12:36:00,443 [trainer.py] => No NME accuracy.
+2025-07-17 12:36:00,444 [trainer.py] => CNN: {'total': 59.11, '00-29': 59.33, '30-59': 63.11, '60-89': 54.59, '90-119': 57.12, '120-149': 63.61, '150-179': 56.52, '180-209': 56.62, '210-239': 61.94, 'old': 58.7, 'new': 61.94}
+2025-07-17 12:36:00,444 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46, 62.36, 60.23, 59.11]
+2025-07-17 12:36:00,444 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37, 84.1, 82.93, 81.56]
+
+Average Accuracy (CNN): 67.06
+2025-07-17 12:36:00,444 [trainer.py] => Average Accuracy (CNN): 67.06 
+
+2025-07-17 12:36:00,445 [trainer.py] => All params: 85982977
+2025-07-17 12:36:00,445 [trainer.py] => Trainable params: 85982977
+2025-07-17 12:36:00,470 [simplecil.py] => Learning on 240-270
+2025-07-17 12:37:47,449 [trainer.py] => No NME accuracy.
+2025-07-17 12:37:47,449 [trainer.py] => CNN: {'total': 58.21, '00-29': 58.5, '30-59': 62.77, '60-89': 52.92, '90-119': 55.11, '120-149': 60.6, '150-179': 54.68, '180-209': 54.77, '210-239': 61.6, '240-269': 62.94, 'old': 57.62, 'new': 62.94}
+2025-07-17 12:37:47,449 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46, 62.36, 60.23, 59.11, 58.21]
+2025-07-17 12:37:47,449 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37, 84.1, 82.93, 81.56, 81.44]
+
+Average Accuracy (CNN): 66.08
+2025-07-17 12:37:47,449 [trainer.py] => Average Accuracy (CNN): 66.08 
+
+2025-07-17 12:37:47,450 [trainer.py] => All params: 86006017
+2025-07-17 12:37:47,451 [trainer.py] => Trainable params: 86006017
+2025-07-17 12:37:47,458 [simplecil.py] => Learning on 270-300
+2025-07-17 12:39:28,582 [trainer.py] => No NME accuracy.
+2025-07-17 12:39:28,582 [trainer.py] => CNN: {'total': 57.19, '00-29': 57.17, '30-59': 60.93, '60-89': 52.59, '90-119': 54.1, '120-149': 59.6, '150-179': 53.18, '180-209': 52.6, '210-239': 60.77, '240-269': 61.27, '270-299': 59.7, 'old': 56.91, 'new': 59.7}
+2025-07-17 12:39:28,582 [trainer.py] => CNN top1 curve: [78.33, 74.4, 70.41, 67.18, 64.46, 62.36, 60.23, 59.11, 58.21, 57.19]
+2025-07-17 12:39:28,582 [trainer.py] => CNN top5 curve: [95.5, 93.66, 90.71, 88.52, 86.37, 84.1, 82.93, 81.56, 81.44, 80.63]
+
+Average Accuracy (CNN): 65.19
+2025-07-17 12:39:28,582 [trainer.py] => Average Accuracy (CNN): 65.19 
+
+Finished omnibenchmark_init30_inc30: vit_base_patch16_224_dino  
+----------------------------------------------------------------------------------------------------
+Total Train Time: 770.89 s
+Total Test Time: 183.6 s
+Traceback (most recent call last):
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 24, in <module>
+    main()
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/main.py", line 11, in main
+    train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 21, in train
+    _train(args)
+  File "/home/team/zhaohongwei/Code/Research/Awesome-CIL/trainer.py", line 143, in _train
+    if args['tuned_epoch'] != 0:
+ZeroDivisionError: float division by zero
+2025-07-17 12:39:32,634 [trainer.py] => config: ./scripts/simplecil/dino/simplecil_vtab_B0_Inc10_DINO16.json
+2025-07-17 12:39:32,634 [trainer.py] => prefix:  
+2025-07-17 12:39:32,634 [trainer.py] => dataset: vtab
+2025-07-17 12:39:32,634 [trainer.py] => memory_size: 0
+2025-07-17 12:39:32,634 [trainer.py] => memory_per_class: 0
+2025-07-17 12:39:32,634 [trainer.py] => fixed_memory: False
+2025-07-17 12:39:32,635 [trainer.py] => shuffle: True
+2025-07-17 12:39:32,635 [trainer.py] => init_cls: 10
+2025-07-17 12:39:32,635 [trainer.py] => increment: 10
+2025-07-17 12:39:32,635 [trainer.py] => model_name: simplecil
+2025-07-17 12:39:32,635 [trainer.py] => backbone_type: vit_base_patch16_224_dino
+2025-07-17 12:39:32,635 [trainer.py] => device: [device(type='cuda', index=6)]
+2025-07-17 12:39:32,635 [trainer.py] => seed: 1993
+2025-07-17 12:39:32,635 [trainer.py] => tuned_epoch: 0
+2025-07-17 12:39:32,635 [trainer.py] => init_lr: 0.02
+2025-07-17 12:39:32,635 [trainer.py] => batch_size: 48
+2025-07-17 12:39:32,635 [trainer.py] => weight_decay: 0.005
+2025-07-17 12:39:32,635 [trainer.py] => min_lr: 0
+2025-07-17 12:39:32,635 [trainer.py] => optimizer: sgd
+2025-07-17 12:39:32,635 [trainer.py] => scheduler: cosine
+2025-07-17 12:39:32,635 [trainer.py] => init_milestones: [10]
+2025-07-17 12:39:32,635 [trainer.py] => init_lr_decay: 0.1
+{'10': 0, '11': 1, '12': 2, '13': 3, '14': 4, '15': 5, '16': 6, '17': 7, '18': 8, '19': 9, '20': 10, '21': 11, '22': 12, '23': 13, '24': 14, '25': 15, '26': 16, '27': 17, '28': 18, '29': 19, '30': 20, '31': 21, '32': 22, '33': 23, '34': 24, '35': 25, '36': 26, '37': 27, '38': 28, '39': 29, '40': 30, '41': 31, '42': 32, '43': 33, '44': 34, '45': 35, '46': 36, '47': 37, '48': 38, '49': 39, '50': 40, '51': 41, '52': 42, '53': 43, '54': 44, '55': 45, '56': 46, '57': 47, '58': 48, '59': 49}
+{'10': 0, '11': 1, '12': 2, '13': 3, '14': 4, '15': 5, '16': 6, '17': 7, '18': 8, '19': 9, '20': 10, '21': 11, '22': 12, '23': 13, '24': 14, '25': 15, '26': 16, '27': 17, '28': 18, '29': 19, '30': 20, '31': 21, '32': 22, '33': 23, '34': 24, '35': 25, '36': 26, '37': 27, '38': 28, '39': 29, '40': 30, '41': 31, '42': 32, '43': 33, '44': 34, '45': 35, '46': 36, '47': 37, '48': 38, '49': 39, '50': 40, '51': 41, '52': 42, '53': 43, '54': 44, '55': 45, '56': 46, '57': 47, '58': 48, '59': 49}
+2025-07-17 12:39:32,682 [data_manager.py] => [43, 41, 23, 14, 13, 40, 42, 22, 16, 45, 17, 10, 27, 46, 35, 8, 2, 34, 1, 37, 21, 0, 18, 36, 38, 24, 12, 6, 15, 20, 25, 48, 30, 19, 44, 26, 7, 28, 11, 5, 32, 4, 9, 47, 39, 31, 3, 29, 49, 33]
+This is for the BaseNet initialization.
+2025-07-17 12:39:40,514 [helpers.py] => Loading pretrained weights from url (https://dl.fbaipublicfiles.com/dino/dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth)
+After BaseNet initialization.
+2025-07-17 12:39:42,526 [trainer.py] => All params: 85798656
+2025-07-17 12:39:42,527 [trainer.py] => Trainable params: 85798656
+2025-07-17 12:39:43,085 [simplecil.py] => Learning on 0-10
+2025-07-17 12:39:52,549 [trainer.py] => No NME accuracy.
+2025-07-17 12:39:52,549 [trainer.py] => CNN: {'total': 95.4, '00-09': 95.4, 'old': 0, 'new': 95.4}
+2025-07-17 12:39:52,549 [trainer.py] => CNN top1 curve: [95.4]
+2025-07-17 12:39:52,549 [trainer.py] => CNN top5 curve: [100.0]
+
+Average Accuracy (CNN): 95.4
+2025-07-17 12:39:52,549 [trainer.py] => Average Accuracy (CNN): 95.4 
+
+2025-07-17 12:39:52,550 [trainer.py] => All params: 85806337
+2025-07-17 12:39:52,551 [trainer.py] => Trainable params: 85806337
+2025-07-17 12:39:52,558 [simplecil.py] => Learning on 10-20
+2025-07-17 12:40:12,025 [trainer.py] => No NME accuracy.
+2025-07-17 12:40:12,025 [trainer.py] => CNN: {'total': 96.17, '00-09': 94.07, '10-19': 97.03, 'old': 94.07, 'new': 97.03}
+2025-07-17 12:40:12,025 [trainer.py] => CNN top1 curve: [95.4, 96.17]
+2025-07-17 12:40:12,025 [trainer.py] => CNN top5 curve: [100.0, 99.96]
+
+Average Accuracy (CNN): 95.78
+2025-07-17 12:40:12,025 [trainer.py] => Average Accuracy (CNN): 95.78 
+
+2025-07-17 12:40:12,026 [trainer.py] => All params: 85814017
+2025-07-17 12:40:12,027 [trainer.py] => Trainable params: 85814017
+2025-07-17 12:40:12,032 [simplecil.py] => Learning on 20-30
+2025-07-17 12:40:38,339 [trainer.py] => No NME accuracy.
+2025-07-17 12:40:38,339 [trainer.py] => CNN: {'total': 89.73, '00-09': 90.44, '10-19': 94.61, '20-29': 83.34, 'old': 93.4, 'new': 83.34}
+2025-07-17 12:40:38,339 [trainer.py] => CNN top1 curve: [95.4, 96.17, 89.73]
+2025-07-17 12:40:38,339 [trainer.py] => CNN top5 curve: [100.0, 99.96, 99.84]
+
+Average Accuracy (CNN): 93.77
+2025-07-17 12:40:38,339 [trainer.py] => Average Accuracy (CNN): 93.77 
+
+2025-07-17 12:40:38,340 [trainer.py] => All params: 85821697
+2025-07-17 12:40:38,341 [trainer.py] => Trainable params: 85821697
+2025-07-17 12:40:38,345 [simplecil.py] => Learning on 30-40
+2025-07-17 12:41:11,256 [trainer.py] => No NME accuracy.
+2025-07-17 12:41:11,256 [trainer.py] => CNN: {'total': 87.59, '00-09': 85.11, '10-19': 93.91, '20-29': 79.42, '30-39': 89.68, 'old': 87.01, 'new': 89.68}
+2025-07-17 12:41:11,257 [trainer.py] => CNN top1 curve: [95.4, 96.17, 89.73, 87.59]
+2025-07-17 12:41:11,257 [trainer.py] => CNN top5 curve: [100.0, 99.96, 99.84, 99.67]
+
+Average Accuracy (CNN): 92.22
+2025-07-17 12:41:11,257 [trainer.py] => Average Accuracy (CNN): 92.22 
+
+2025-07-17 12:41:11,257 [trainer.py] => All params: 85829377
+2025-07-17 12:41:11,258 [trainer.py] => Trainable params: 85829377
+2025-07-17 12:41:11,263 [simplecil.py] => Learning on 40-50
+2025-07-17 12:41:59,144 [trainer.py] => No NME accuracy.
+2025-07-17 12:41:59,145 [trainer.py] => CNN: {'total': 82.24, '00-09': 84.14, '10-19': 90.65, '20-29': 73.73, '30-39': 88.48, '40-49': 77.92, 'old': 84.42, 'new': 77.92}
+2025-07-17 12:41:59,145 [trainer.py] => CNN top1 curve: [95.4, 96.17, 89.73, 87.59, 82.24]
+2025-07-17 12:41:59,145 [trainer.py] => CNN top5 curve: [100.0, 99.96, 99.84, 99.67, 98.93]
+
+Average Accuracy (CNN): 90.23
+2025-07-17 12:41:59,145 [trainer.py] => Average Accuracy (CNN): 90.23 
+
+Finished vtab_init10_inc10: vit_base_patch16_224_dino  
+----------------------------------------------------------------------------------------------------
+Total Train Time: 18.0 s
+Total Test Time: 118.61 s
+Accuracy Matrix (CNN):
+[[95.4  94.07 90.44 85.11 84.14]
+ [ 0.   97.03 94.61 93.91 90.65]
+ [ 0.    0.   83.34 79.42 73.73]
+ [ 0.    0.    0.   89.68 88.48]
+ [ 0.    0.    0.    0.   77.92]]
+2025-07-17 12:41:59,146 [trainer.py] => Forgetting (CNN): 7.112500000000001

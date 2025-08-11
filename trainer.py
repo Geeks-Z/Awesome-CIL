@@ -140,8 +140,8 @@ def _train(args):
     print('-' * 100)
     print('Total Train Time:', round(total_train_time, 2), 's')
     print('Total Test Time:', round(total_test_time, 2), 's')
-    if args['tuned_epoch'] != 0:
-        print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
+    # if args['tuned_epoch'] != 0:
+    #     print('Train Time / (Epoch*Task):', round(total_train_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
     # print('每个任务每个epoch测试时间:', round(total_test_time / (data_manager.nb_tasks * args['tuned_epoch']), 2), 's')
     if len(cnn_matrix) > 0:
         np_acctable = np.zeros([task + 1, task + 1])
