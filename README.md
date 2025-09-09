@@ -113,8 +113,6 @@
 |iCaRL-CNN |84.6 ± 0.02|85.87 ± 0.16|86.91 ± 0.18|81.67 ± 0.03|83.54 ± 0.24|
 |iCaRL-NME |89.52 ± 0.08|90.3 ± 0.05|90.64 ± 0.16|87.55 ± 0.0|88.98 ± 0.02|
 
-
-
 #### CUB-200
 
 <img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/202507050947215.png" alt="image-20250705094735156" style="zoom:67%;" />
@@ -220,45 +218,20 @@
 |SimpleCIL |91.35 ± 0.0|90.8 ± 0.0|
 |Finetune |60.69 ± 2.02|80.8 ± 1.5|
 
-
 ---
-
-
-## 👨‍🏫 TODO
-
-| Title                                                        | Venue | Year | Type            | Code                                                        |
-| ------------------------------------------------------------ | ----- | ---- | --------------- | ----------------------------------------------------------- |
-|                                                              |       |      |                 |                                                             |
-| [FCS: Feature Calibration and Separation for Non-Exemplar Class Incremental Learning](https://ieeexplore.ieee.org/document/10657158/?arnumber=10657158) | CVPR  | 2024 | Feature Rectify | [Official](https://github.com/zhoujiahuan1991/CVPR2024-FCS) |
-|                                                              |       |      |                 |                                                             |
-|                                                              |       |      |                 |                                                             |
 
 ### Different PTMs
 
-| PTM             | Pre-Trained Dataset | Finetuned Dataset |
-| --------------- | ------------------- | ----------------- |
-| ViT-B/16-IN1K   | ImageNet21K         | ImageNet1K        |
-| ViT-B/16-IN21K  | ImageNet21K         | -                 |
-| ViT-L/16-IN1K   | ImageNet21K         | ImageNet1K        |
-| ViT-B/16-DINO   | ImageNet            | -                 |
-| ViT-B/16-SAM    | SA-1B (Segment Anything 1 Billion Dataset) | - |
-| ViT-B/16-MAE    | ImageNet21K         | -                 |
-| ViT-B/16-CLIP   | OpenAI CLIP Dataset (a large corpus of text-image pairs) | - |
-| ResNet18/50/152 | ImageNet1K          | -                 |
-
-### Parameters
-
-> Params and Time Comparison. Training time refers to the average time per epoch for each incremental task, while inference time  is measured in **milliseconds per image**.  For a fair comparison, all methods are based on pre-trained ViT-B/16-IN21K.
-
-| Method          | CIFAR B0 Inc5                |                  |                    | IN-R B0 Inc5                 |                  |                    |
-| --------------- | ---------------------------- | ---------------- | ------------------ | ---------------------------- | ---------------- | ------------------ |
-|                 | Tunable Parameters(Millions) | Training Time(s) | Inference Time(ms) | Tunable Parameters(Millions) | Training Time(s) | Inference Time(ms) |
-| L2P             | 0.05                         | 102.12           | 3.77               | 0.12                         | 50.12            | 3.84               |
-| DualPrompt      | 0.25                         | 93.21            | 3.44               | 0.39                         | 45.16            | 3.58               |
-| CODA-Prompt     | 3.84                         | 99.42            | 2.99               | 3.98                         | 47.53            | 3.08               |
-| LAE             | 0.31                         | 46.87            | 3.35               | 0.37                         | 24.26            | 3.52               |
-| InfLoRA         | 0.31                         | 72.36            | 2.03               | 0.33                         | 34.96            | 2.24               |
-| APER w/ Adapter | 0.3                          | 16.04            | 3.63               | 0.3                          | 8.92             | 3.71               |
+| PTM             | Pre-Trained Dataset              | Finetuned Dataset   | Description                                                  |
+| --------------- | -------------------------------- | ------------------- | ------------------------------------------------------------ |
+| ViT-B/16-IN1K   | ImageNet21K                      | ImageNet1K          | Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
+| ViT-B/16-IN21K  | ImageNet21K                      | ImageNet1K          | Vision Transformer trained on ImageNet21K without fine-tuning. |
+| ViT-L/16-IN1K   | ImageNet21K                      | ImageNet1K          | Large Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
+| ViT-B/16-DINO   | ImageNet                         | ImageNet1K          | Self-supervised Vision Transformer trained with DINO on ImageNet. |
+| ViT-B/16-SAM    | SA-1B (Segment Anything Dataset) | COCO, ADE20K        | Vision Transformer trained on a large-scale segmentation dataset. |
+| ViT-B/16-MAE    | ImageNet21K                      | ImageNet1K          | Vision Transformer trained with Masked Autoencoder on ImageNet21K. |
+| ViT-B/16-CLIP   | OpenAI CLIP Dataset              | COCO, Flickr30K     | Vision Transformer trained on a large corpus of text-image pairs by OpenAI. |
+| ResNet18/50/152 | ImageNet1K                       | CIFAR-10, CIFAR-100 | ResNet models trained on ImageNet1K.                         |
 
 ---
 
