@@ -222,16 +222,16 @@
 
 ### Different PTMs
 
-| PTM             | Pre-Trained Dataset              | Finetuned Dataset   | Description                                                  |
-| --------------- | -------------------------------- | ------------------- | ------------------------------------------------------------ |
-| ViT-B/16-IN1K   | ImageNet21K                      | ImageNet1K          | Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
-| ViT-B/16-IN21K  | ImageNet21K                      | ImageNet1K          | Vision Transformer trained on ImageNet21K without fine-tuning. |
-| ViT-L/16-IN1K   | ImageNet21K                      | ImageNet1K          | Large Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
-| ViT-B/16-DINO   | ImageNet                         | ImageNet1K          | Self-supervised Vision Transformer trained with DINO on ImageNet. |
-| ViT-B/16-SAM    | SA-1B (Segment Anything Dataset) | COCO, ADE20K        | Vision Transformer trained on a large-scale segmentation dataset. |
-| ViT-B/16-MAE    | ImageNet21K                      | ImageNet1K          | Vision Transformer trained with Masked Autoencoder on ImageNet21K. |
-| ViT-B/16-CLIP   | OpenAI CLIP Dataset              | COCO, Flickr30K     | Vision Transformer trained on a large corpus of text-image pairs by OpenAI. |
-| ResNet18/50/152 | ImageNet1K                       | CIFAR-10, CIFAR-100 | ResNet models trained on ImageNet1K.                         |
+| PTM             | Pre-Trained Dataset              | Finetuned Dataset   | timm                                                         | Description                                                  |
+| --------------- | -------------------------------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ViT-B/16-IN1K   | ImageNet21K                      | ImageNet1K          | timm.create_model("vit_base_patch16_224",pretrained=True)    | Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
+| ViT-B/16-IN21K  | ImageNet21K                      | ImageNet1K          | timm.create_model("vit_base_patch16_224_in21k",pretrained=True) | Vision Transformer trained on ImageNet21K without fine-tuning. |
+| ViT-L/16-IN1K   | ImageNet21K                      | ImageNet1K          |                                                              | Large Vision Transformer trained on ImageNet21K and fine-tuned on ImageNet1K. |
+| ViT-B/16-DINO   | ImageNet                         | ImageNet1K          |                                                              | Self-supervised Vision Transformer trained with DINO on ImageNet. |
+| ViT-B/16-SAM    | SA-1B (Segment Anything Dataset) | COCO, ADE20K        |                                                              | Vision Transformer trained on a large-scale segmentation dataset. |
+| ViT-B/16-MAE    | ImageNet21K                      | ImageNet1K          |                                                              | Vision Transformer trained with Masked Autoencoder on ImageNet21K. |
+| ViT-B/16-CLIP   | OpenAI CLIP Dataset              | COCO, Flickr30K     |                                                              | Vision Transformer trained on a large corpus of text-image pairs by OpenAI. |
+| ResNet18/50/152 | ImageNet1K                       | CIFAR-10, CIFAR-100 |                                                              | ResNet models trained on ImageNet1K.                         |
 
 ---
 

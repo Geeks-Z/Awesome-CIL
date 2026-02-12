@@ -14,6 +14,10 @@ url={https://openreview.net/forum?id=5U1rlpX68A}
 }
 ``` 
 
+## 实验设置
+
+- LoRA的秩在 `sdlora.py update_network`方法中定义
+
 ## 👀 Introduction
 ![SD-LoRA](imgs/intro.jpg)
 

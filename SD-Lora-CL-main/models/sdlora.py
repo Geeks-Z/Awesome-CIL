@@ -86,7 +86,7 @@ class Learner(BaseLearner):
         else:
             rank = 10
         '''
-        rank=10
+        rank=4
         model = LoRA_ViT_timm(vit_model=model.eval(), r=rank, num_classes=10, index=index, increment= self.args['increment'], filepath=self.args['filepath'], 
         cur_task_index= self._cur_task)
         model.out_dim = 768
