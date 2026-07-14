@@ -40,6 +40,16 @@ def get_model(model_name, args):
         from models.cofima import Learner
     elif name == 'lae':
         from models.lae import Learner
+    elif name == 'cllora':
+        from models.cllora import Learner
+    elif name == "bilora":
+        from models.bilora import Learner
+    elif name == "inflora":
+        from models.inflora import Learner
+    elif name == "sdlora":
+        from models.sdlora import Learner
+    elif name == "hidep":
+        from models.hidep import Learner
     else:
         assert 0
     

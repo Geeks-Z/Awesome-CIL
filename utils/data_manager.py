@@ -3,7 +3,20 @@ import numpy as np
 from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
-from utils.data import iCIFAR10, iCIFAR100, iImageNet100, iImageNet1000, iCIFAR224, iImageNetR,iImageNetA,CUB, objectnet, omnibenchmark, vtab
+from utils.data import (
+    CUB,
+    iCIFAR10,
+    iCIFAR100,
+    iCIFAR224,
+    iDomainNet,
+    iImageNet100,
+    iImageNet1000,
+    iImageNetA,
+    iImageNetR,
+    objectnet,
+    omnibenchmark,
+    vtab,
+)
 
 
 class DataManager(object):
@@ -218,15 +231,17 @@ def _get_idata(dataset_name, args=None):
     if name == "cifar10":
         return iCIFAR10()
     elif name == "cifar100":
-        return iCIFAR100()
+        return iCIFAR100(args)
     elif name == "imagenet1000":
         return iImageNet1000()
     elif name == "imagenet100":
         return iImageNet100()
     elif name == "cifar224":
         return iCIFAR224(args)
-    elif name == "imagenetr":
+    elif name in ["imagenetr", "imagenet_r"]:
         return iImageNetR(args)
+    elif name == "domainnet":
+        return iDomainNet(args)
     elif name == "imageneta":
         return iImageNetA()
     elif name == "cub":
