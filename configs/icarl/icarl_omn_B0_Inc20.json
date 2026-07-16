@@ -9,7 +9,7 @@
   "increment": 20,
   "model_name": "icarl",
   "backbone_type": "vit_base_patch16_224_in21k",
-  "device": ["6"],
+  "device": ["3"],
   "seed": [42, 1993, 1994],
   "init_epoch": 20,
   "init_lr": 0.001,

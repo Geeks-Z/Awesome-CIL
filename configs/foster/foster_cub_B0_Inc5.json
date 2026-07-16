@@ -9,7 +9,7 @@
   "increment": 5,
   "model_name": "foster",
   "backbone_type": "vit_base_patch16_224_in21k",
-  "device": ["2"],
+  "device": ["3"],
   "seed": [42, 1993, 1994],
   "beta1": 0.96,
   "beta2": 0.97,

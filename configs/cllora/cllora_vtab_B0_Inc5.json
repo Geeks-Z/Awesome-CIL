@@ -9,7 +9,7 @@
   "increment": 5,
   "model_name": "cllora",
   "backbone_type": "vit_base_patch16_224_in21k_cllora",
-  "device": ["5"],
+  "device": ["3"],
   "seed": [0,42,1993,1994],
   "init_epochs": 45,
   "init_lr": 0.03,
