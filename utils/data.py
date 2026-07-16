@@ -6,6 +6,9 @@ from torchvision import datasets, transforms
 from utils.toolkit import split_images_labels
 
 
+DATA_ROOT = os.environ.get("CIL_DATA_ROOT", "/home/team/zhaohongwei/Dataset")
+
+
 def _resolve_domainnet_paths(paths, data_path):
     normalized_root = os.path.normpath(data_path)
     if os.path.basename(normalized_root).lower() == "domainnet":
@@ -58,10 +61,10 @@ class iCIFAR10(iData):
 
     def download_data(self):
         train_dataset = datasets.cifar.CIFAR10(
-            "/public/home/hanlida/Dr.1/Dataset", train=True, download=False
+            DATA_ROOT, train=True, download=False
         )
         test_dataset = datasets.cifar.CIFAR10(
-            "/public/home/hanlida/Dr.1/Dataset", train=False, download=False
+            DATA_ROOT, train=False, download=False
         )
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
@@ -90,7 +93,7 @@ class iCIFAR100(iData):
 
     def __init__(self, args=None):
         self.args = args
-        self.data_path = "/public/home/hanlida/Dr.1/Dataset"
+        self.data_path = DATA_ROOT
         if args is not None and args.get("data_path") is not None:
             self.data_path = args["data_path"]
 
@@ -202,10 +205,10 @@ class iCIFAR224(iData):
 
     def download_data(self):
         train_dataset = datasets.cifar.CIFAR100(
-            "/public/home/hanlida/Dr.1/Dataset", train=True, download=False
+            DATA_ROOT, train=True, download=False
         )
         test_dataset = datasets.cifar.CIFAR100(
-            "/public/home/hanlida/Dr.1/Dataset", train=False, download=False
+            DATA_ROOT, train=False, download=False
         )
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
@@ -295,7 +298,7 @@ class iImageNetR(iData):
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
         data_path = self.args.get(
-            "data_path", "/public/home/hanlida/Dr.1/Dataset/imagenet-r"
+            "data_path", os.path.join(DATA_ROOT, "imagenet-r")
         )
         train_dir = os.path.join(data_path, "train")
         test_dir = os.path.join(data_path, "test")
@@ -318,8 +321,8 @@ class iImageNetA(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/public/home/hanlida/Dr.1/Dataset/imagenet-a/train/"
-        test_dir = "/public/home/hanlida/Dr.1/Dataset/imagenet-a/test/"
+        train_dir = os.path.join(DATA_ROOT, "imagenet-a", "train")
+        test_dir = os.path.join(DATA_ROOT, "imagenet-a", "test")
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -339,8 +342,8 @@ class CUB(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/public/home/hanlida/Dr.1/Dataset/cub/train/"
-        test_dir = "/public/home/hanlida/Dr.1/Dataset/cub/test/"
+        train_dir = os.path.join(DATA_ROOT, "cub", "train")
+        test_dir = os.path.join(DATA_ROOT, "cub", "test")
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -360,8 +363,8 @@ class objectnet(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/public/home/hanlida/Dr.1/Dataset/objectnet/train/"
-        test_dir = "/public/home/hanlida/Dr.1/Dataset/objectnet/test/"
+        train_dir = os.path.join(DATA_ROOT, "objectnet", "train")
+        test_dir = os.path.join(DATA_ROOT, "objectnet", "test")
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -381,8 +384,8 @@ class omnibenchmark(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/public/home/hanlida/Dr.1/Dataset/omnibenchmark/train/"
-        test_dir = "/public/home/hanlida/Dr.1/Dataset/omnibenchmark/test/"
+        train_dir = os.path.join(DATA_ROOT, "omnibenchmark", "train")
+        test_dir = os.path.join(DATA_ROOT, "omnibenchmark", "test")
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -402,8 +405,8 @@ class vtab(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/public/home/hanlida/Dr.1/Dataset/vtab/train/"
-        test_dir = "/public/home/hanlida/Dr.1/Dataset/vtab/test/"
+        train_dir = os.path.join(DATA_ROOT, "vtab", "train")
+        test_dir = os.path.join(DATA_ROOT, "vtab", "test")
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -449,7 +452,7 @@ class iDomainNet(iData):
         test_data_config = yaml.load(
             open("dataloaders/splits/domainnet_test.yaml", "r"), Loader=yaml.Loader
         )
-        data_path = self.args.get("data_path", "/public/home/hanlida/Dr.1/Dataset")
+        data_path = self.args.get("data_path", DATA_ROOT)
         self.train_data = _resolve_domainnet_paths(train_data_config["data"], data_path)
         self.train_targets = np.array(train_data_config["targets"])
         self.test_data = _resolve_domainnet_paths(test_data_config["data"], data_path)
