@@ -12,6 +12,8 @@
 
 Awesome-CIL collects resources, reference implementations, and reproducible results for class-incremental learning (CIL), also known as continual, incremental, or lifelong learning.
 
+For paper reading notes, see [Paper Reading Notes](https://www.zhihu.com/people/icode1024/columns).
+
 ## Surveys
 
 | Title | Venue | Year | Code |
