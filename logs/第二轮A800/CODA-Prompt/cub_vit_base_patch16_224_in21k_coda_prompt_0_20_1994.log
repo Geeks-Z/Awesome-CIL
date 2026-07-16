@@ -1,0 +1,120 @@
+2026-06-03 11:15:51,329 [trainer.py] => config: ./configs/coda_prompt/coda_prompt_cub_B0_Inc20.json
+2026-06-03 11:15:51,329 [trainer.py] => prefix:  
+2026-06-03 11:15:51,329 [trainer.py] => dataset: cub
+2026-06-03 11:15:51,329 [trainer.py] => memory_size: 0
+2026-06-03 11:15:51,329 [trainer.py] => memory_per_class: 0
+2026-06-03 11:15:51,329 [trainer.py] => fixed_memory: False
+2026-06-03 11:15:51,329 [trainer.py] => shuffle: True
+2026-06-03 11:15:51,330 [trainer.py] => init_cls: 20
+2026-06-03 11:15:51,330 [trainer.py] => increment: 20
+2026-06-03 11:15:51,330 [trainer.py] => model_name: coda_prompt
+2026-06-03 11:15:51,330 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_coda_prompt
+2026-06-03 11:15:51,330 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-06-03 11:15:51,330 [trainer.py] => seed: 1994
+2026-06-03 11:15:51,330 [trainer.py] => tuned_epoch: 20
+2026-06-03 11:15:51,330 [trainer.py] => init_lr: 0.001
+2026-06-03 11:15:51,330 [trainer.py] => batch_size: 128
+2026-06-03 11:15:51,330 [trainer.py] => weight_decay: 0
+2026-06-03 11:15:51,330 [trainer.py] => min_lr: 1e-05
+2026-06-03 11:15:51,330 [trainer.py] => optimizer: adam
+2026-06-03 11:15:51,330 [trainer.py] => scheduler: cosine
+2026-06-03 11:15:51,330 [trainer.py] => reinit_optimizer: True
+2026-06-03 11:15:51,330 [trainer.py] => pretrained: True
+2026-06-03 11:15:51,330 [trainer.py] => drop: 0.0
+2026-06-03 11:15:51,331 [trainer.py] => drop_path: 0.0
+2026-06-03 11:15:51,331 [trainer.py] => prompt_param: [100, 8.0, 0.0]
+2026-06-03 11:15:51,331 [trainer.py] => nb_classes: 200
+2026-06-03 11:15:51,331 [trainer.py] => nb_tasks: 10
+2026-06-03 11:15:52,078 [data_manager.py] => [85, 41, 23, 28, 70, 87, 134, 151, 51, 159, 178, 119, 50, 117, 73, 95, 86, 147, 63, 22, 79, 175, 40, 155, 174, 54, 132, 72, 124, 157, 93, 26, 196, 74, 44, 15, 169, 122, 88, 171, 184, 6, 18, 145, 48, 197, 64, 172, 126, 96, 11, 55, 193, 66, 128, 21, 77, 113, 140, 116, 141, 133, 120, 29, 115, 14, 103, 127, 114, 19, 9, 38, 33, 195, 81, 35, 69, 181, 47, 129, 112, 168, 198, 71, 101, 188, 68, 90, 158, 163, 52, 8, 185, 59, 154, 92, 56, 183, 32, 136, 65, 45, 46, 173, 189, 108, 102, 144, 0, 107, 187, 100, 98, 192, 43, 161, 104, 75, 150, 166, 121, 60, 160, 3, 143, 153, 62, 142, 61, 110, 194, 97, 25, 177, 179, 17, 49, 31, 94, 111, 16, 53, 91, 58, 135, 83, 2, 12, 13, 165, 42, 36, 186, 105, 1, 7, 149, 170, 27, 24, 78, 167, 137, 138, 118, 10, 139, 164, 20, 57, 123, 199, 89, 130, 82, 162, 176, 148, 109, 125, 67, 106, 37, 146, 131, 180, 156, 39, 5, 84, 4, 190, 152, 191, 30, 76, 80, 34, 99, 182]
+2026-06-03 11:15:55,500 [coda_prompt.py] => 89,792,456 total parameters.
+2026-06-03 11:15:55,500 [coda_prompt.py] => 3,993,800 fc and prompt training parameters.
+2026-06-03 11:15:55,501 [trainer.py] => All params: 89792456
+2026-06-03 11:15:55,501 [trainer.py] => Trainable params: 89792456
+2026-06-03 11:15:55,501 [coda_prompt.py] => Learning on 0-20
+2026-06-03 11:36:21,908 [coda_prompt.py] => Task 0, Epoch 20/20 => Loss 0.121, Train_accy 96.73, Test_accy 97.93
+2026-06-03 11:36:30,337 [trainer.py] => No NME accuracy.
+2026-06-03 11:36:30,337 [trainer.py] => CNN: {'total': 97.93, '00-19': 97.93, 'old': 0, 'new': 97.93}
+2026-06-03 11:36:30,337 [trainer.py] => CNN top1 curve: [97.93]
+2026-06-03 11:36:30,338 [trainer.py] => CNN top5 curve: [99.59]
+2026-06-03 11:36:30,338 [trainer.py] => Average Accuracy (CNN): 97.93
+2026-06-03 11:36:30,339 [trainer.py] => All params: 89792456
+2026-06-03 11:36:30,340 [trainer.py] => Trainable params: 89792456
+2026-06-03 11:36:54,829 [coda_prompt.py] => Learning on 20-40
+2026-06-03 11:57:54,393 [coda_prompt.py] => Task 1, Epoch 20/20 => Loss 0.131, Train_accy 96.30, Test_accy 91.84
+2026-06-03 11:58:10,060 [trainer.py] => No NME accuracy.
+2026-06-03 11:58:10,061 [trainer.py] => CNN: {'total': 91.84, '00-19': 97.93, '20-39': 85.94, 'old': 97.93, 'new': 85.94}
+2026-06-03 11:58:10,061 [trainer.py] => CNN top1 curve: [97.93, 91.84]
+2026-06-03 11:58:10,061 [trainer.py] => CNN top5 curve: [99.59, 99.18]
+2026-06-03 11:58:10,061 [trainer.py] => Average Accuracy (CNN): 94.88
+2026-06-03 11:58:10,063 [trainer.py] => All params: 89792456
+2026-06-03 11:58:10,065 [trainer.py] => Trainable params: 89792456
+2026-06-03 11:58:51,142 [coda_prompt.py] => Learning on 40-60
+2026-06-03 12:20:12,276 [coda_prompt.py] => Task 2, Epoch 20/20 => Loss 0.182, Train_accy 95.16, Test_accy 86.58
+2026-06-03 12:20:34,590 [trainer.py] => No NME accuracy.
+2026-06-03 12:20:34,591 [trainer.py] => CNN: {'total': 86.58, '00-19': 97.51, '20-39': 84.34, '40-59': 77.06, 'old': 90.82, 'new': 77.06}
+2026-06-03 12:20:34,591 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58]
+2026-06-03 12:20:34,591 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59]
+2026-06-03 12:20:34,591 [trainer.py] => Average Accuracy (CNN): 92.12
+2026-06-03 12:20:34,592 [trainer.py] => All params: 89792456
+2026-06-03 12:20:34,592 [trainer.py] => Trainable params: 89792456
+2026-06-03 12:21:32,969 [coda_prompt.py] => Learning on 60-80
+2026-06-03 12:43:47,520 [coda_prompt.py] => Task 3, Epoch 20/20 => Loss 0.170, Train_accy 94.81, Test_accy 83.99
+2026-06-03 12:44:15,817 [trainer.py] => No NME accuracy.
+2026-06-03 12:44:15,818 [trainer.py] => CNN: {'total': 83.99, '00-19': 96.68, '20-39': 83.53, '40-59': 76.61, '60-79': 78.17, 'old': 85.88, 'new': 78.17}
+2026-06-03 12:44:15,818 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99]
+2026-06-03 12:44:15,818 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19]
+2026-06-03 12:44:15,818 [trainer.py] => Average Accuracy (CNN): 90.08
+2026-06-03 12:44:15,820 [trainer.py] => All params: 89792456
+2026-06-03 12:44:15,821 [trainer.py] => Trainable params: 89792456
+2026-06-03 12:45:29,745 [coda_prompt.py] => Learning on 80-100
+2026-06-03 13:07:50,037 [coda_prompt.py] => Task 4, Epoch 20/20 => Loss 0.102, Train_accy 97.11, Test_accy 81.28
+2026-06-03 13:08:25,700 [trainer.py] => No NME accuracy.
+2026-06-03 13:08:25,712 [trainer.py] => CNN: {'total': 81.28, '00-19': 95.44, '20-39': 81.12, '40-59': 74.77, '60-79': 75.98, '80-99': 77.88, 'old': 82.07, 'new': 77.88}
+2026-06-03 13:08:25,712 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28]
+2026-06-03 13:08:25,712 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18]
+2026-06-03 13:08:25,713 [trainer.py] => Average Accuracy (CNN): 88.32
+2026-06-03 13:08:25,713 [trainer.py] => All params: 89792456
+2026-06-03 13:08:25,714 [trainer.py] => Trainable params: 89792456
+2026-06-03 13:09:56,284 [coda_prompt.py] => Learning on 100-120
+2026-06-03 13:32:07,956 [coda_prompt.py] => Task 5, Epoch 20/20 => Loss 0.105, Train_accy 96.68, Test_accy 79.61
+2026-06-03 13:32:50,574 [trainer.py] => No NME accuracy.
+2026-06-03 13:32:50,593 [trainer.py] => CNN: {'total': 79.61, '00-19': 95.02, '20-39': 80.32, '40-59': 67.89, '60-79': 72.93, '80-99': 77.42, '100-119': 82.48, 'old': 79.03, 'new': 82.48}
+2026-06-03 13:32:50,594 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28, 79.61]
+2026-06-03 13:32:50,594 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18, 98.13]
+2026-06-03 13:32:50,594 [trainer.py] => Average Accuracy (CNN): 86.87
+2026-06-03 13:32:50,594 [trainer.py] => All params: 89792456
+2026-06-03 13:32:50,595 [trainer.py] => Trainable params: 89792456
+2026-06-03 13:34:37,681 [coda_prompt.py] => Learning on 120-140
+2026-06-03 13:57:02,470 [coda_prompt.py] => Task 6, Epoch 20/20 => Loss 0.144, Train_accy 95.43, Test_accy 75.52
+2026-06-03 13:57:52,085 [trainer.py] => No NME accuracy.
+2026-06-03 13:57:52,085 [trainer.py] => CNN: {'total': 75.52, '00-19': 94.61, '20-39': 80.32, '40-59': 66.51, '60-79': 72.93, '80-99': 76.5, '100-119': 82.05, '120-139': 55.91, 'old': 79.11, 'new': 55.91}
+2026-06-03 13:57:52,086 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28, 79.61, 75.52]
+2026-06-03 13:57:52,086 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18, 98.13, 97.75]
+2026-06-03 13:57:52,086 [trainer.py] => Average Accuracy (CNN): 85.25
+2026-06-03 13:57:52,087 [trainer.py] => All params: 89792456
+2026-06-03 13:57:52,089 [trainer.py] => Trainable params: 89792456
+2026-06-03 13:59:55,965 [coda_prompt.py] => Learning on 140-160
+2026-06-03 14:23:09,344 [coda_prompt.py] => Task 7, Epoch 20/20 => Loss 0.163, Train_accy 95.43, Test_accy 74.22
+2026-06-03 14:24:05,627 [trainer.py] => No NME accuracy.
+2026-06-03 14:24:05,627 [trainer.py] => CNN: {'total': 74.22, '00-19': 94.61, '20-39': 79.92, '40-59': 65.6, '60-79': 71.18, '80-99': 73.27, '100-119': 81.2, '120-139': 55.91, '140-159': 72.02, 'old': 74.54, 'new': 72.02}
+2026-06-03 14:24:05,627 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28, 79.61, 75.52, 74.22]
+2026-06-03 14:24:05,627 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18, 98.13, 97.75, 97.45]
+2026-06-03 14:24:05,628 [trainer.py] => Average Accuracy (CNN): 83.87
+2026-06-03 14:24:05,629 [trainer.py] => All params: 89792456
+2026-06-03 14:24:05,630 [trainer.py] => Trainable params: 89792456
+2026-06-03 14:26:27,939 [coda_prompt.py] => Learning on 160-180
+2026-06-03 14:50:26,146 [coda_prompt.py] => Task 8, Epoch 20/20 => Loss 0.126, Train_accy 96.52, Test_accy 74.88
+2026-06-03 14:51:30,426 [trainer.py] => No NME accuracy.
+2026-06-03 14:51:30,426 [trainer.py] => CNN: {'total': 74.88, '00-19': 94.61, '20-39': 78.71, '40-59': 65.6, '60-79': 67.69, '80-99': 72.81, '100-119': 79.91, '120-139': 56.3, '140-159': 71.6, '160-179': 86.12, 'old': 73.42, 'new': 86.12}
+2026-06-03 14:51:30,427 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28, 79.61, 75.52, 74.22, 74.88]
+2026-06-03 14:51:30,427 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18, 98.13, 97.75, 97.45, 97.18]
+2026-06-03 14:51:30,427 [trainer.py] => Average Accuracy (CNN): 82.87
+2026-06-03 14:51:30,427 [trainer.py] => All params: 89792456
+2026-06-03 14:51:30,428 [trainer.py] => Trainable params: 89792456
+2026-06-03 14:54:07,794 [coda_prompt.py] => Learning on 180-200
+2026-06-03 15:18:35,607 [coda_prompt.py] => Task 9, Epoch 20/20 => Loss 0.127, Train_accy 96.03, Test_accy 73.32
+2026-06-03 15:19:49,156 [trainer.py] => No NME accuracy.
+2026-06-03 15:19:49,184 [trainer.py] => CNN: {'total': 73.32, '00-19': 94.19, '20-39': 77.51, '40-59': 63.76, '60-79': 67.25, '80-99': 70.97, '100-119': 78.21, '120-139': 53.94, '140-159': 70.37, '160-179': 85.31, '180-199': 71.05, 'old': 73.57, 'new': 71.05}
+2026-06-03 15:19:49,184 [trainer.py] => CNN top1 curve: [97.93, 91.84, 86.58, 83.99, 81.28, 79.61, 75.52, 74.22, 74.88, 73.32]
+2026-06-03 15:19:49,184 [trainer.py] => CNN top5 curve: [99.59, 99.18, 98.59, 98.19, 98.18, 98.13, 97.75, 97.45, 97.18, 96.86]
+2026-06-03 15:19:49,184 [trainer.py] => Average Accuracy (CNN): 81.92

@@ -1,0 +1,117 @@
+2026-05-28 10:28:08,820 [trainer.py] => config: ./configs/l2p/l2p_cifar_B50_Inc10.json
+2026-05-28 10:28:08,820 [trainer.py] => prefix:  
+2026-05-28 10:28:08,820 [trainer.py] => dataset: cifar224
+2026-05-28 10:28:08,821 [trainer.py] => memory_size: 0
+2026-05-28 10:28:08,821 [trainer.py] => memory_per_class: 0
+2026-05-28 10:28:08,821 [trainer.py] => fixed_memory: False
+2026-05-28 10:28:08,821 [trainer.py] => shuffle: True
+2026-05-28 10:28:08,821 [trainer.py] => init_cls: 50
+2026-05-28 10:28:08,821 [trainer.py] => increment: 10
+2026-05-28 10:28:08,821 [trainer.py] => model_name: l2p
+2026-05-28 10:28:08,821 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_l2p
+2026-05-28 10:28:08,821 [trainer.py] => get_original_backbone: True
+2026-05-28 10:28:08,821 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-05-28 10:28:08,821 [trainer.py] => seed: 42
+2026-05-28 10:28:08,821 [trainer.py] => tuned_epoch: 20
+2026-05-28 10:28:08,821 [trainer.py] => init_lr: 0.001875
+2026-05-28 10:28:08,821 [trainer.py] => batch_size: 48
+2026-05-28 10:28:08,821 [trainer.py] => weight_decay: 0
+2026-05-28 10:28:08,821 [trainer.py] => min_lr: 1e-05
+2026-05-28 10:28:08,821 [trainer.py] => optimizer: adam
+2026-05-28 10:28:08,821 [trainer.py] => scheduler: constant
+2026-05-28 10:28:08,821 [trainer.py] => reinit_optimizer: True
+2026-05-28 10:28:08,821 [trainer.py] => global_pool: token
+2026-05-28 10:28:08,821 [trainer.py] => head_type: prompt
+2026-05-28 10:28:08,821 [trainer.py] => freeze: ['blocks', 'patch_embed', 'cls_token', 'norm', 'pos_embed']
+2026-05-28 10:28:08,821 [trainer.py] => pretrained: True
+2026-05-28 10:28:08,821 [trainer.py] => drop: 0.0
+2026-05-28 10:28:08,821 [trainer.py] => drop_path: 0.0
+2026-05-28 10:28:08,821 [trainer.py] => prompt_pool: True
+2026-05-28 10:28:08,822 [trainer.py] => size: 10
+2026-05-28 10:28:08,822 [trainer.py] => length: 5
+2026-05-28 10:28:08,822 [trainer.py] => top_k: 5
+2026-05-28 10:28:08,822 [trainer.py] => initializer: uniform
+2026-05-28 10:28:08,822 [trainer.py] => prompt_key: True
+2026-05-28 10:28:08,822 [trainer.py] => prompt_key_init: uniform
+2026-05-28 10:28:08,822 [trainer.py] => use_prompt_mask: False
+2026-05-28 10:28:08,822 [trainer.py] => shared_prompt_pool: False
+2026-05-28 10:28:08,822 [trainer.py] => shared_prompt_key: False
+2026-05-28 10:28:08,822 [trainer.py] => batchwise_prompt: True
+2026-05-28 10:28:08,822 [trainer.py] => embedding_key: cls
+2026-05-28 10:28:08,822 [trainer.py] => predefined_key: 
+2026-05-28 10:28:08,822 [trainer.py] => pull_constraint: True
+2026-05-28 10:28:08,822 [trainer.py] => pull_constraint_coeff: 0.1
+2026-05-28 10:28:10,014 [data_manager.py] => [83, 53, 70, 45, 44, 39, 22, 80, 10, 0, 18, 30, 73, 33, 90, 4, 76, 77, 12, 31, 55, 88, 26, 42, 69, 15, 40, 96, 9, 72, 11, 47, 85, 28, 93, 5, 66, 65, 35, 16, 49, 34, 7, 95, 27, 19, 81, 25, 62, 13, 24, 3, 17, 38, 8, 78, 6, 64, 36, 89, 56, 99, 54, 43, 50, 67, 46, 68, 61, 97, 79, 41, 58, 48, 98, 57, 75, 32, 94, 59, 63, 84, 37, 29, 1, 52, 21, 2, 23, 87, 91, 74, 86, 82, 20, 60, 71, 14, 92, 51]
+2026-05-28 10:28:14,520 [vit_l2p.py] => Resized position embedding: torch.Size([1, 197, 768]) to torch.Size([1, 222, 768])
+2026-05-28 10:28:14,521 [vit_l2p.py] => Position embedding grid-size from [14, 14] to (14, 14)
+2026-05-28 10:28:20,105 [l2p.py] => 85,940,836 model total parameters.
+2026-05-28 10:28:20,106 [l2p.py] => 122,980 model training parameters.
+2026-05-28 10:28:20,106 [l2p.py] => prompt.prompt: 38400
+2026-05-28 10:28:20,106 [l2p.py] => prompt.prompt_key: 7680
+2026-05-28 10:28:20,107 [l2p.py] => head.weight: 76800
+2026-05-28 10:28:20,107 [l2p.py] => head.bias: 100
+2026-05-28 10:28:20,108 [trainer.py] => All params: 171816392
+2026-05-28 10:28:20,109 [trainer.py] => Trainable params: 122980
+2026-05-28 10:28:20,440 [l2p.py] => Learning on 0-50
+2026-05-28 12:58:11,170 [l2p.py] => Task 0, Epoch 20/20 => Loss 0.279, Train_accy 83.81, Test_accy 92.38
+2026-05-28 12:59:10,078 [trainer.py] => Timing Task 0 => Train 8990.73s, Epochs 20, Train 449.5366s/epoch, Inference 58.91s, Images 5000, Inference 11.7813ms/image
+2026-05-28 12:59:10,079 [trainer.py] => No NME accuracy.
+2026-05-28 12:59:10,079 [trainer.py] => CNN: {'total': 92.38, '00-49': 92.38, 'old': 0, 'new': 92.38}
+2026-05-28 12:59:10,079 [trainer.py] => CNN top1 curve: [92.38]
+2026-05-28 12:59:10,079 [trainer.py] => CNN top5 curve: [99.32]
+2026-05-28 12:59:10,079 [trainer.py] => Average Accuracy (CNN): 92.38
+2026-05-28 12:59:10,080 [trainer.py] => All params: 171816392
+2026-05-28 12:59:10,082 [trainer.py] => Trainable params: 122980
+2026-05-28 12:59:10,082 [l2p.py] => Learning on 50-60
+2026-05-28 13:33:40,494 [l2p.py] => Task 1, Epoch 20/20 => Loss -0.103, Train_accy 93.94, Test_accy 91.40
+2026-05-28 13:34:49,174 [trainer.py] => Timing Task 1 => Train 2070.41s, Epochs 20, Train 103.5207s/epoch, Inference 68.68s, Images 6000, Inference 11.4464ms/image
+2026-05-28 13:34:49,174 [trainer.py] => No NME accuracy.
+2026-05-28 13:34:49,174 [trainer.py] => CNN: {'total': 91.4, '00-49': 92.6, '50-59': 85.4, 'old': 92.6, 'new': 85.4}
+2026-05-28 13:34:49,174 [trainer.py] => CNN top1 curve: [92.38, 91.4]
+2026-05-28 13:34:49,174 [trainer.py] => CNN top5 curve: [99.32, 99.12]
+2026-05-28 13:34:49,174 [trainer.py] => Average Accuracy (CNN): 91.89
+2026-05-28 13:34:49,176 [trainer.py] => All params: 171816392
+2026-05-28 13:34:49,177 [trainer.py] => Trainable params: 122980
+2026-05-28 13:34:49,177 [l2p.py] => Learning on 60-70
+2026-05-28 14:09:54,054 [l2p.py] => Task 2, Epoch 20/20 => Loss -0.118, Train_accy 94.54, Test_accy 87.51
+2026-05-28 14:11:14,811 [trainer.py] => Timing Task 2 => Train 2104.88s, Epochs 20, Train 105.2439s/epoch, Inference 80.76s, Images 7000, Inference 11.5365ms/image
+2026-05-28 14:11:14,811 [trainer.py] => No NME accuracy.
+2026-05-28 14:11:14,811 [trainer.py] => CNN: {'total': 87.51, '00-49': 92.24, '50-59': 82.6, '60-69': 68.8, 'old': 90.63, 'new': 68.8}
+2026-05-28 14:11:14,811 [trainer.py] => CNN top1 curve: [92.38, 91.4, 87.51]
+2026-05-28 14:11:14,811 [trainer.py] => CNN top5 curve: [99.32, 99.12, 98.91]
+2026-05-28 14:11:14,811 [trainer.py] => Average Accuracy (CNN): 90.43
+2026-05-28 14:11:14,813 [trainer.py] => All params: 171816392
+2026-05-28 14:11:14,814 [trainer.py] => Trainable params: 122980
+2026-05-28 14:11:14,814 [l2p.py] => Learning on 70-80
+2026-05-28 14:46:41,855 [l2p.py] => Task 3, Epoch 20/20 => Loss -0.132, Train_accy 95.54, Test_accy 85.56
+2026-05-28 14:48:12,255 [trainer.py] => Timing Task 3 => Train 2127.04s, Epochs 20, Train 106.3521s/epoch, Inference 90.40s, Images 8000, Inference 11.2999ms/image
+2026-05-28 14:48:12,255 [trainer.py] => No NME accuracy.
+2026-05-28 14:48:12,255 [trainer.py] => CNN: {'total': 85.56, '00-49': 92.3, '50-59': 83.1, '60-69': 68.7, '70-79': 71.2, 'old': 87.61, 'new': 71.2}
+2026-05-28 14:48:12,255 [trainer.py] => CNN top1 curve: [92.38, 91.4, 87.51, 85.56]
+2026-05-28 14:48:12,255 [trainer.py] => CNN top5 curve: [99.32, 99.12, 98.91, 98.89]
+2026-05-28 14:48:12,255 [trainer.py] => Average Accuracy (CNN): 89.21
+2026-05-28 14:48:12,257 [trainer.py] => All params: 171816392
+2026-05-28 14:48:12,258 [trainer.py] => Trainable params: 122980
+2026-05-28 14:48:12,258 [l2p.py] => Learning on 80-90
+2026-05-28 15:24:22,670 [l2p.py] => Task 4, Epoch 20/20 => Loss -0.147, Train_accy 95.58, Test_accy 82.94
+2026-05-28 15:26:01,354 [trainer.py] => Timing Task 4 => Train 2170.41s, Epochs 20, Train 108.5206s/epoch, Inference 98.68s, Images 9000, Inference 10.9648ms/image
+2026-05-28 15:26:01,354 [trainer.py] => No NME accuracy.
+2026-05-28 15:26:01,354 [trainer.py] => CNN: {'total': 82.94, '00-49': 92.42, '50-59': 82.5, '60-69': 68.8, '70-79': 71.0, '80-89': 62.1, 'old': 85.55, 'new': 62.1}
+2026-05-28 15:26:01,354 [trainer.py] => CNN top1 curve: [92.38, 91.4, 87.51, 85.56, 82.94]
+2026-05-28 15:26:01,354 [trainer.py] => CNN top5 curve: [99.32, 99.12, 98.91, 98.89, 98.38]
+2026-05-28 15:26:01,354 [trainer.py] => Average Accuracy (CNN): 87.96
+2026-05-28 15:26:01,356 [trainer.py] => All params: 171816392
+2026-05-28 15:26:01,357 [trainer.py] => Trainable params: 122980
+2026-05-28 15:26:01,357 [l2p.py] => Learning on 90-100
+2026-05-28 16:03:21,814 [l2p.py] => Task 5, Epoch 20/20 => Loss -0.132, Train_accy 95.22, Test_accy 81.04
+2026-05-28 16:05:12,696 [trainer.py] => Timing Task 5 => Train 2240.46s, Epochs 20, Train 112.0230s/epoch, Inference 110.88s, Images 10000, Inference 11.0880ms/image
+2026-05-28 16:05:12,697 [trainer.py] => No NME accuracy.
+2026-05-28 16:05:12,697 [trainer.py] => CNN: {'total': 81.04, '00-49': 92.42, '50-59': 81.5, '60-69': 66.7, '70-79': 69.2, '80-89': 60.0, '90-99': 70.9, 'old': 82.17, 'new': 70.9}
+2026-05-28 16:05:12,697 [trainer.py] => CNN top1 curve: [92.38, 91.4, 87.51, 85.56, 82.94, 81.04]
+2026-05-28 16:05:12,697 [trainer.py] => CNN top5 curve: [99.32, 99.12, 98.91, 98.89, 98.38, 98.27]
+2026-05-28 16:05:12,697 [trainer.py] => Average Accuracy (CNN): 86.8
+2026-05-28 16:05:12,697 [trainer.py] => Total Train Time: 19703.94s
+2026-05-28 16:05:12,697 [trainer.py] => Total Inference Time: 508.30s
+2026-05-28 16:05:12,697 [trainer.py] => Average Training Time per Epoch per Incremental Task: 164.1995s
+2026-05-28 16:05:12,697 [trainer.py] => Average Inference Time: 11.2956ms/image
+2026-05-28 16:05:12,697 [trainer.py] => Mean Task Inference Time: 11.3528ms/image

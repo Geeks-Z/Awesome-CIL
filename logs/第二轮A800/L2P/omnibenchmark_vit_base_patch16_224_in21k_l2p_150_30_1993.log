@@ -1,0 +1,114 @@
+2026-06-07 14:16:46,763 [trainer.py] => config: ./configs/l2p/l2p_omn_B150_Inc30.json
+2026-06-07 14:16:46,763 [trainer.py] => prefix:  
+2026-06-07 14:16:46,763 [trainer.py] => dataset: omnibenchmark
+2026-06-07 14:16:46,763 [trainer.py] => memory_size: 0
+2026-06-07 14:16:46,763 [trainer.py] => memory_per_class: 0
+2026-06-07 14:16:46,763 [trainer.py] => fixed_memory: False
+2026-06-07 14:16:46,763 [trainer.py] => shuffle: True
+2026-06-07 14:16:46,763 [trainer.py] => init_cls: 150
+2026-06-07 14:16:46,763 [trainer.py] => increment: 30
+2026-06-07 14:16:46,763 [trainer.py] => model_name: l2p
+2026-06-07 14:16:46,763 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_l2p
+2026-06-07 14:16:46,763 [trainer.py] => get_original_backbone: True
+2026-06-07 14:16:46,763 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-06-07 14:16:46,763 [trainer.py] => seed: 1993
+2026-06-07 14:16:46,764 [trainer.py] => tuned_epoch: 20
+2026-06-07 14:16:46,764 [trainer.py] => init_lr: 0.001875
+2026-06-07 14:16:46,764 [trainer.py] => batch_size: 48
+2026-06-07 14:16:46,764 [trainer.py] => weight_decay: 0
+2026-06-07 14:16:46,764 [trainer.py] => min_lr: 1e-05
+2026-06-07 14:16:46,764 [trainer.py] => optimizer: adam
+2026-06-07 14:16:46,764 [trainer.py] => scheduler: constant
+2026-06-07 14:16:46,764 [trainer.py] => reinit_optimizer: True
+2026-06-07 14:16:46,764 [trainer.py] => global_pool: token
+2026-06-07 14:16:46,764 [trainer.py] => head_type: prompt
+2026-06-07 14:16:46,764 [trainer.py] => freeze: ['blocks', 'patch_embed', 'cls_token', 'norm', 'pos_embed']
+2026-06-07 14:16:46,764 [trainer.py] => pretrained: True
+2026-06-07 14:16:46,764 [trainer.py] => drop: 0.0
+2026-06-07 14:16:46,764 [trainer.py] => drop_path: 0.0
+2026-06-07 14:16:46,764 [trainer.py] => prompt_pool: True
+2026-06-07 14:16:46,764 [trainer.py] => size: 10
+2026-06-07 14:16:46,764 [trainer.py] => length: 5
+2026-06-07 14:16:46,764 [trainer.py] => top_k: 5
+2026-06-07 14:16:46,764 [trainer.py] => initializer: uniform
+2026-06-07 14:16:46,764 [trainer.py] => prompt_key: True
+2026-06-07 14:16:46,764 [trainer.py] => prompt_key_init: uniform
+2026-06-07 14:16:46,764 [trainer.py] => use_prompt_mask: False
+2026-06-07 14:16:46,764 [trainer.py] => shared_prompt_pool: False
+2026-06-07 14:16:46,764 [trainer.py] => shared_prompt_key: False
+2026-06-07 14:16:46,764 [trainer.py] => batchwise_prompt: True
+2026-06-07 14:16:46,764 [trainer.py] => embedding_key: cls
+2026-06-07 14:16:46,764 [trainer.py] => predefined_key: 
+2026-06-07 14:16:46,764 [trainer.py] => pull_constraint: True
+2026-06-07 14:16:46,765 [trainer.py] => pull_constraint_coeff: 0.1
+2026-06-07 14:16:46,765 [trainer.py] => nb_classes: 300
+2026-06-07 14:16:46,765 [trainer.py] => nb_tasks: 6
+2026-06-07 14:16:47,635 [data_manager.py] => [169, 221, 146, 296, 92, 229, 49, 70, 126, 77, 243, 57, 120, 223, 27, 217, 154, 8, 101, 182, 54, 50, 97, 162, 28, 193, 79, 6, 151, 0, 173, 187, 44, 277, 157, 16, 257, 122, 35, 9, 171, 176, 134, 4, 87, 255, 112, 153, 246, 286, 147, 186, 107, 98, 10, 7, 266, 214, 36, 165, 139, 254, 103, 269, 59, 23, 298, 39, 73, 208, 135, 299, 102, 20, 12, 268, 11, 209, 161, 210, 74, 42, 56, 99, 235, 133, 159, 189, 145, 238, 215, 241, 138, 195, 233, 279, 88, 199, 64, 280, 26, 203, 17, 245, 174, 236, 137, 252, 80, 68, 181, 150, 118, 94, 75, 2, 109, 119, 232, 15, 69, 184, 201, 261, 55, 287, 273, 66, 175, 32, 142, 136, 116, 76, 179, 1, 91, 248, 275, 240, 290, 170, 132, 106, 265, 270, 85, 19, 284, 43, 259, 293, 228, 200, 104, 227, 51, 224, 163, 297, 216, 260, 93, 46, 100, 272, 105, 72, 131, 3, 156, 256, 249, 48, 113, 82, 172, 213, 62, 53, 271, 168, 253, 226, 183, 180, 276, 283, 78, 61, 143, 278, 30, 141, 196, 264, 231, 52, 222, 40, 125, 219, 65, 166, 192, 289, 45, 205, 89, 267, 90, 71, 167, 262, 281, 212, 96, 84, 127, 67, 294, 178, 288, 197, 21, 18, 111, 108, 58, 230, 188, 31, 110, 291, 129, 24, 204, 83, 81, 251, 60, 13, 128, 14, 86, 63, 117, 198, 274, 5, 22, 144, 258, 121, 38, 207, 148, 292, 41, 234, 237, 114, 202, 37, 149, 206, 155, 29, 130, 177, 194, 152, 34, 33, 239, 160, 140, 47, 244, 25, 282, 158, 211, 123, 190, 218, 164, 247, 263, 191, 220, 115, 242, 250, 124, 295, 95, 285, 225, 185]
+2026-06-07 14:17:01,211 [vit_l2p.py] => Resized position embedding: torch.Size([1, 197, 768]) to torch.Size([1, 222, 768])
+2026-06-07 14:17:01,212 [vit_l2p.py] => Position embedding grid-size from [14, 14] to (14, 14)
+2026-06-07 14:17:19,685 [l2p.py] => 86,094,636 model total parameters.
+2026-06-07 14:17:19,686 [l2p.py] => 276,780 model training parameters.
+2026-06-07 14:17:19,686 [l2p.py] => prompt.prompt: 38400
+2026-06-07 14:17:19,686 [l2p.py] => prompt.prompt_key: 7680
+2026-06-07 14:17:19,686 [l2p.py] => head.weight: 230400
+2026-06-07 14:17:19,686 [l2p.py] => head.bias: 300
+2026-06-07 14:17:19,688 [trainer.py] => All params: 172123992
+2026-06-07 14:17:19,689 [trainer.py] => Trainable params: 276780
+2026-06-07 14:17:19,689 [l2p.py] => Learning on 0-150
+2026-06-07 17:34:57,854 [l2p.py] => Task 0, Epoch 20/20 => Loss 0.253, Train_accy 86.15, Test_accy 85.37
+2026-06-07 17:35:31,193 [trainer.py] => Timing Task 0 => Train 11858.17s, Epochs 20, Train 592.9083s/epoch, Inference 33.34s, Images 2994, Inference 11.1349ms/image
+2026-06-07 17:35:31,193 [trainer.py] => No NME accuracy.
+2026-06-07 17:35:31,194 [trainer.py] => CNN: {'total': 85.37, '00-149': 85.37, 'old': 0, 'new': 85.37}
+2026-06-07 17:35:31,194 [trainer.py] => CNN top1 curve: [85.37]
+2026-06-07 17:35:31,194 [trainer.py] => CNN top5 curve: [97.19]
+2026-06-07 17:35:31,194 [trainer.py] => Average Accuracy (CNN): 85.37
+2026-06-07 17:35:31,197 [trainer.py] => All params: 172123992
+2026-06-07 17:35:31,200 [trainer.py] => Trainable params: 276780
+2026-06-07 17:35:31,200 [l2p.py] => Learning on 150-180
+2026-06-07 18:25:26,627 [l2p.py] => Task 1, Epoch 20/20 => Loss -0.080, Train_accy 95.26, Test_accy 76.39
+2026-06-07 18:26:04,631 [trainer.py] => Timing Task 1 => Train 2995.43s, Epochs 20, Train 149.7714s/epoch, Inference 38.00s, Images 3592, Inference 10.5799ms/image
+2026-06-07 18:26:04,631 [trainer.py] => No NME accuracy.
+2026-06-07 18:26:04,632 [trainer.py] => CNN: {'total': 76.39, '00-149': 85.6, '150-179': 30.27, 'old': 85.6, 'new': 30.27}
+2026-06-07 18:26:04,632 [trainer.py] => CNN top1 curve: [85.37, 76.39]
+2026-06-07 18:26:04,632 [trainer.py] => CNN top5 curve: [97.19, 94.71]
+2026-06-07 18:26:04,632 [trainer.py] => Average Accuracy (CNN): 80.88
+2026-06-07 18:26:04,636 [trainer.py] => All params: 172123992
+2026-06-07 18:26:04,638 [trainer.py] => Trainable params: 276780
+2026-06-07 18:26:04,639 [l2p.py] => Learning on 180-210
+2026-06-07 19:14:54,317 [l2p.py] => Task 2, Epoch 20/20 => Loss -0.063, Train_accy 94.56, Test_accy 71.23
+2026-06-07 19:15:34,682 [trainer.py] => Timing Task 2 => Train 2929.68s, Epochs 20, Train 146.4840s/epoch, Inference 40.36s, Images 4189, Inference 9.6356ms/image
+2026-06-07 19:15:34,683 [trainer.py] => No NME accuracy.
+2026-06-07 19:15:34,683 [trainer.py] => CNN: {'total': 71.23, '00-149': 85.34, '150-179': 29.93, '180-209': 41.88, 'old': 76.11, 'new': 41.88}
+2026-06-07 19:15:34,683 [trainer.py] => CNN top1 curve: [85.37, 76.39, 71.23]
+2026-06-07 19:15:34,683 [trainer.py] => CNN top5 curve: [97.19, 94.71, 91.96]
+2026-06-07 19:15:34,683 [trainer.py] => Average Accuracy (CNN): 77.66
+2026-06-07 19:15:34,686 [trainer.py] => All params: 172123992
+2026-06-07 19:15:34,688 [trainer.py] => Trainable params: 276780
+2026-06-07 19:15:34,688 [l2p.py] => Learning on 210-240
+2026-06-07 20:06:20,943 [l2p.py] => Task 3, Epoch 20/20 => Loss -0.024, Train_accy 93.14, Test_accy 66.71
+2026-06-07 20:07:03,467 [trainer.py] => Timing Task 3 => Train 3046.26s, Epochs 20, Train 152.3129s/epoch, Inference 42.52s, Images 4788, Inference 8.8809ms/image
+2026-06-07 20:07:03,468 [trainer.py] => No NME accuracy.
+2026-06-07 20:07:03,468 [trainer.py] => CNN: {'total': 66.71, '00-149': 85.47, '150-179': 31.94, '180-209': 43.05, '210-239': 31.22, 'old': 71.78, 'new': 31.22}
+2026-06-07 20:07:03,468 [trainer.py] => CNN top1 curve: [85.37, 76.39, 71.23, 66.71]
+2026-06-07 20:07:03,468 [trainer.py] => CNN top5 curve: [97.19, 94.71, 91.96, 90.48]
+2026-06-07 20:07:03,468 [trainer.py] => Average Accuracy (CNN): 74.92
+2026-06-07 20:07:03,471 [trainer.py] => All params: 172123992
+2026-06-07 20:07:03,473 [trainer.py] => Trainable params: 276780
+2026-06-07 20:07:03,473 [l2p.py] => Learning on 240-270
+2026-06-07 20:55:54,038 [l2p.py] => Task 4, Epoch 20/20 => Loss -0.116, Train_accy 96.69, Test_accy 62.67
+2026-06-07 20:56:46,015 [trainer.py] => Timing Task 4 => Train 2930.57s, Epochs 20, Train 146.5284s/epoch, Inference 51.97s, Images 5387, Inference 9.6480ms/image
+2026-06-07 20:56:46,015 [trainer.py] => No NME accuracy.
+2026-06-07 20:56:46,015 [trainer.py] => CNN: {'total': 62.67, '00-149': 85.17, '150-179': 29.6, '180-209': 41.37, '210-239': 31.89, '240-269': 35.23, 'old': 66.1, 'new': 35.23}
+2026-06-07 20:56:46,016 [trainer.py] => CNN top1 curve: [85.37, 76.39, 71.23, 66.71, 62.67]
+2026-06-07 20:56:46,016 [trainer.py] => CNN top5 curve: [97.19, 94.71, 91.96, 90.48, 88.99]
+2026-06-07 20:56:46,016 [trainer.py] => Average Accuracy (CNN): 72.47
+2026-06-07 20:56:46,019 [trainer.py] => All params: 172123992
+2026-06-07 20:56:46,021 [trainer.py] => Trainable params: 276780
+2026-06-07 20:56:46,021 [l2p.py] => Learning on 270-300
+2026-06-07 21:42:42,256 [l2p.py] => Task 5, Epoch 20/20 => Loss -0.095, Train_accy 96.17, Test_accy 60.35
+2026-06-07 21:43:37,850 [trainer.py] => Timing Task 5 => Train 2756.24s, Epochs 20, Train 137.8118s/epoch, Inference 55.59s, Images 5985, Inference 9.2885ms/image
+2026-06-07 21:43:37,850 [trainer.py] => No NME accuracy.
+2026-06-07 21:43:37,850 [trainer.py] => CNN: {'total': 60.35, '00-149': 84.84, '150-179': 29.77, '180-209': 42.04, '210-239': 30.55, '240-269': 35.39, '270-299': 41.47, 'old': 62.45, 'new': 41.47}
+2026-06-07 21:43:37,850 [trainer.py] => CNN top1 curve: [85.37, 76.39, 71.23, 66.71, 62.67, 60.35]
+2026-06-07 21:43:37,850 [trainer.py] => CNN top5 curve: [97.19, 94.71, 91.96, 90.48, 88.99, 88.72]
+2026-06-07 21:43:37,850 [trainer.py] => Average Accuracy (CNN): 70.45

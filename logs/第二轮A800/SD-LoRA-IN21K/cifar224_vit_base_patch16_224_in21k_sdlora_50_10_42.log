@@ -1,0 +1,85 @@
+2026-05-23 17:16:56,350 [trainer.py] => config: ./configs/sdlora/sdlora_cifar_B50_Inc10.json
+2026-05-23 17:16:56,372 [trainer.py] => prefix: reproduce
+2026-05-23 17:16:56,372 [trainer.py] => dataset: cifar224
+2026-05-23 17:16:56,372 [trainer.py] => memory_size: 0
+2026-05-23 17:16:56,373 [trainer.py] => memory_per_class: 0
+2026-05-23 17:16:56,373 [trainer.py] => fixed_memory: False
+2026-05-23 17:16:56,373 [trainer.py] => shuffle: True
+2026-05-23 17:16:56,373 [trainer.py] => init_cls: 50
+2026-05-23 17:16:56,373 [trainer.py] => increment: 10
+2026-05-23 17:16:56,373 [trainer.py] => model_name: sdlora
+2026-05-23 17:16:56,373 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_sdlora
+2026-05-23 17:16:56,374 [trainer.py] => device: [device(type='cuda', index=0)]
+2026-05-23 17:16:56,374 [trainer.py] => seed: 42
+2026-05-23 17:16:56,374 [trainer.py] => scheduler: cosine
+2026-05-23 17:16:56,374 [trainer.py] => min_lr: 0.005
+2026-05-23 17:16:56,374 [trainer.py] => tuned_epoch: 20
+2026-05-23 17:16:56,374 [trainer.py] => filepath: ./checkpoints/CF100/
+2026-05-23 17:16:56,374 [trainer.py] => init_epoch: 20
+2026-05-23 17:16:56,375 [trainer.py] => init_lr: 0.008
+2026-05-23 17:16:56,375 [trainer.py] => init_milestones: [60, 120, 170]
+2026-05-23 17:16:56,375 [trainer.py] => init_lr_decay: 0.1
+2026-05-23 17:16:56,375 [trainer.py] => init_weight_decay: 0.0005
+2026-05-23 17:16:56,375 [trainer.py] => epochs: 20
+2026-05-23 17:16:56,375 [trainer.py] => lrate: 0.008
+2026-05-23 17:16:56,375 [trainer.py] => milestones: [40, 70]
+2026-05-23 17:16:56,375 [trainer.py] => lrate_decay: 0
+2026-05-23 17:16:56,376 [trainer.py] => batch_size: 128
+2026-05-23 17:16:56,376 [trainer.py] => weight_decay: 0.0002
+2026-05-23 17:16:56,376 [trainer.py] => pretrained: True
+2026-05-23 17:16:56,376 [trainer.py] => rank: 10
+2026-05-23 17:17:00,323 [data_manager.py] => [83, 53, 70, 45, 44, 39, 22, 80, 10, 0, 18, 30, 73, 33, 90, 4, 76, 77, 12, 31, 55, 88, 26, 42, 69, 15, 40, 96, 9, 72, 11, 47, 85, 28, 93, 5, 66, 65, 35, 16, 49, 34, 7, 95, 27, 19, 81, 25, 62, 13, 24, 3, 17, 38, 8, 78, 6, 64, 36, 89, 56, 99, 54, 43, 50, 67, 46, 68, 61, 97, 79, 41, 58, 48, 98, 57, 75, 32, 94, 59, 63, 84, 37, 29, 1, 52, 21, 2, 23, 87, 91, 74, 86, 82, 20, 60, 71, 14, 92, 51]
+2026-05-23 17:18:16,568 [trainer.py] => All params: 171965973
+2026-05-23 17:18:16,569 [trainer.py] => Trainable params: 368661
+2026-05-23 17:18:16,570 [sdlora.py] => Learning on 0-50
+2026-05-23 18:09:21,908 [sdlora.py] => Task 0, Epoch 20/20 => Loss 0.413, Train_accy 87.86
+2026-05-23 18:09:38,267 [trainer.py] => No NME accuracy.
+2026-05-23 18:09:38,275 [trainer.py] => CNN: {'total': 92.9, '00-49': 92.9, 'old': 0, 'new': 92.9}
+2026-05-23 18:09:38,275 [trainer.py] => CNN top1 curve: [92.9]
+2026-05-23 18:09:38,275 [trainer.py] => CNN top5 curve: [99.4]
+2026-05-23 18:09:38,276 [trainer.py] => Average Accuracy (CNN): 92.9
+2026-05-23 18:09:38,281 [trainer.py] => All params: 172004423
+2026-05-23 18:09:38,285 [trainer.py] => Trainable params: 407111
+2026-05-23 18:09:38,288 [sdlora.py] => Learning on 50-60
+2026-05-23 18:21:54,622 [sdlora.py] => Task 1, Epoch 20/20 => Loss 0.168, Train_accy 84.78
+2026-05-23 18:22:13,920 [trainer.py] => No NME accuracy.
+2026-05-23 18:22:13,930 [trainer.py] => CNN: {'total': 92.9, '00-49': 92.52, '50-59': 94.8, 'old': 92.52, 'new': 94.8}
+2026-05-23 18:22:13,930 [trainer.py] => CNN top1 curve: [92.9, 92.9]
+2026-05-23 18:22:13,930 [trainer.py] => CNN top5 curve: [99.4, 99.37]
+2026-05-23 18:22:13,930 [trainer.py] => Average Accuracy (CNN): 92.9
+2026-05-23 18:22:13,932 [trainer.py] => All params: 172012113
+2026-05-23 18:22:13,934 [trainer.py] => Trainable params: 414801
+2026-05-23 18:22:13,937 [sdlora.py] => Learning on 60-70
+2026-05-23 18:35:23,246 [sdlora.py] => Task 2, Epoch 20/20 => Loss 0.144, Train_accy 83.18
+2026-05-23 18:35:46,434 [trainer.py] => No NME accuracy.
+2026-05-23 18:35:46,442 [trainer.py] => CNN: {'total': 92.24, '00-49': 91.52, '50-59': 93.8, '60-69': 94.3, 'old': 91.9, 'new': 94.3}
+2026-05-23 18:35:46,442 [trainer.py] => CNN top1 curve: [92.9, 92.9, 92.24]
+2026-05-23 18:35:46,442 [trainer.py] => CNN top5 curve: [99.4, 99.37, 99.13]
+2026-05-23 18:35:46,443 [trainer.py] => Average Accuracy (CNN): 92.68
+2026-05-23 18:35:46,445 [trainer.py] => All params: 172019803
+2026-05-23 18:35:46,446 [trainer.py] => Trainable params: 422491
+2026-05-23 18:35:46,448 [sdlora.py] => Learning on 70-80
+2026-05-23 18:49:48,386 [sdlora.py] => Task 3, Epoch 20/20 => Loss 0.135, Train_accy 79.50
+2026-05-23 18:50:14,838 [trainer.py] => No NME accuracy.
+2026-05-23 18:50:14,850 [trainer.py] => CNN: {'total': 91.38, '00-49': 90.94, '50-59': 93.0, '60-69': 92.7, '70-79': 90.6, 'old': 91.49, 'new': 90.6}
+2026-05-23 18:50:14,850 [trainer.py] => CNN top1 curve: [92.9, 92.9, 92.24, 91.38]
+2026-05-23 18:50:14,850 [trainer.py] => CNN top5 curve: [99.4, 99.37, 99.13, 99.14]
+2026-05-23 18:50:14,850 [trainer.py] => Average Accuracy (CNN): 92.36
+2026-05-23 18:50:14,852 [trainer.py] => All params: 172027493
+2026-05-23 18:50:14,854 [trainer.py] => Trainable params: 430181
+2026-05-23 18:50:14,855 [sdlora.py] => Learning on 80-90
+2026-05-23 19:05:03,778 [sdlora.py] => Task 4, Epoch 20/20 => Loss 0.130, Train_accy 78.74
+2026-05-23 19:05:33,719 [trainer.py] => No NME accuracy.
+2026-05-23 19:05:33,720 [trainer.py] => CNN: {'total': 90.74, '00-49': 90.5, '50-59': 93.1, '60-69': 92.3, '70-79': 89.8, '80-89': 89.0, 'old': 90.96, 'new': 89.0}
+2026-05-23 19:05:33,721 [trainer.py] => CNN top1 curve: [92.9, 92.9, 92.24, 91.38, 90.74]
+2026-05-23 19:05:33,721 [trainer.py] => CNN top5 curve: [99.4, 99.37, 99.13, 99.14, 98.99]
+2026-05-23 19:05:33,721 [trainer.py] => Average Accuracy (CNN): 92.03
+2026-05-23 19:05:33,723 [trainer.py] => All params: 172035183
+2026-05-23 19:05:33,724 [trainer.py] => Trainable params: 437871
+2026-05-23 19:05:33,726 [sdlora.py] => Learning on 90-100
+2026-05-23 19:21:19,530 [sdlora.py] => Task 5, Epoch 20/20 => Loss 0.136, Train_accy 81.90
+2026-05-23 19:21:54,353 [trainer.py] => No NME accuracy.
+2026-05-23 19:21:54,354 [trainer.py] => CNN: {'total': 89.79, '00-49': 89.36, '50-59': 93.1, '60-69': 90.6, '70-79': 89.2, '80-89': 87.7, '90-99': 90.5, 'old': 89.71, 'new': 90.5}
+2026-05-23 19:21:54,354 [trainer.py] => CNN top1 curve: [92.9, 92.9, 92.24, 91.38, 90.74, 89.79]
+2026-05-23 19:21:54,354 [trainer.py] => CNN top5 curve: [99.4, 99.37, 99.13, 99.14, 98.99, 98.87]
+2026-05-23 19:21:54,355 [trainer.py] => Average Accuracy (CNN): 91.66

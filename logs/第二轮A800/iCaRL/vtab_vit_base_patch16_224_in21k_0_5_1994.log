@@ -1,0 +1,45 @@
+2026-07-13 18:19:38,188 [trainer.py] => prefix: reproduce
+2026-07-13 18:19:38,188 [trainer.py] => dataset: vtab
+2026-07-13 18:19:38,188 [trainer.py] => memory_size: 6000
+2026-07-13 18:19:38,188 [trainer.py] => memory_per_class: 20
+2026-07-13 18:19:38,188 [trainer.py] => fixed_memory: True
+2026-07-13 18:19:38,188 [trainer.py] => shuffle: True
+2026-07-13 18:19:38,188 [trainer.py] => init_cls: 5
+2026-07-13 18:19:38,188 [trainer.py] => increment: 5
+2026-07-13 18:19:38,188 [trainer.py] => model_name: icarl
+2026-07-13 18:19:38,188 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-07-13 18:19:38,188 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-07-13 18:19:38,188 [trainer.py] => seed: 1994
+2026-07-13 18:19:38,188 [trainer.py] => init_epoch: 20
+2026-07-13 18:19:38,189 [trainer.py] => init_lr: 0.001
+2026-07-13 18:19:38,189 [trainer.py] => init_milestones: [60, 120, 170]
+2026-07-13 18:19:38,189 [trainer.py] => init_lr_decay: 0.1
+2026-07-13 18:19:38,189 [trainer.py] => init_weight_decay: 0.0005
+2026-07-13 18:19:38,189 [trainer.py] => epochs: 20
+2026-07-13 18:19:38,189 [trainer.py] => lrate: 0.001
+2026-07-13 18:19:38,189 [trainer.py] => milestones: [80, 120]
+2026-07-13 18:19:38,189 [trainer.py] => lrate_decay: 0.1
+2026-07-13 18:19:38,189 [trainer.py] => batch_size: 48
+2026-07-13 18:19:38,189 [trainer.py] => weight_decay: 0.0002
+2026-07-13 18:19:38,189 [trainer.py] => T: 2
+2026-07-13 18:19:38,253 [data_manager.py] => [19, 0, 33, 14, 23, 41, 7, 45, 8, 44, 9, 25, 6, 27, 21, 47, 38, 48, 15, 22, 17, 42, 2, 46, 37, 13, 32, 10, 49, 39, 18, 1, 3, 40, 36, 5, 28, 43, 4, 29, 31, 24, 30, 20, 12, 26, 16, 11, 34, 35]
+2026-07-13 18:19:44,103 [trainer.py] => All params: 85798656
+2026-07-13 18:19:44,104 [trainer.py] => Trainable params: 85798656
+2026-07-13 18:19:44,431 [icarl.py] => Learning on 0-5
+2026-07-13 18:21:15,372 [icarl.py] => Task 0, Epoch 20/20 => Loss 4.402, Train_accy 28.35
+2026-07-13 18:21:15,373 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-13 18:21:28,737 [trainer.py] => Timing Task 0 => Train 94.55s, Epochs 20, Train 4.7277s/epoch, Inference 9.75s, Images 784, Inference 12.4392ms/image
+2026-07-13 18:21:28,753 [icarl.py] => Exemplar size: 100
+2026-07-13 18:21:28,754 [trainer.py] => CNN: {'total': 12.76, '00-04': 12.76, 'old': 0, 'new': 12.76}
+2026-07-13 18:21:28,754 [trainer.py] => NME: {'total': 62.5, '00-04': 62.5, 'old': 0, 'new': 62.5}
+2026-07-13 18:21:28,754 [trainer.py] => CNN top1 curve: [12.76]
+2026-07-13 18:21:28,754 [trainer.py] => CNN top5 curve: [100.0]
+2026-07-13 18:21:28,754 [trainer.py] => NME top1 curve: [62.5]
+2026-07-13 18:21:28,754 [trainer.py] => NME top5 curve: [100.0]
+2026-07-13 18:21:28,754 [trainer.py] => Average Accuracy (CNN): 12.76
+2026-07-13 18:21:28,754 [trainer.py] => Average Accuracy (NME): 62.5
+2026-07-13 18:21:28,755 [trainer.py] => All params: 85802501
+2026-07-13 18:21:28,755 [trainer.py] => Trainable params: 85802501
+2026-07-13 18:21:28,758 [icarl.py] => Learning on 5-10
+2026-07-13 18:23:12,458 [icarl.py] => Task 1, Epoch 20/20 => Loss 3.725, Train_accy 13.58
+2026-07-13 18:23:12,459 [base.py] => Constructing exemplars for new classes...(20 per classes)

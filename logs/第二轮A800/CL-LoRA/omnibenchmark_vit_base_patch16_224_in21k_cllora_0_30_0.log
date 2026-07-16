@@ -1,0 +1,162 @@
+2026-06-12 09:44:40,163 [trainer.py] => config: ./configs/cllora/cllora_omni_B0_Inc30.json
+2026-06-12 09:44:40,163 [trainer.py] => prefix:  
+2026-06-12 09:44:40,163 [trainer.py] => dataset: omnibenchmark
+2026-06-12 09:44:40,163 [trainer.py] => memory_size: 0
+2026-06-12 09:44:40,163 [trainer.py] => memory_per_class: 0
+2026-06-12 09:44:40,164 [trainer.py] => fixed_memory: False
+2026-06-12 09:44:40,164 [trainer.py] => shuffle: True
+2026-06-12 09:44:40,164 [trainer.py] => init_cls: 30
+2026-06-12 09:44:40,164 [trainer.py] => increment: 30
+2026-06-12 09:44:40,164 [trainer.py] => model_name: cllora
+2026-06-12 09:44:40,164 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_cllora
+2026-06-12 09:44:40,164 [trainer.py] => device: [device(type='cuda', index=5)]
+2026-06-12 09:44:40,164 [trainer.py] => seed: 0
+2026-06-12 09:44:40,164 [trainer.py] => init_epochs: 20
+2026-06-12 09:44:40,164 [trainer.py] => init_lr: 0.01
+2026-06-12 09:44:40,164 [trainer.py] => later_epochs: 20
+2026-06-12 09:44:40,164 [trainer.py] => later_lr: 0.01
+2026-06-12 09:44:40,164 [trainer.py] => batch_size: 16
+2026-06-12 09:44:40,164 [trainer.py] => weight_decay: 0.0005
+2026-06-12 09:44:40,164 [trainer.py] => min_lr: 0
+2026-06-12 09:44:40,164 [trainer.py] => optimizer: sgd
+2026-06-12 09:44:40,164 [trainer.py] => scheduler: cosine
+2026-06-12 09:44:40,164 [trainer.py] => pretrained: True
+2026-06-12 09:44:40,164 [trainer.py] => vpt_type: Deep
+2026-06-12 09:44:40,164 [trainer.py] => prompt_token_num: 5
+2026-06-12 09:44:40,165 [trainer.py] => ffn_num: 10
+2026-06-12 09:44:40,165 [trainer.py] => use_diagonal: False
+2026-06-12 09:44:40,165 [trainer.py] => recalc_sim: True
+2026-06-12 09:44:40,165 [trainer.py] => alpha: 0.0
+2026-06-12 09:44:40,165 [trainer.py] => use_init_ptm: False
+2026-06-12 09:44:40,165 [trainer.py] => beta: 0
+2026-06-12 09:44:40,165 [trainer.py] => use_old_data: False
+2026-06-12 09:44:40,165 [trainer.py] => use_reweight: True
+2026-06-12 09:44:40,165 [trainer.py] => moni_adam: False
+2026-06-12 09:44:40,165 [trainer.py] => adapter_num: -1
+2026-06-12 09:44:40,165 [trainer.py] => msa_adapt: True
+2026-06-12 09:44:40,165 [trainer.py] => use_distillation: True
+2026-06-12 09:44:40,165 [trainer.py] => use_block_weight: True
+2026-06-12 09:44:40,165 [trainer.py] => msa: [1, 0, 1]
+2026-06-12 09:44:40,165 [trainer.py] => general_pos: [0, 1, 2, 3, 4, 5]
+2026-06-12 09:44:40,165 [trainer.py] => specfic_pos: [6, 7, 8, 9, 10, 11]
+2026-06-12 09:44:40,424 [data_manager.py] => [208, 188, 12, 221, 239, 136, 230, 206, 52, 108, 290, 15, 184, 248, 22, 74, 270, 90, 229, 164, 190, 103, 124, 129, 222, 116, 194, 286, 234, 295, 92, 66, 8, 122, 219, 150, 176, 182, 299, 5, 223, 89, 81, 34, 55, 139, 236, 64, 7, 45, 73, 213, 173, 106, 59, 253, 168, 26, 284, 153, 134, 145, 63, 293, 285, 224, 252, 111, 20, 46, 156, 228, 273, 27, 144, 259, 37, 97, 191, 135, 118, 160, 264, 214, 238, 76, 212, 225, 255, 237, 282, 44, 272, 189, 152, 158, 101, 54, 181, 18, 281, 250, 126, 171, 71, 227, 245, 205, 288, 215, 154, 159, 33, 83, 249, 60, 167, 280, 110, 21, 29, 146, 16, 56, 75, 109, 175, 201, 161, 4, 96, 166, 61, 67, 137, 198, 262, 279, 40, 268, 13, 107, 220, 3, 157, 125, 24, 30, 77, 291, 210, 19, 254, 241, 266, 80, 51, 2, 235, 104, 179, 86, 10, 199, 58, 41, 14, 155, 50, 292, 233, 123, 200, 62, 187, 226, 130, 209, 260, 43, 114, 138, 294, 218, 149, 112, 247, 98, 217, 93, 216, 162, 36, 178, 113, 0, 94, 275, 95, 296, 261, 240, 69, 49, 48, 85, 297, 141, 207, 23, 246, 148, 143, 78, 180, 100, 204, 131, 267, 298, 196, 6, 68, 203, 84, 170, 121, 140, 256, 274, 142, 257, 91, 82, 283, 11, 119, 102, 35, 57, 169, 231, 65, 1, 120, 269, 186, 42, 105, 132, 79, 17, 263, 232, 38, 133, 53, 258, 128, 28, 183, 163, 151, 244, 202, 31, 32, 127, 185, 278, 271, 147, 276, 177, 99, 197, 243, 115, 265, 72, 25, 165, 287, 174, 289, 39, 193, 88, 70, 87, 242, 277, 211, 9, 195, 251, 192, 117, 47, 172]
+2026-06-12 09:44:44,433 [trainer.py] => All params: 86167314
+2026-06-12 09:44:44,434 [trainer.py] => Trainable params: 276498
+2026-06-12 09:44:44,440 [cllora.py] => Learning on 0-30
+2026-06-12 10:04:49,002 [cllora.py] => Task 0, Epoch 20/20 => Loss 0.118, Train_accy 96.60
+2026-06-12 10:05:20,519 [cllora.py] => Task correct: 100.0
+2026-06-12 10:05:20,519 [cllora.py] => Task acc: 98.49749582637729
+2026-06-12 10:05:20,520 [trainer.py] => Timing Task 0 => Train 1233.79s, Epochs 20, Train 61.6894s/epoch, Inference 2.30s, Images 599, Inference 3.8356ms/image
+2026-06-12 10:05:20,574 [trainer.py] => No NME accuracy.
+2026-06-12 10:05:20,574 [trainer.py] => CNN: {'total': 98.5, '00-29': 98.5, 'old': 0, 'new': 98.5}
+2026-06-12 10:05:20,574 [trainer.py] => CNN top1 curve: [98.5]
+2026-06-12 10:05:20,574 [trainer.py] => CNN top5 curve: [99.83]
+2026-06-12 10:05:20,574 [trainer.py] => Average Accuracy (CNN): 98.5
+2026-06-12 10:05:20,575 [trainer.py] => All params: 86605095
+2026-06-12 10:05:20,575 [trainer.py] => Trainable params: 276498
+2026-06-12 10:05:20,577 [cllora.py] => Learning on 30-60
+2026-06-12 10:39:34,206 [cllora.py] => Task 1, Epoch 20/20 => Loss 0.113, Train_accy 96.66
+2026-06-12 10:40:41,019 [cllora.py] => Task correct: 90.07506255212677
+2026-06-12 10:40:41,020 [cllora.py] => Task acc: 97.66472060050042
+2026-06-12 10:40:41,023 [trainer.py] => Timing Task 1 => Train 2112.66s, Epochs 20, Train 105.6332s/epoch, Inference 7.78s, Images 1199, Inference 6.4921ms/image
+2026-06-12 10:40:41,053 [trainer.py] => No NME accuracy.
+2026-06-12 10:40:41,053 [trainer.py] => CNN: {'total': 88.57, '00-29': 97.16, '30-59': 80.0, 'old': 97.16, 'new': 80.0}
+2026-06-12 10:40:41,053 [trainer.py] => CNN top1 curve: [98.5, 88.57]
+2026-06-12 10:40:41,053 [trainer.py] => CNN top5 curve: [99.83, 99.42]
+2026-06-12 10:40:41,053 [trainer.py] => Average Accuracy (CNN): 93.54
+2026-06-12 10:40:41,054 [trainer.py] => All params: 87088936
+2026-06-12 10:40:41,056 [trainer.py] => Trainable params: 276498
+2026-06-12 10:40:41,058 [cllora.py] => Learning on 60-90
+2026-06-12 11:14:22,721 [cllora.py] => Task 2, Epoch 20/20 => Loss 0.154, Train_accy 95.30
+2026-06-12 11:16:07,955 [cllora.py] => Task correct: 81.92436040044494
+2026-06-12 11:16:07,955 [cllora.py] => Task acc: 96.71857619577308
+2026-06-12 11:16:07,957 [trainer.py] => Timing Task 2 => Train 2110.04s, Epochs 20, Train 105.5019s/epoch, Inference 16.86s, Images 1798, Inference 9.3790ms/image
+2026-06-12 11:16:07,984 [trainer.py] => No NME accuracy.
+2026-06-12 11:16:07,985 [trainer.py] => CNN: {'total': 80.81, '00-29': 94.99, '30-59': 75.17, '60-89': 72.29, 'old': 85.07, 'new': 72.29}
+2026-06-12 11:16:07,985 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81]
+2026-06-12 11:16:07,985 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94]
+2026-06-12 11:16:07,985 [trainer.py] => Average Accuracy (CNN): 89.29
+2026-06-12 11:16:07,987 [trainer.py] => All params: 87618857
+2026-06-12 11:16:07,988 [trainer.py] => Trainable params: 276498
+2026-06-12 11:16:07,994 [cllora.py] => Learning on 90-120
+2026-06-12 11:49:52,344 [cllora.py] => Task 3, Epoch 20/20 => Loss 0.140, Train_accy 95.46
+2026-06-12 11:52:18,356 [cllora.py] => Task correct: 78.92320534223707
+2026-06-12 11:52:18,357 [cllora.py] => Task acc: 96.95325542570951
+2026-06-12 11:52:18,362 [trainer.py] => Timing Task 3 => Train 2140.94s, Epochs 20, Train 107.0472s/epoch, Inference 29.43s, Images 2396, Inference 12.2825ms/image
+2026-06-12 11:52:18,423 [trainer.py] => No NME accuracy.
+2026-06-12 11:52:18,424 [trainer.py] => CNN: {'total': 78.21, '00-29': 93.66, '30-59': 72.83, '60-89': 67.95, '90-119': 78.43, 'old': 78.14, 'new': 78.43}
+2026-06-12 11:52:18,424 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21]
+2026-06-12 11:52:18,424 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16]
+2026-06-12 11:52:18,424 [trainer.py] => Average Accuracy (CNN): 86.52
+2026-06-12 11:52:18,426 [trainer.py] => All params: 88194858
+2026-06-12 11:52:18,428 [trainer.py] => Trainable params: 276498
+2026-06-12 11:52:18,437 [cllora.py] => Learning on 120-150
+2026-06-12 12:26:20,061 [cllora.py] => Task 4, Epoch 20/20 => Loss 0.121, Train_accy 96.29
+2026-06-12 12:29:34,736 [cllora.py] => Task correct: 76.76126878130216
+2026-06-12 12:29:34,737 [cllora.py] => Task acc: 96.99499165275459
+2026-06-12 12:29:34,741 [trainer.py] => Timing Task 4 => Train 2190.71s, Epochs 20, Train 109.5354s/epoch, Inference 45.61s, Images 2995, Inference 15.2273ms/image
+2026-06-12 12:29:34,769 [trainer.py] => No NME accuracy.
+2026-06-12 12:29:34,769 [trainer.py] => CNN: {'total': 76.29, '00-29': 92.99, '30-59': 71.17, '60-89': 63.94, '90-119': 76.59, '120-149': 76.79, 'old': 76.17, 'new': 76.79}
+2026-06-12 12:29:34,769 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29]
+2026-06-12 12:29:34,769 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73]
+2026-06-12 12:29:34,769 [trainer.py] => Average Accuracy (CNN): 84.48
+2026-06-12 12:29:34,771 [trainer.py] => All params: 88816939
+2026-06-12 12:29:34,772 [trainer.py] => Trainable params: 276498
+2026-06-12 12:29:34,780 [cllora.py] => Learning on 150-180
+2026-06-12 13:03:50,639 [cllora.py] => Task 5, Epoch 20/20 => Loss 0.135, Train_accy 96.06
+2026-06-12 13:07:54,541 [cllora.py] => Task correct: 75.41759465478842
+2026-06-12 13:07:54,542 [cllora.py] => Task acc: 97.35523385300668
+2026-06-12 13:07:54,546 [trainer.py] => Timing Task 5 => Train 2234.38s, Epochs 20, Train 111.7190s/epoch, Inference 65.39s, Images 3592, Inference 18.2053ms/image
+2026-06-12 13:07:54,578 [trainer.py] => No NME accuracy.
+2026-06-12 13:07:54,579 [trainer.py] => CNN: {'total': 74.92, '00-29': 92.82, '30-59': 69.83, '60-89': 63.61, '90-119': 75.42, '120-149': 74.62, '150-179': 73.2, 'old': 75.26, 'new': 73.2}
+2026-06-12 13:07:54,579 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29, 74.92]
+2026-06-12 13:07:54,579 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73, 97.02]
+2026-06-12 13:07:54,579 [trainer.py] => Average Accuracy (CNN): 82.88
+2026-06-12 13:07:54,581 [trainer.py] => All params: 89485100
+2026-06-12 13:07:54,584 [trainer.py] => Trainable params: 276498
+2026-06-12 13:07:54,594 [cllora.py] => Learning on 180-210
+2026-06-12 13:43:25,800 [cllora.py] => Task 6, Epoch 20/20 => Loss 0.161, Train_accy 95.23
+2026-06-12 13:48:31,830 [cllora.py] => Task correct: 70.08587786259542
+2026-06-12 13:48:31,830 [cllora.py] => Task acc: 96.56488549618321
+2026-06-12 13:48:31,837 [trainer.py] => Timing Task 6 => Train 2348.38s, Epochs 20, Train 117.4189s/epoch, Inference 88.88s, Images 4192, Inference 21.2012ms/image
+2026-06-12 13:48:31,865 [trainer.py] => No NME accuracy.
+2026-06-12 13:48:31,865 [trainer.py] => CNN: {'total': 69.66, '00-29': 90.82, '30-59': 70.33, '60-89': 60.27, '90-119': 74.58, '120-149': 73.96, '150-179': 71.19, '180-209': 46.5, 'old': 73.52, 'new': 46.5}
+2026-06-12 13:48:31,865 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29, 74.92, 69.66]
+2026-06-12 13:48:31,865 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73, 97.02, 96.09]
+2026-06-12 13:48:31,865 [trainer.py] => Average Accuracy (CNN): 80.99
+2026-06-12 13:48:31,867 [trainer.py] => All params: 90199341
+2026-06-12 13:48:31,869 [trainer.py] => Trainable params: 276498
+2026-06-12 13:48:31,883 [cllora.py] => Learning on 210-240
+2026-06-12 14:23:29,055 [cllora.py] => Task 7, Epoch 20/20 => Loss 0.167, Train_accy 93.49
+2026-06-12 14:29:27,808 [cllora.py] => Task correct: 69.46994991652754
+2026-06-12 14:29:27,809 [cllora.py] => Task acc: 95.99332220367279
+2026-06-12 14:29:27,818 [trainer.py] => Timing Task 7 => Train 2340.06s, Epochs 20, Train 117.0028s/epoch, Inference 115.89s, Images 4792, Inference 24.1846ms/image
+2026-06-12 14:29:27,851 [trainer.py] => No NME accuracy.
+2026-06-12 14:29:27,851 [trainer.py] => CNN: {'total': 68.68, '00-29': 90.15, '30-59': 68.0, '60-89': 56.26, '90-119': 73.91, '120-149': 73.96, '150-179': 70.69, '180-209': 43.0, '210-239': 73.5, 'old': 67.99, 'new': 73.5}
+2026-06-12 14:29:27,851 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29, 74.92, 69.66, 68.68]
+2026-06-12 14:29:27,851 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73, 97.02, 96.09, 94.66]
+2026-06-12 14:29:27,851 [trainer.py] => Average Accuracy (CNN): 79.46
+2026-06-12 14:29:27,854 [trainer.py] => All params: 90959662
+2026-06-12 14:29:27,857 [trainer.py] => Trainable params: 276498
+2026-06-12 14:29:27,873 [cllora.py] => Learning on 240-270
+2026-06-12 15:03:01,640 [cllora.py] => Task 8, Epoch 20/20 => Loss 0.105, Train_accy 96.94
+2026-06-12 15:09:49,154 [cllora.py] => Task correct: 68.99239190944516
+2026-06-12 15:09:49,154 [cllora.py] => Task acc: 96.325848951568
+2026-06-12 15:09:49,162 [trainer.py] => Timing Task 8 => Train 2274.58s, Epochs 20, Train 113.7292s/epoch, Inference 146.72s, Images 5389, Inference 27.2262ms/image
+2026-06-12 15:09:49,190 [trainer.py] => No NME accuracy.
+2026-06-12 15:09:49,190 [trainer.py] => CNN: {'total': 68.25, '00-29': 88.48, '30-59': 65.83, '60-89': 56.59, '90-119': 73.41, '120-149': 73.96, '150-179': 67.67, '180-209': 41.83, '210-239': 72.17, '240-269': 74.37, 'old': 67.49, 'new': 74.37}
+2026-06-12 15:09:49,190 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29, 74.92, 69.66, 68.68, 68.25]
+2026-06-12 15:09:49,190 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73, 97.02, 96.09, 94.66, 94.36]
+2026-06-12 15:09:49,190 [trainer.py] => Average Accuracy (CNN): 78.21
+2026-06-12 15:09:49,192 [trainer.py] => All params: 91766063
+2026-06-12 15:09:49,195 [trainer.py] => Trainable params: 276498
+2026-06-12 15:09:49,214 [cllora.py] => Learning on 270-300
+2026-06-12 15:42:38,301 [cllora.py] => Task 9, Epoch 20/20 => Loss 0.140, Train_accy 95.63
+2026-06-12 15:50:24,339 [cllora.py] => Task correct: 68.58813700918964
+2026-06-12 15:50:24,339 [cllora.py] => Task acc: 96.12364243943192
+2026-06-12 15:50:24,344 [trainer.py] => Timing Task 9 => Train 2254.56s, Epochs 20, Train 112.7282s/epoch, Inference 180.59s, Images 5985, Inference 30.1729ms/image
+2026-06-12 15:50:24,368 [trainer.py] => No NME accuracy.
+2026-06-12 15:50:24,368 [trainer.py] => CNN: {'total': 67.82, '00-29': 89.32, '30-59': 68.17, '60-89': 55.09, '90-119': 72.58, '120-149': 71.12, '150-179': 67.84, '180-209': 39.5, '210-239': 71.5, '240-269': 71.36, '270-299': 71.81, 'old': 67.38, 'new': 71.81}
+2026-06-12 15:50:24,368 [trainer.py] => CNN top1 curve: [98.5, 88.57, 80.81, 78.21, 76.29, 74.92, 69.66, 68.68, 68.25, 67.82]
+2026-06-12 15:50:24,368 [trainer.py] => CNN top5 curve: [99.83, 99.42, 98.94, 98.16, 97.73, 97.02, 96.09, 94.66, 94.36, 93.88]
+2026-06-12 15:50:24,368 [trainer.py] => Average Accuracy (CNN): 77.17

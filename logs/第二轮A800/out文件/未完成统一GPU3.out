@@ -1,0 +1,68 @@
+2026-07-15 09:04:25,773 [trainer.py] => prefix: reproduce
+2026-07-15 09:04:25,773 [trainer.py] => dataset: imagenetr
+2026-07-15 09:04:25,773 [trainer.py] => memory_size: 6000
+2026-07-15 09:04:25,773 [trainer.py] => memory_per_class: 20
+2026-07-15 09:04:25,773 [trainer.py] => fixed_memory: True
+2026-07-15 09:04:25,773 [trainer.py] => shuffle: True
+2026-07-15 09:04:25,773 [trainer.py] => init_cls: 5
+2026-07-15 09:04:25,773 [trainer.py] => increment: 5
+2026-07-15 09:04:25,773 [trainer.py] => model_name: icarl
+2026-07-15 09:04:25,773 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-07-15 09:04:25,773 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-07-15 09:04:25,773 [trainer.py] => seed: 42
+2026-07-15 09:04:25,773 [trainer.py] => init_epoch: 20
+2026-07-15 09:04:25,774 [trainer.py] => init_lr: 0.001
+2026-07-15 09:04:25,774 [trainer.py] => init_milestones: [60, 120, 170]
+2026-07-15 09:04:25,774 [trainer.py] => init_lr_decay: 0.1
+2026-07-15 09:04:25,774 [trainer.py] => init_weight_decay: 0.0005
+2026-07-15 09:04:25,774 [trainer.py] => epochs: 20
+2026-07-15 09:04:25,774 [trainer.py] => lrate: 0.001
+2026-07-15 09:04:25,774 [trainer.py] => milestones: [80, 120]
+2026-07-15 09:04:25,774 [trainer.py] => lrate_decay: 0.1
+2026-07-15 09:04:25,774 [trainer.py] => batch_size: 48
+2026-07-15 09:04:25,774 [trainer.py] => weight_decay: 0.0002
+2026-07-15 09:04:25,774 [trainer.py] => T: 2
+2026-07-15 09:04:26,200 [data_manager.py] => [95, 15, 30, 158, 128, 115, 69, 170, 174, 45, 66, 182, 165, 78, 186, 177, 56, 152, 82, 68, 124, 16, 148, 93, 65, 60, 84, 67, 125, 132, 9, 18, 55, 75, 150, 104, 135, 137, 164, 76, 79, 197, 38, 24, 122, 195, 29, 19, 143, 86, 114, 173, 5, 126, 117, 73, 140, 98, 172, 96, 169, 97, 31, 12, 35, 119, 42, 189, 90, 136, 51, 127, 162, 41, 118, 113, 26, 139, 100, 111, 2, 77, 46, 187, 191, 85, 161, 36, 190, 61, 22, 141, 101, 33, 11, 194, 159, 6, 27, 120, 4, 32, 142, 145, 109, 144, 10, 62, 112, 146, 166, 0, 198, 153, 70, 123, 64, 44, 163, 28, 40, 108, 155, 156, 25, 23, 184, 147, 81, 39, 168, 47, 94, 154, 43, 138, 3, 105, 53, 133, 180, 178, 185, 49, 80, 34, 7, 110, 91, 83, 176, 181, 89, 8, 13, 59, 171, 131, 17, 72, 175, 134, 167, 183, 63, 54, 107, 50, 196, 58, 48, 88, 21, 57, 160, 192, 129, 37, 157, 193, 1, 52, 149, 130, 151, 103, 99, 116, 87, 74, 121, 199, 20, 188, 71, 106, 14, 92, 179, 102]
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-07-15 09:04:30,372 [trainer.py] => All params: 85798656
+2026-07-15 09:04:30,373 [trainer.py] => Trainable params: 85798656
+2026-07-15 09:04:30,523 [icarl.py] => Learning on 0-5
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 3.965, Train_accy 23.34, Test_accy 22.84:   0%|          | 0/20 [00:06<?, ?it/s]Task 0, Epoch 1/20 => Loss 3.965, Train_accy 23.34, Test_accy 22.84:   5%|▌         | 1/20 [00:06<02:00,  6.34s/it]Task 0, Epoch 2/20 => Loss 2.806, Train_accy 28.71:   5%|▌         | 1/20 [00:11<02:00,  6.34s/it]                 Task 0, Epoch 2/20 => Loss 2.806, Train_accy 28.71:  10%|█         | 2/20 [00:11<01:40,  5.59s/it]bash: line 4: 25448 Killed                  python - "$cfg" "$seed"  <<'PY'
+import json,sys,os
+cfg,seed=sys.argv[1],int(sys.argv[2]); d=json.load(open(cfg)); b=d['backbone_type']; b=b[11:] if b.startswith('pretrained_') else b; init=0 if d['init_cls']==d['increment'] else d['init_cls']; p=f"logs/第二轮A800/{d['model_name']}/{d['dataset']}_{b}_{init}_{d['increment']}_{seed}.log"
+if os.path.exists(p) and 'Average Accuracy' in open(p,errors='ignore').read(): print('SKIP',p); raise SystemExit
+d['seed']=[seed]; d['device']=['3']; from trainer import train; train(d)
+PY
+
+2026-07-15 09:04:45,256 [trainer.py] => prefix: reproduce
+2026-07-15 09:04:45,267 [trainer.py] => dataset: imagenetr
+2026-07-15 09:04:45,267 [trainer.py] => memory_size: 6000
+2026-07-15 09:04:45,267 [trainer.py] => memory_per_class: 20
+2026-07-15 09:04:45,267 [trainer.py] => fixed_memory: True
+2026-07-15 09:04:45,267 [trainer.py] => shuffle: True
+2026-07-15 09:04:45,267 [trainer.py] => init_cls: 5
+2026-07-15 09:04:45,267 [trainer.py] => increment: 5
+2026-07-15 09:04:45,267 [trainer.py] => model_name: icarl
+2026-07-15 09:04:45,267 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-07-15 09:04:45,267 [trainer.py] => device: [device(type='cuda', index=3)]
+2026-07-15 09:04:45,267 [trainer.py] => seed: 1993
+2026-07-15 09:04:45,267 [trainer.py] => init_epoch: 20
+2026-07-15 09:04:45,267 [trainer.py] => init_lr: 0.001
+2026-07-15 09:04:45,267 [trainer.py] => init_milestones: [60, 120, 170]
+2026-07-15 09:04:45,267 [trainer.py] => init_lr_decay: 0.1
+2026-07-15 09:04:45,267 [trainer.py] => init_weight_decay: 0.0005
+2026-07-15 09:04:45,267 [trainer.py] => epochs: 20
+2026-07-15 09:04:45,267 [trainer.py] => lrate: 0.001
+2026-07-15 09:04:45,267 [trainer.py] => milestones: [80, 120]
+2026-07-15 09:04:45,267 [trainer.py] => lrate_decay: 0.1
+2026-07-15 09:04:45,267 [trainer.py] => batch_size: 48
+2026-07-15 09:04:45,267 [trainer.py] => weight_decay: 0.0002
+2026-07-15 09:04:45,268 [trainer.py] => T: 2
+2026-07-15 09:04:45,538 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+This is for the BaseNet initialization.
+After BaseNet initialization.
+2026-07-15 09:04:48,504 [trainer.py] => All params: 85798656
+2026-07-15 09:04:48,505 [trainer.py] => Trainable params: 85798656
+2026-07-15 09:04:48,654 [icarl.py] => Learning on 0-5
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.192, Train_accy 33.78, Test_accy 37.93:   0%|          | 0/20 [00:07<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.192, Train_accy 33.78, Test_accy 37.93:   5%|▌         | 1/20 [00:07<02:27,  7.75s/it]Task 0, Epoch 2/20 => Loss 1.151, Train_accy 51.91:   5%|▌         | 1/20 [00:12<02:27,  7.75s/it]                 Task 0, Epoch 2/20 => Loss 1.151, Train_accy 51.91:  10%|█         | 2/20 [00:12<01:50,  6.12s/it]

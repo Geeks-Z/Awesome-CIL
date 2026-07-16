@@ -1,0 +1,90 @@
+2026-05-29 18:27:41,222 [trainer.py] => config: ./configs/finetune/finetune_inr_B100_Inc20.json
+2026-05-29 18:27:41,223 [trainer.py] => prefix: reproduce
+2026-05-29 18:27:41,223 [trainer.py] => dataset: imagenetr
+2026-05-29 18:27:41,223 [trainer.py] => memory_size: 0
+2026-05-29 18:27:41,223 [trainer.py] => memory_per_class: 0
+2026-05-29 18:27:41,223 [trainer.py] => fixed_memory: False
+2026-05-29 18:27:41,223 [trainer.py] => shuffle: True
+2026-05-29 18:27:41,223 [trainer.py] => init_cls: 100
+2026-05-29 18:27:41,223 [trainer.py] => increment: 20
+2026-05-29 18:27:41,223 [trainer.py] => model_name: finetune
+2026-05-29 18:27:41,223 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-05-29 18:27:41,223 [trainer.py] => device: [device(type='cuda', index=6)]
+2026-05-29 18:27:41,223 [trainer.py] => seed: 42
+2026-05-29 18:27:41,223 [trainer.py] => init_epoch: 20
+2026-05-29 18:27:41,224 [trainer.py] => init_lr: 0.001
+2026-05-29 18:27:41,224 [trainer.py] => init_milestones: [60, 120, 170]
+2026-05-29 18:27:41,224 [trainer.py] => init_lr_decay: 0.1
+2026-05-29 18:27:41,224 [trainer.py] => init_weight_decay: 0.0005
+2026-05-29 18:27:41,224 [trainer.py] => epochs: 20
+2026-05-29 18:27:41,224 [trainer.py] => lrate: 0.001
+2026-05-29 18:27:41,224 [trainer.py] => milestones: [40, 70]
+2026-05-29 18:27:41,224 [trainer.py] => lrate_decay: 0.1
+2026-05-29 18:27:41,224 [trainer.py] => batch_size: 48
+2026-05-29 18:27:41,224 [trainer.py] => weight_decay: 0.0002
+2026-05-29 18:27:41,311 [data_manager.py] => [95, 15, 30, 158, 128, 115, 69, 170, 174, 45, 66, 182, 165, 78, 186, 177, 56, 152, 82, 68, 124, 16, 148, 93, 65, 60, 84, 67, 125, 132, 9, 18, 55, 75, 150, 104, 135, 137, 164, 76, 79, 197, 38, 24, 122, 195, 29, 19, 143, 86, 114, 173, 5, 126, 117, 73, 140, 98, 172, 96, 169, 97, 31, 12, 35, 119, 42, 189, 90, 136, 51, 127, 162, 41, 118, 113, 26, 139, 100, 111, 2, 77, 46, 187, 191, 85, 161, 36, 190, 61, 22, 141, 101, 33, 11, 194, 159, 6, 27, 120, 4, 32, 142, 145, 109, 144, 10, 62, 112, 146, 166, 0, 198, 153, 70, 123, 64, 44, 163, 28, 40, 108, 155, 156, 25, 23, 184, 147, 81, 39, 168, 47, 94, 154, 43, 138, 3, 105, 53, 133, 180, 178, 185, 49, 80, 34, 7, 110, 91, 83, 176, 181, 89, 8, 13, 59, 171, 131, 17, 72, 175, 134, 167, 183, 63, 54, 107, 50, 196, 58, 48, 88, 21, 57, 160, 192, 129, 37, 157, 193, 1, 52, 149, 130, 151, 103, 99, 116, 87, 74, 121, 199, 20, 188, 71, 106, 14, 92, 179, 102]
+2026-05-29 18:27:44,274 [trainer.py] => All params: 85798656
+2026-05-29 18:27:44,275 [trainer.py] => Trainable params: 85798656
+2026-05-29 18:27:44,410 [finetune.py] => Learning on 0-100
+2026-05-29 19:27:00,941 [finetune.py] => Task 0, Epoch 20/20 => Loss 0.439, Train_accy 89.23
+2026-05-29 19:27:17,419 [trainer.py] => Timing Task 0 => Train 3556.53s, Epochs 20, Train 177.8266s/epoch, Inference 16.48s, Images 3234, Inference 5.0946ms/image
+2026-05-29 19:27:17,419 [trainer.py] => No NME accuracy.
+2026-05-29 19:27:17,420 [trainer.py] => CNN: {'total': 81.51, '00-99': 81.51, 'old': 0, 'new': 81.51}
+2026-05-29 19:27:17,420 [trainer.py] => CNN top1 curve: [81.51]
+2026-05-29 19:27:17,420 [trainer.py] => CNN top5 curve: [92.73]
+2026-05-29 19:27:17,420 [trainer.py] => Average Accuracy (CNN): 81.51
+2026-05-29 19:27:17,421 [trainer.py] => All params: 85875556
+2026-05-29 19:27:17,423 [trainer.py] => Trainable params: 85875556
+2026-05-29 19:27:17,426 [finetune.py] => Learning on 100-120
+2026-05-29 19:38:54,830 [finetune.py] => Task 1, Epoch 20/20 => Loss 0.148, Train_accy 87.03
+2026-05-29 19:39:15,052 [trainer.py] => Timing Task 1 => Train 697.41s, Epochs 20, Train 34.8705s/epoch, Inference 20.22s, Images 3768, Inference 5.3658ms/image
+2026-05-29 19:39:15,052 [trainer.py] => No NME accuracy.
+2026-05-29 19:39:15,052 [trainer.py] => CNN: {'total': 76.06, '00-99': 74.89, '100-119': 83.15, 'old': 74.89, 'new': 83.15}
+2026-05-29 19:39:15,053 [trainer.py] => CNN top1 curve: [81.51, 76.06]
+2026-05-29 19:39:15,053 [trainer.py] => CNN top5 curve: [92.73, 90.71]
+2026-05-29 19:39:15,053 [trainer.py] => Average Accuracy (CNN): 78.78
+2026-05-29 19:39:15,055 [trainer.py] => All params: 85890936
+2026-05-29 19:39:15,056 [trainer.py] => Trainable params: 85890936
+2026-05-29 19:39:15,060 [finetune.py] => Learning on 120-140
+2026-05-29 19:49:45,710 [finetune.py] => Task 2, Epoch 20/20 => Loss 0.160, Train_accy 83.53
+2026-05-29 19:50:08,259 [trainer.py] => Timing Task 2 => Train 630.66s, Epochs 20, Train 31.5328s/epoch, Inference 22.55s, Images 4282, Inference 5.2654ms/image
+2026-05-29 19:50:08,259 [trainer.py] => No NME accuracy.
+2026-05-29 19:50:08,259 [trainer.py] => CNN: {'total': 70.32, '00-99': 68.31, '100-119': 73.78, '120-139': 79.38, 'old': 69.08, 'new': 79.38}
+2026-05-29 19:50:08,259 [trainer.py] => CNN top1 curve: [81.51, 76.06, 70.32]
+2026-05-29 19:50:08,259 [trainer.py] => CNN top5 curve: [92.73, 90.71, 87.67]
+2026-05-29 19:50:08,259 [trainer.py] => Average Accuracy (CNN): 75.96
+2026-05-29 19:50:08,260 [trainer.py] => All params: 85906316
+2026-05-29 19:50:08,260 [trainer.py] => Trainable params: 85906316
+2026-05-29 19:50:08,263 [finetune.py] => Learning on 140-160
+2026-05-29 20:03:31,557 [finetune.py] => Task 3, Epoch 20/20 => Loss 0.142, Train_accy 90.43
+2026-05-29 20:03:58,064 [trainer.py] => Timing Task 3 => Train 803.30s, Epochs 20, Train 40.1649s/epoch, Inference 26.50s, Images 4861, Inference 5.4525ms/image
+2026-05-29 20:03:58,064 [trainer.py] => No NME accuracy.
+2026-05-29 20:03:58,065 [trainer.py] => CNN: {'total': 69.14, '00-99': 65.55, '100-119': 69.48, '120-139': 71.21, '140-159': 87.05, 'old': 66.72, 'new': 87.05}
+2026-05-29 20:03:58,065 [trainer.py] => CNN top1 curve: [81.51, 76.06, 70.32, 69.14]
+2026-05-29 20:03:58,065 [trainer.py] => CNN top5 curve: [92.73, 90.71, 87.67, 85.97]
+2026-05-29 20:03:58,065 [trainer.py] => Average Accuracy (CNN): 74.26
+2026-05-29 20:03:58,066 [trainer.py] => All params: 85921696
+2026-05-29 20:03:58,068 [trainer.py] => Trainable params: 85921696
+2026-05-29 20:03:58,072 [finetune.py] => Learning on 160-180
+2026-05-29 20:17:21,338 [finetune.py] => Task 4, Epoch 20/20 => Loss 0.172, Train_accy 89.13
+2026-05-29 20:17:49,575 [trainer.py] => Timing Task 4 => Train 803.27s, Epochs 20, Train 40.1637s/epoch, Inference 28.23s, Images 5476, Inference 5.1559ms/image
+2026-05-29 20:17:49,575 [trainer.py] => No NME accuracy.
+2026-05-29 20:17:49,576 [trainer.py] => CNN: {'total': 64.99, '00-99': 59.21, '100-119': 60.49, '120-139': 65.37, '140-159': 78.41, '160-179': 86.34, 'old': 62.29, 'new': 86.34}
+2026-05-29 20:17:49,576 [trainer.py] => CNN top1 curve: [81.51, 76.06, 70.32, 69.14, 64.99]
+2026-05-29 20:17:49,576 [trainer.py] => CNN top5 curve: [92.73, 90.71, 87.67, 85.97, 84.0]
+2026-05-29 20:17:49,576 [trainer.py] => Average Accuracy (CNN): 72.4
+2026-05-29 20:17:49,577 [trainer.py] => All params: 85937076
+2026-05-29 20:17:49,579 [trainer.py] => Trainable params: 85937076
+2026-05-29 20:17:49,582 [finetune.py] => Learning on 180-200
+2026-05-29 20:29:45,545 [finetune.py] => Task 5, Epoch 20/20 => Loss 0.146, Train_accy 88.03
+2026-05-29 20:30:16,642 [trainer.py] => Timing Task 5 => Train 715.97s, Epochs 20, Train 35.7984s/epoch, Inference 31.10s, Images 6000, Inference 5.1825ms/image
+2026-05-29 20:30:16,642 [trainer.py] => No NME accuracy.
+2026-05-29 20:30:16,642 [trainer.py] => CNN: {'total': 62.42, '00-99': 56.06, '100-119': 58.8, '120-139': 57.78, '140-159': 71.33, '160-179': 77.4, '180-199': 82.44, 'old': 60.5, 'new': 82.44}
+2026-05-29 20:30:16,642 [trainer.py] => CNN top1 curve: [81.51, 76.06, 70.32, 69.14, 64.99, 62.42]
+2026-05-29 20:30:16,642 [trainer.py] => CNN top5 curve: [92.73, 90.71, 87.67, 85.97, 84.0, 83.63]
+2026-05-29 20:30:16,642 [trainer.py] => Average Accuracy (CNN): 70.74
+2026-05-29 20:30:16,643 [trainer.py] => Total Train Time: 7207.14s
+2026-05-29 20:30:16,643 [trainer.py] => Total Inference Time: 145.07s
+2026-05-29 20:30:16,643 [trainer.py] => Average Training Time per Epoch per Incremental Task: 60.0595s
+2026-05-29 20:30:16,643 [trainer.py] => Average Inference Time: 5.2523ms/image
+2026-05-29 20:30:16,643 [trainer.py] => Mean Task Inference Time: 5.2528ms/image

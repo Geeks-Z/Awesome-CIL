@@ -1,0 +1,59 @@
+2026-05-22 20:35:10,658 [trainer.py] => config: ./configs/foster/foster_cifar_B0_Inc5.json
+2026-05-22 20:35:10,666 [trainer.py] => prefix: cil
+2026-05-22 20:35:10,666 [trainer.py] => dataset: cifar224
+2026-05-22 20:35:10,667 [trainer.py] => memory_size: 2000
+2026-05-22 20:35:10,667 [trainer.py] => memory_per_class: 20
+2026-05-22 20:35:10,667 [trainer.py] => fixed_memory: False
+2026-05-22 20:35:10,667 [trainer.py] => shuffle: True
+2026-05-22 20:35:10,667 [trainer.py] => init_cls: 5
+2026-05-22 20:35:10,667 [trainer.py] => increment: 5
+2026-05-22 20:35:10,668 [trainer.py] => model_name: foster
+2026-05-22 20:35:10,669 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-05-22 20:35:10,669 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-05-22 20:35:10,669 [trainer.py] => seed: 42
+2026-05-22 20:35:10,669 [trainer.py] => beta1: 0.96
+2026-05-22 20:35:10,670 [trainer.py] => beta2: 0.97
+2026-05-22 20:35:10,670 [trainer.py] => oofc: ft
+2026-05-22 20:35:10,670 [trainer.py] => is_teacher_wa: False
+2026-05-22 20:35:10,670 [trainer.py] => is_student_wa: False
+2026-05-22 20:35:10,670 [trainer.py] => lambda_okd: 1
+2026-05-22 20:35:10,670 [trainer.py] => wa_value: 1
+2026-05-22 20:35:10,670 [trainer.py] => init_epochs: 20
+2026-05-22 20:35:10,670 [trainer.py] => init_lr: 0.001
+2026-05-22 20:35:10,671 [trainer.py] => init_weight_decay: 0.0005
+2026-05-22 20:35:10,671 [trainer.py] => boosting_epochs: 20
+2026-05-22 20:35:10,671 [trainer.py] => compression_epochs: 20
+2026-05-22 20:35:10,671 [trainer.py] => lr: 0.001
+2026-05-22 20:35:10,671 [trainer.py] => batch_size: 48
+2026-05-22 20:35:10,671 [trainer.py] => weight_decay: 0.0005
+2026-05-22 20:35:10,671 [trainer.py] => num_workers: 8
+2026-05-22 20:35:10,672 [trainer.py] => T: 2
+2026-05-22 20:35:13,208 [data_manager.py] => [83, 53, 70, 45, 44, 39, 22, 80, 10, 0, 18, 30, 73, 33, 90, 4, 76, 77, 12, 31, 55, 88, 26, 42, 69, 15, 40, 96, 9, 72, 11, 47, 85, 28, 93, 5, 66, 65, 35, 16, 49, 34, 7, 95, 27, 19, 81, 25, 62, 13, 24, 3, 17, 38, 8, 78, 6, 64, 36, 89, 56, 99, 54, 43, 50, 67, 46, 68, 61, 97, 79, 41, 58, 48, 98, 57, 75, 32, 94, 59, 63, 84, 37, 29, 1, 52, 21, 2, 23, 87, 91, 74, 86, 82, 20, 60, 71, 14, 92, 51]
+2026-05-22 20:35:52,053 [trainer.py] => All params: 0
+2026-05-22 20:35:52,104 [trainer.py] => Trainable params: 0
+2026-05-22 20:36:06,444 [foster.py] => Learning on 0-5
+2026-05-22 20:36:06,464 [foster.py] => All params: 85806346
+2026-05-22 20:36:06,468 [foster.py] => Trainable params: 85806346
+2026-05-22 21:20:05,970 [foster.py] => Task 0, Epoch 20/20 => Loss 0.075, Train_accy 97.08
+2026-05-22 21:20:05,996 [base.py] => Reducing exemplars...(400 per classes)
+2026-05-22 21:20:05,996 [base.py] => Constructing exemplars...(400 per classes)
+2026-05-22 21:21:57,142 [foster.py] => Exemplar size: 2000
+2026-05-22 21:21:57,163 [trainer.py] => CNN: {'total': 98.4, '00-04': 98.4, 'old': 0, 'new': 98.4}
+2026-05-22 21:21:57,163 [trainer.py] => NME: {'total': 98.2, '00-04': 98.2, 'old': 0, 'new': 98.2}
+2026-05-22 21:21:57,163 [trainer.py] => CNN top1 curve: [98.4]
+2026-05-22 21:21:57,163 [trainer.py] => CNN top5 curve: [100.0]
+2026-05-22 21:21:57,163 [trainer.py] => NME top1 curve: [98.2]
+2026-05-22 21:21:57,163 [trainer.py] => NME top5 curve: [100.0]
+2026-05-22 21:21:57,164 [trainer.py] => Average Accuracy (CNN): 98.4
+2026-05-22 21:21:57,164 [trainer.py] => Average Accuracy (NME): 98.2
+2026-05-22 21:21:57,168 [trainer.py] => All params: 85806346
+2026-05-22 21:21:57,170 [trainer.py] => Trainable params: 85806346
+2026-05-22 21:22:04,751 [foster.py] => Learning on 5-10
+2026-05-22 21:22:04,753 [foster.py] => All params: 171624217
+2026-05-22 21:22:04,754 [foster.py] => Trainable params: 85821716
+2026-05-22 21:22:06,192 [foster.py] => per cls weights : [1.00000004 1.00000004 1.00000004 1.00000004 1.00000004 0.99999996
+ 0.99999996 0.99999996 0.99999996 0.99999996]
+2026-05-22 23:07:09,510 [foster.py] => Task 1, Epoch 20/20 => Loss 0.868, Loss_clf 0.100, Loss_fe 0.096, Loss_kd 0.336, Train_accy 96.44
+2026-05-22 23:07:09,525 [foster.py] => do not weight align teacher!
+2026-05-22 23:07:09,526 [foster.py] => per cls weights : [1.00000256 1.00000256 1.00000256 1.00000256 1.00000256 0.99999744
+ 0.99999744 0.99999744 0.99999744 0.99999744]
