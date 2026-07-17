@@ -1,965 +1,0 @@
-nohup: ignoring input
-2025-07-07 19:26:07,512 [trainer.py] => config: ./scripts/aper/aper_adapter_cifar_B0_Inc10.json
-2025-07-07 19:26:07,526 [trainer.py] => prefix: exp
-2025-07-07 19:26:07,526 [trainer.py] => dataset: cifar224
-2025-07-07 19:26:07,526 [trainer.py] => memory_size: 0
-2025-07-07 19:26:07,526 [trainer.py] => memory_per_class: 0
-2025-07-07 19:26:07,526 [trainer.py] => fixed_memory: False
-2025-07-07 19:26:07,526 [trainer.py] => shuffle: True
-2025-07-07 19:26:07,526 [trainer.py] => init_cls: 10
-2025-07-07 19:26:07,526 [trainer.py] => increment: 10
-2025-07-07 19:26:07,527 [trainer.py] => model_name: adam_adapter
-2025-07-07 19:26:07,527 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
-2025-07-07 19:26:07,527 [trainer.py] => weight_decay: 0.0005
-2025-07-07 19:26:07,527 [trainer.py] => prompt_token_num: 30
-2025-07-07 19:26:07,527 [trainer.py] => ffn_num: 10
-2025-07-07 19:26:07,527 [trainer.py] => optimizer: sgd
-2025-07-07 19:26:07,527 [trainer.py] => min_lr: 0
-2025-07-07 19:26:07,527 [trainer.py] => device: [device(type='cuda', index=3)]
-2025-07-07 19:26:07,527 [trainer.py] => seed: 1993
-2025-07-07 19:26:07,527 [trainer.py] => tuned_epoch: 20
-2025-07-07 19:26:07,527 [trainer.py] => init_lr: 0.01
-2025-07-07 19:26:07,527 [trainer.py] => batch_size: 48
-Files already downloaded and verified
-Files already downloaded and verified
-2025-07-07 19:26:09,362 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-2025-07-07 19:26:16,271 [trainer.py] => All params: 85992312
-2025-07-07 19:26:16,285 [trainer.py] => Trainable params: 193656
-2025-07-07 19:26:16,937 [adam_adapter.py] => Learning on 0-10
-85,999,993 total parameters.
-201,337 training parameters.
-backbone.blocks.0.adaptmlp.down_proj.weight 7680
-backbone.blocks.0.adaptmlp.down_proj.bias 10
-backbone.blocks.0.adaptmlp.up_proj.weight 7680
-backbone.blocks.0.adaptmlp.up_proj.bias 768
-backbone.blocks.1.adaptmlp.down_proj.weight 7680
-backbone.blocks.1.adaptmlp.down_proj.bias 10
-backbone.blocks.1.adaptmlp.up_proj.weight 7680
-backbone.blocks.1.adaptmlp.up_proj.bias 768
-backbone.blocks.2.adaptmlp.down_proj.weight 7680
-backbone.blocks.2.adaptmlp.down_proj.bias 10
-backbone.blocks.2.adaptmlp.up_proj.weight 7680
-backbone.blocks.2.adaptmlp.up_proj.bias 768
-backbone.blocks.3.adaptmlp.down_proj.weight 7680
-backbone.blocks.3.adaptmlp.down_proj.bias 10
-backbone.blocks.3.adaptmlp.up_proj.weight 7680
-backbone.blocks.3.adaptmlp.up_proj.bias 768
-backbone.blocks.4.adaptmlp.down_proj.weight 7680
-backbone.blocks.4.adaptmlp.down_proj.bias 10
-backbone.blocks.4.adaptmlp.up_proj.weight 7680
-backbone.blocks.4.adaptmlp.up_proj.bias 768
-backbone.blocks.5.adaptmlp.down_proj.weight 7680
-backbone.blocks.5.adaptmlp.down_proj.bias 10
-backbone.blocks.5.adaptmlp.up_proj.weight 7680
-backbone.blocks.5.adaptmlp.up_proj.bias 768
-backbone.blocks.6.adaptmlp.down_proj.weight 7680
-backbone.blocks.6.adaptmlp.down_proj.bias 10
-backbone.blocks.6.adaptmlp.up_proj.weight 7680
-backbone.blocks.6.adaptmlp.up_proj.bias 768
-backbone.blocks.7.adaptmlp.down_proj.weight 7680
-backbone.blocks.7.adaptmlp.down_proj.bias 10
-backbone.blocks.7.adaptmlp.up_proj.weight 7680
-backbone.blocks.7.adaptmlp.up_proj.bias 768
-backbone.blocks.8.adaptmlp.down_proj.weight 7680
-backbone.blocks.8.adaptmlp.down_proj.bias 10
-backbone.blocks.8.adaptmlp.up_proj.weight 7680
-backbone.blocks.8.adaptmlp.up_proj.bias 768
-backbone.blocks.9.adaptmlp.down_proj.weight 7680
-backbone.blocks.9.adaptmlp.down_proj.bias 10
-backbone.blocks.9.adaptmlp.up_proj.weight 7680
-backbone.blocks.9.adaptmlp.up_proj.bias 768
-backbone.blocks.10.adaptmlp.down_proj.weight 7680
-backbone.blocks.10.adaptmlp.down_proj.bias 10
-backbone.blocks.10.adaptmlp.up_proj.weight 7680
-backbone.blocks.10.adaptmlp.up_proj.bias 768
-backbone.blocks.11.adaptmlp.down_proj.weight 7680
-backbone.blocks.11.adaptmlp.down_proj.bias 10
-backbone.blocks.11.adaptmlp.up_proj.weight 7680
-backbone.blocks.11.adaptmlp.up_proj.bias 768
-fc.weight 7680
-fc.sigma 1
-  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.121, Train_accy 59.82, Test_accy 94.40:   0%|          | 0/20 [00:30<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.121, Train_accy 59.82, Test_accy 94.40:   5%|▌         | 1/20 [00:30<09:41, 30.59s/it]Task 0, Epoch 2/20 => Loss 1.412, Train_accy 83.32, Test_accy 96.10:   5%|▌         | 1/20 [01:00<09:41, 30.59s/it]Task 0, Epoch 2/20 => Loss 1.412, Train_accy 83.32, Test_accy 96.10:  10%|█         | 2/20 [01:00<09:01, 30.07s/it]Task 0, Epoch 3/20 => Loss 0.794, Train_accy 86.46, Test_accy 96.40:  10%|█         | 2/20 [01:30<09:01, 30.07s/it]Task 0, Epoch 3/20 => Loss 0.794, Train_accy 86.46, Test_accy 96.40:  15%|█▌        | 3/20 [01:30<08:31, 30.09s/it]Task 0, Epoch 4/20 => Loss 0.524, Train_accy 88.82, Test_accy 97.50:  15%|█▌        | 3/20 [02:00<08:31, 30.09s/it]Task 0, Epoch 4/20 => Loss 0.524, Train_accy 88.82, Test_accy 97.50:  20%|██        | 4/20 [02:00<08:02, 30.14s/it]Task 0, Epoch 5/20 => Loss 0.418, Train_accy 89.78, Test_accy 97.60:  20%|██        | 4/20 [02:31<08:02, 30.14s/it]Task 0, Epoch 5/20 => Loss 0.418, Train_accy 89.78, Test_accy 97.60:  25%|██▌       | 5/20 [02:31<07:34, 30.31s/it]Task 0, Epoch 6/20 => Loss 0.364, Train_accy 90.42, Test_accy 98.00:  25%|██▌       | 5/20 [03:01<07:34, 30.31s/it]Task 0, Epoch 6/20 => Loss 0.364, Train_accy 90.42, Test_accy 98.00:  30%|███       | 6/20 [03:01<07:04, 30.32s/it]Task 0, Epoch 7/20 => Loss 0.338, Train_accy 90.76, Test_accy 98.10:  30%|███       | 6/20 [03:32<07:04, 30.32s/it]Task 0, Epoch 7/20 => Loss 0.338, Train_accy 90.76, Test_accy 98.10:  35%|███▌      | 7/20 [03:32<06:35, 30.39s/it]Task 0, Epoch 8/20 => Loss 0.315, Train_accy 91.34, Test_accy 98.70:  35%|███▌      | 7/20 [04:02<06:35, 30.39s/it]Task 0, Epoch 8/20 => Loss 0.315, Train_accy 91.34, Test_accy 98.70:  40%|████      | 8/20 [04:02<06:05, 30.45s/it]Task 0, Epoch 9/20 => Loss 0.300, Train_accy 91.36, Test_accy 98.80:  40%|████      | 8/20 [04:33<06:05, 30.45s/it]Task 0, Epoch 9/20 => Loss 0.300, Train_accy 91.36, Test_accy 98.80:  45%|████▌     | 9/20 [04:33<05:35, 30.46s/it]Task 0, Epoch 10/20 => Loss 0.277, Train_accy 92.28, Test_accy 98.70:  45%|████▌     | 9/20 [05:03<05:35, 30.46s/it]Task 0, Epoch 10/20 => Loss 0.277, Train_accy 92.28, Test_accy 98.70:  50%|█████     | 10/20 [05:03<05:04, 30.49s/it]Task 0, Epoch 11/20 => Loss 0.273, Train_accy 92.02, Test_accy 98.90:  50%|█████     | 10/20 [05:33<05:04, 30.49s/it]Task 0, Epoch 11/20 => Loss 0.273, Train_accy 92.02, Test_accy 98.90:  55%|█████▌    | 11/20 [05:33<04:33, 30.42s/it]Task 0, Epoch 12/20 => Loss 0.259, Train_accy 92.52, Test_accy 98.80:  55%|█████▌    | 11/20 [06:04<04:33, 30.42s/it]Task 0, Epoch 12/20 => Loss 0.259, Train_accy 92.52, Test_accy 98.80:  60%|██████    | 12/20 [06:04<04:04, 30.53s/it]Task 0, Epoch 13/20 => Loss 0.266, Train_accy 92.34, Test_accy 98.70:  60%|██████    | 12/20 [06:35<04:04, 30.53s/it]Task 0, Epoch 13/20 => Loss 0.266, Train_accy 92.34, Test_accy 98.70:  65%|██████▌   | 13/20 [06:35<03:33, 30.47s/it]Task 0, Epoch 14/20 => Loss 0.269, Train_accy 92.24, Test_accy 98.80:  65%|██████▌   | 13/20 [07:05<03:33, 30.47s/it]Task 0, Epoch 14/20 => Loss 0.269, Train_accy 92.24, Test_accy 98.80:  70%|███████   | 14/20 [07:05<03:02, 30.40s/it]Task 0, Epoch 15/20 => Loss 0.261, Train_accy 92.32, Test_accy 98.60:  70%|███████   | 14/20 [07:35<03:02, 30.40s/it]Task 0, Epoch 15/20 => Loss 0.261, Train_accy 92.32, Test_accy 98.60:  75%|███████▌  | 15/20 [07:35<02:31, 30.37s/it]Task 0, Epoch 16/20 => Loss 0.245, Train_accy 92.78, Test_accy 98.70:  75%|███████▌  | 15/20 [08:05<02:31, 30.37s/it]Task 0, Epoch 16/20 => Loss 0.245, Train_accy 92.78, Test_accy 98.70:  80%|████████  | 16/20 [08:05<02:01, 30.37s/it]Task 0, Epoch 17/20 => Loss 0.249, Train_accy 92.62, Test_accy 98.80:  80%|████████  | 16/20 [08:36<02:01, 30.37s/it]Task 0, Epoch 17/20 => Loss 0.249, Train_accy 92.62, Test_accy 98.80:  85%|████████▌ | 17/20 [08:36<01:31, 30.39s/it]Task 0, Epoch 18/20 => Loss 0.245, Train_accy 92.98, Test_accy 98.80:  85%|████████▌ | 17/20 [09:06<01:31, 30.39s/it]Task 0, Epoch 18/20 => Loss 0.245, Train_accy 92.98, Test_accy 98.80:  90%|█████████ | 18/20 [09:06<01:00, 30.36s/it]Task 0, Epoch 19/20 => Loss 0.242, Train_accy 92.66, Test_accy 98.80:  90%|█████████ | 18/20 [09:37<01:00, 30.36s/it]Task 0, Epoch 19/20 => Loss 0.242, Train_accy 92.66, Test_accy 98.80:  95%|█████████▌| 19/20 [09:37<00:30, 30.40s/it]Task 0, Epoch 20/20 => Loss 0.250, Train_accy 92.78, Test_accy 98.80:  95%|█████████▌| 19/20 [10:07<00:30, 30.40s/it]Task 0, Epoch 20/20 => Loss 0.250, Train_accy 92.78, Test_accy 98.80: 100%|██████████| 20/20 [10:07<00:00, 30.41s/it]Task 0, Epoch 20/20 => Loss 0.250, Train_accy 92.78, Test_accy 98.80: 100%|██████████| 20/20 [10:07<00:00, 30.38s/it]
-2025-07-07 19:36:24,672 [adam_adapter.py] => Task 0, Epoch 20/20 => Loss 0.250, Train_accy 92.78, Test_accy 98.80
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-Clear the backbone in MultiBranchCosineIncrementalNet, since we are using self.backbones with dual branches
-pretrained_vit_b16_224_in21k
-Time for task 0: 644.328161239624
-2025-07-07 19:37:06,250 [trainer.py] => No NME accuracy.
-2025-07-07 19:37:06,251 [trainer.py] => CNN: {'total': 98.7, '00-09': 98.7, 'old': 0, 'new': 98.7}
-2025-07-07 19:37:06,251 [trainer.py] => CNN top1 curve: [98.7]
-2025-07-07 19:37:06,251 [trainer.py] => CNN top5 curve: [99.9]
-
-Average Accuracy (CNN): 98.7
-2025-07-07 19:37:06,251 [trainer.py] => Average Accuracy (CNN): 98.7 
-
-2025-07-07 19:37:06,253 [trainer.py] => All params: 171806329
-2025-07-07 19:37:06,254 [trainer.py] => Trainable params: 86007673
-2025-07-07 19:37:06,256 [adam_adapter.py] => Learning on 10-20
-Time for task 1: 28.075080633163452
-2025-07-07 19:37:45,042 [trainer.py] => No NME accuracy.
-2025-07-07 19:37:45,043 [trainer.py] => CNN: {'total': 96.65, '00-09': 97.9, '10-19': 95.4, 'old': 97.9, 'new': 95.4}
-2025-07-07 19:37:45,043 [trainer.py] => CNN top1 curve: [98.7, 96.65]
-2025-07-07 19:37:45,043 [trainer.py] => CNN top5 curve: [99.9, 99.55]
-
-Average Accuracy (CNN): 97.68
-2025-07-07 19:37:45,043 [trainer.py] => Average Accuracy (CNN): 97.68 
-
-2025-07-07 19:37:45,048 [trainer.py] => All params: 171821689
-2025-07-07 19:37:45,051 [trainer.py] => Trainable params: 86023033
-2025-07-07 19:37:45,054 [adam_adapter.py] => Learning on 20-30
-Time for task 2: 27.812496185302734
-2025-07-07 19:38:28,758 [trainer.py] => No NME accuracy.
-2025-07-07 19:38:28,758 [trainer.py] => CNN: {'total': 95.33, '00-09': 96.6, '10-19': 94.0, '20-29': 95.4, 'old': 95.3, 'new': 95.4}
-2025-07-07 19:38:28,758 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33]
-2025-07-07 19:38:28,758 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4]
-
-Average Accuracy (CNN): 96.89
-2025-07-07 19:38:28,759 [trainer.py] => Average Accuracy (CNN): 96.89 
-
-2025-07-07 19:38:28,760 [trainer.py] => All params: 171837049
-2025-07-07 19:38:28,761 [trainer.py] => Trainable params: 86038393
-2025-07-07 19:38:28,762 [adam_adapter.py] => Learning on 30-40
-Time for task 3: 27.551183938980103
-2025-07-07 19:39:17,483 [trainer.py] => No NME accuracy.
-2025-07-07 19:39:17,483 [trainer.py] => CNN: {'total': 93.58, '00-09': 95.5, '10-19': 92.4, '20-29': 94.8, '30-39': 91.6, 'old': 94.23, 'new': 91.6}
-2025-07-07 19:39:17,483 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58]
-2025-07-07 19:39:17,483 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25]
-
-Average Accuracy (CNN): 96.06
-2025-07-07 19:39:17,483 [trainer.py] => Average Accuracy (CNN): 96.06 
-
-2025-07-07 19:39:17,484 [trainer.py] => All params: 171852409
-2025-07-07 19:39:17,485 [trainer.py] => Trainable params: 86053753
-2025-07-07 19:39:17,487 [adam_adapter.py] => Learning on 40-50
-Time for task 4: 27.87646198272705
-2025-07-07 19:40:11,767 [trainer.py] => No NME accuracy.
-2025-07-07 19:40:11,767 [trainer.py] => CNN: {'total': 92.02, '00-09': 94.6, '10-19': 90.9, '20-29': 93.9, '30-39': 89.3, '40-49': 91.4, 'old': 92.18, 'new': 91.4}
-2025-07-07 19:40:11,768 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02]
-2025-07-07 19:40:11,768 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14]
-
-Average Accuracy (CNN): 95.26
-2025-07-07 19:40:11,768 [trainer.py] => Average Accuracy (CNN): 95.26 
-
-2025-07-07 19:40:11,770 [trainer.py] => All params: 171867769
-2025-07-07 19:40:11,773 [trainer.py] => Trainable params: 86069113
-2025-07-07 19:40:11,775 [adam_adapter.py] => Learning on 50-60
-Time for task 5: 27.618613719940186
-2025-07-07 19:41:10,905 [trainer.py] => No NME accuracy.
-2025-07-07 19:41:10,906 [trainer.py] => CNN: {'total': 90.82, '00-09': 93.5, '10-19': 90.7, '20-29': 92.8, '30-39': 88.7, '40-49': 90.1, '50-59': 89.1, 'old': 91.16, 'new': 89.1}
-2025-07-07 19:41:10,906 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02, 90.82]
-2025-07-07 19:41:10,906 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14, 98.75]
-
-Average Accuracy (CNN): 94.52
-2025-07-07 19:41:10,906 [trainer.py] => Average Accuracy (CNN): 94.52 
-
-2025-07-07 19:41:10,907 [trainer.py] => All params: 171883129
-2025-07-07 19:41:10,909 [trainer.py] => Trainable params: 86084473
-2025-07-07 19:41:10,910 [adam_adapter.py] => Learning on 60-70
-Time for task 6: 28.17549443244934
-2025-07-07 19:42:16,040 [trainer.py] => No NME accuracy.
-2025-07-07 19:42:16,040 [trainer.py] => CNN: {'total': 90.39, '00-09': 92.7, '10-19': 89.9, '20-29': 92.8, '30-39': 88.2, '40-49': 89.8, '50-59': 87.4, '60-69': 91.9, 'old': 90.13, 'new': 91.9}
-2025-07-07 19:42:16,040 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02, 90.82, 90.39]
-2025-07-07 19:42:16,040 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14, 98.75, 98.73]
-
-Average Accuracy (CNN): 93.93
-2025-07-07 19:42:16,040 [trainer.py] => Average Accuracy (CNN): 93.93 
-
-2025-07-07 19:42:16,041 [trainer.py] => All params: 171898489
-2025-07-07 19:42:16,042 [trainer.py] => Trainable params: 86099833
-2025-07-07 19:42:16,044 [adam_adapter.py] => Learning on 70-80
-Time for task 7: 28.39562487602234
-2025-07-07 19:43:26,801 [trainer.py] => No NME accuracy.
-2025-07-07 19:43:26,801 [trainer.py] => CNN: {'total': 88.34, '00-09': 92.1, '10-19': 89.7, '20-29': 92.8, '30-39': 87.7, '40-49': 87.5, '50-59': 84.4, '60-69': 89.8, '70-79': 82.7, 'old': 89.14, 'new': 82.7}
-2025-07-07 19:43:26,801 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02, 90.82, 90.39, 88.34]
-2025-07-07 19:43:26,801 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14, 98.75, 98.73, 98.36]
-
-Average Accuracy (CNN): 93.23
-2025-07-07 19:43:26,801 [trainer.py] => Average Accuracy (CNN): 93.23 
-
-2025-07-07 19:43:26,803 [trainer.py] => All params: 171913849
-2025-07-07 19:43:26,804 [trainer.py] => Trainable params: 86115193
-2025-07-07 19:43:26,805 [adam_adapter.py] => Learning on 80-90
-Time for task 8: 28.3604576587677
-2025-07-07 19:44:42,648 [trainer.py] => No NME accuracy.
-2025-07-07 19:44:42,648 [trainer.py] => CNN: {'total': 87.79, '00-09': 91.6, '10-19': 88.4, '20-29': 92.5, '30-39': 87.5, '40-49': 86.5, '50-59': 84.0, '60-69': 88.9, '70-79': 82.1, '80-89': 88.6, 'old': 87.69, 'new': 88.6}
-2025-07-07 19:44:42,648 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02, 90.82, 90.39, 88.34, 87.79]
-2025-07-07 19:44:42,648 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14, 98.75, 98.73, 98.36, 98.04]
-
-Average Accuracy (CNN): 92.62
-2025-07-07 19:44:42,648 [trainer.py] => Average Accuracy (CNN): 92.62 
-
-2025-07-07 19:44:42,650 [trainer.py] => All params: 171929209
-2025-07-07 19:44:42,651 [trainer.py] => Trainable params: 86130553
-2025-07-07 19:44:42,653 [adam_adapter.py] => Learning on 90-100
-Time for task 9: 27.777318477630615
-2025-07-07 19:46:03,330 [trainer.py] => No NME accuracy.
-2025-07-07 19:46:03,330 [trainer.py] => CNN: {'total': 87.33, '00-09': 91.2, '10-19': 87.8, '20-29': 91.9, '30-39': 86.9, '40-49': 85.8, '50-59': 83.2, '60-69': 88.7, '70-79': 81.4, '80-89': 88.1, '90-99': 88.3, 'old': 87.22, 'new': 88.3}
-2025-07-07 19:46:03,330 [trainer.py] => CNN top1 curve: [98.7, 96.65, 95.33, 93.58, 92.02, 90.82, 90.39, 88.34, 87.79, 87.33]
-2025-07-07 19:46:03,330 [trainer.py] => CNN top5 curve: [99.9, 99.55, 99.4, 99.25, 99.14, 98.75, 98.73, 98.36, 98.04, 97.79]
-
-Average Accuracy (CNN): 92.1
-2025-07-07 19:46:03,330 [trainer.py] => Average Accuracy (CNN): 92.1 
-
-Finished cifar224_init10_inc10: pretrained_vit_b16_224_in21k_adapter  
-----------------------------------------------------------------------------------------------------
-Accuracy Matrix (CNN):
-[[98.7 97.9 96.6 95.5 94.6 93.5 92.7 92.1 91.6 91.2]
- [ 0.  95.4 94.  92.4 90.9 90.7 89.9 89.7 88.4 87.8]
- [ 0.   0.  95.4 94.8 93.9 92.8 92.8 92.8 92.5 91.9]
- [ 0.   0.   0.  91.6 89.3 88.7 88.2 87.7 87.5 86.9]
- [ 0.   0.   0.   0.  91.4 90.1 89.8 87.5 86.5 85.8]
- [ 0.   0.   0.   0.   0.  89.1 87.4 84.4 84.  83.2]
- [ 0.   0.   0.   0.   0.   0.  91.9 89.8 88.9 88.7]
- [ 0.   0.   0.   0.   0.   0.   0.  82.7 82.1 81.4]
- [ 0.   0.   0.   0.   0.   0.   0.   0.  88.6 88.1]
- [ 0.   0.   0.   0.   0.   0.   0.   0.   0.  88.3]]
-2025-07-07 19:46:03,331 [trainer.py] => Forgetting (CNN): 4.422222222222222
-2025-07-07 19:46:06,278 [trainer.py] => config: ./scripts/aper/aper_adapter_cub_B0_Inc20.json
-2025-07-07 19:46:06,292 [trainer.py] => prefix: exp
-2025-07-07 19:46:06,293 [trainer.py] => dataset: cub
-2025-07-07 19:46:06,293 [trainer.py] => memory_size: 0
-2025-07-07 19:46:06,293 [trainer.py] => memory_per_class: 0
-2025-07-07 19:46:06,293 [trainer.py] => fixed_memory: False
-2025-07-07 19:46:06,293 [trainer.py] => shuffle: True
-2025-07-07 19:46:06,293 [trainer.py] => init_cls: 20
-2025-07-07 19:46:06,293 [trainer.py] => increment: 20
-2025-07-07 19:46:06,293 [trainer.py] => model_name: adam_adapter
-2025-07-07 19:46:06,293 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
-2025-07-07 19:46:06,293 [trainer.py] => weight_decay: 0.0005
-2025-07-07 19:46:06,293 [trainer.py] => prompt_token_num: 30
-2025-07-07 19:46:06,293 [trainer.py] => ffn_num: 10
-2025-07-07 19:46:06,293 [trainer.py] => optimizer: sgd
-2025-07-07 19:46:06,293 [trainer.py] => min_lr: 0
-2025-07-07 19:46:06,293 [trainer.py] => device: [device(type='cuda', index=3)]
-2025-07-07 19:46:06,293 [trainer.py] => seed: 1993
-2025-07-07 19:46:06,293 [trainer.py] => tuned_epoch: 20
-2025-07-07 19:46:06,293 [trainer.py] => init_lr: 0.01
-2025-07-07 19:46:06,293 [trainer.py] => batch_size: 48
-2025-07-07 19:46:07,053 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-2025-07-07 19:46:12,027 [trainer.py] => All params: 85992312
-2025-07-07 19:46:12,028 [trainer.py] => Trainable params: 193656
-2025-07-07 19:46:12,267 [adam_adapter.py] => Learning on 0-20
-86,007,673 total parameters.
-209,017 training parameters.
-backbone.blocks.0.adaptmlp.down_proj.weight 7680
-backbone.blocks.0.adaptmlp.down_proj.bias 10
-backbone.blocks.0.adaptmlp.up_proj.weight 7680
-backbone.blocks.0.adaptmlp.up_proj.bias 768
-backbone.blocks.1.adaptmlp.down_proj.weight 7680
-backbone.blocks.1.adaptmlp.down_proj.bias 10
-backbone.blocks.1.adaptmlp.up_proj.weight 7680
-backbone.blocks.1.adaptmlp.up_proj.bias 768
-backbone.blocks.2.adaptmlp.down_proj.weight 7680
-backbone.blocks.2.adaptmlp.down_proj.bias 10
-backbone.blocks.2.adaptmlp.up_proj.weight 7680
-backbone.blocks.2.adaptmlp.up_proj.bias 768
-backbone.blocks.3.adaptmlp.down_proj.weight 7680
-backbone.blocks.3.adaptmlp.down_proj.bias 10
-backbone.blocks.3.adaptmlp.up_proj.weight 7680
-backbone.blocks.3.adaptmlp.up_proj.bias 768
-backbone.blocks.4.adaptmlp.down_proj.weight 7680
-backbone.blocks.4.adaptmlp.down_proj.bias 10
-backbone.blocks.4.adaptmlp.up_proj.weight 7680
-backbone.blocks.4.adaptmlp.up_proj.bias 768
-backbone.blocks.5.adaptmlp.down_proj.weight 7680
-backbone.blocks.5.adaptmlp.down_proj.bias 10
-backbone.blocks.5.adaptmlp.up_proj.weight 7680
-backbone.blocks.5.adaptmlp.up_proj.bias 768
-backbone.blocks.6.adaptmlp.down_proj.weight 7680
-backbone.blocks.6.adaptmlp.down_proj.bias 10
-backbone.blocks.6.adaptmlp.up_proj.weight 7680
-backbone.blocks.6.adaptmlp.up_proj.bias 768
-backbone.blocks.7.adaptmlp.down_proj.weight 7680
-backbone.blocks.7.adaptmlp.down_proj.bias 10
-backbone.blocks.7.adaptmlp.up_proj.weight 7680
-backbone.blocks.7.adaptmlp.up_proj.bias 768
-backbone.blocks.8.adaptmlp.down_proj.weight 7680
-backbone.blocks.8.adaptmlp.down_proj.bias 10
-backbone.blocks.8.adaptmlp.up_proj.weight 7680
-backbone.blocks.8.adaptmlp.up_proj.bias 768
-backbone.blocks.9.adaptmlp.down_proj.weight 7680
-backbone.blocks.9.adaptmlp.down_proj.bias 10
-backbone.blocks.9.adaptmlp.up_proj.weight 7680
-backbone.blocks.9.adaptmlp.up_proj.bias 768
-backbone.blocks.10.adaptmlp.down_proj.weight 7680
-backbone.blocks.10.adaptmlp.down_proj.bias 10
-backbone.blocks.10.adaptmlp.up_proj.weight 7680
-backbone.blocks.10.adaptmlp.up_proj.bias 768
-backbone.blocks.11.adaptmlp.down_proj.weight 7680
-backbone.blocks.11.adaptmlp.down_proj.bias 10
-backbone.blocks.11.adaptmlp.up_proj.weight 7680
-backbone.blocks.11.adaptmlp.up_proj.bias 768
-fc.weight 15360
-fc.sigma 1
-  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.977, Train_accy 12.58, Test_accy 37.65:   0%|          | 0/20 [00:09<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.977, Train_accy 12.58, Test_accy 37.65:   5%|▌         | 1/20 [00:09<03:06,  9.83s/it]Task 0, Epoch 2/20 => Loss 2.900, Train_accy 55.81, Test_accy 71.26:   5%|▌         | 1/20 [00:16<03:06,  9.83s/it]Task 0, Epoch 2/20 => Loss 2.900, Train_accy 55.81, Test_accy 71.26:  10%|█         | 2/20 [00:16<02:22,  7.91s/it]Task 0, Epoch 3/20 => Loss 2.778, Train_accy 74.31, Test_accy 73.68:  10%|█         | 2/20 [00:23<02:22,  7.91s/it]Task 0, Epoch 3/20 => Loss 2.778, Train_accy 74.31, Test_accy 73.68:  15%|█▌        | 3/20 [00:23<02:04,  7.35s/it]Task 0, Epoch 4/20 => Loss 2.597, Train_accy 79.70, Test_accy 78.54:  15%|█▌        | 3/20 [00:29<02:04,  7.35s/it]Task 0, Epoch 4/20 => Loss 2.597, Train_accy 79.70, Test_accy 78.54:  20%|██        | 4/20 [00:29<01:53,  7.12s/it]Task 0, Epoch 5/20 => Loss 2.348, Train_accy 81.29, Test_accy 83.40:  20%|██        | 4/20 [00:36<01:53,  7.12s/it]Task 0, Epoch 5/20 => Loss 2.348, Train_accy 81.29, Test_accy 83.40:  25%|██▌       | 5/20 [00:36<01:43,  6.93s/it]Task 0, Epoch 6/20 => Loss 2.031, Train_accy 85.41, Test_accy 89.47:  25%|██▌       | 5/20 [00:43<01:43,  6.93s/it]Task 0, Epoch 6/20 => Loss 2.031, Train_accy 85.41, Test_accy 89.47:  30%|███       | 6/20 [00:43<01:35,  6.83s/it]Task 0, Epoch 7/20 => Loss 1.728, Train_accy 88.16, Test_accy 94.74:  30%|███       | 6/20 [00:49<01:35,  6.83s/it]Task 0, Epoch 7/20 => Loss 1.728, Train_accy 88.16, Test_accy 94.74:  35%|███▌      | 7/20 [00:49<01:27,  6.74s/it]Task 0, Epoch 8/20 => Loss 1.469, Train_accy 89.96, Test_accy 97.57:  35%|███▌      | 7/20 [00:56<01:27,  6.74s/it]Task 0, Epoch 8/20 => Loss 1.469, Train_accy 89.96, Test_accy 97.57:  40%|████      | 8/20 [00:56<01:21,  6.80s/it]Task 0, Epoch 9/20 => Loss 1.282, Train_accy 91.65, Test_accy 98.38:  40%|████      | 8/20 [01:03<01:21,  6.80s/it]Task 0, Epoch 9/20 => Loss 1.282, Train_accy 91.65, Test_accy 98.38:  45%|████▌     | 9/20 [01:03<01:14,  6.76s/it]Task 0, Epoch 10/20 => Loss 1.145, Train_accy 91.44, Test_accy 98.38:  45%|████▌     | 9/20 [01:10<01:14,  6.76s/it]Task 0, Epoch 10/20 => Loss 1.145, Train_accy 91.44, Test_accy 98.38:  50%|█████     | 10/20 [01:10<01:08,  6.85s/it]Task 0, Epoch 11/20 => Loss 1.017, Train_accy 91.97, Test_accy 98.79:  50%|█████     | 10/20 [01:16<01:08,  6.85s/it]Task 0, Epoch 11/20 => Loss 1.017, Train_accy 91.97, Test_accy 98.79:  55%|█████▌    | 11/20 [01:16<01:01,  6.78s/it]Task 0, Epoch 12/20 => Loss 0.926, Train_accy 93.13, Test_accy 99.19:  55%|█████▌    | 11/20 [01:23<01:01,  6.78s/it]Task 0, Epoch 12/20 => Loss 0.926, Train_accy 93.13, Test_accy 99.19:  60%|██████    | 12/20 [01:23<00:53,  6.74s/it]Task 0, Epoch 13/20 => Loss 0.858, Train_accy 93.23, Test_accy 99.19:  60%|██████    | 12/20 [01:30<00:53,  6.74s/it]Task 0, Epoch 13/20 => Loss 0.858, Train_accy 93.23, Test_accy 99.19:  65%|██████▌   | 13/20 [01:30<00:47,  6.72s/it]Task 0, Epoch 14/20 => Loss 0.824, Train_accy 92.92, Test_accy 98.79:  65%|██████▌   | 13/20 [01:36<00:47,  6.72s/it]Task 0, Epoch 14/20 => Loss 0.824, Train_accy 92.92, Test_accy 98.79:  70%|███████   | 14/20 [01:36<00:40,  6.70s/it]Task 0, Epoch 15/20 => Loss 0.782, Train_accy 93.97, Test_accy 99.19:  70%|███████   | 14/20 [01:43<00:40,  6.70s/it]Task 0, Epoch 15/20 => Loss 0.782, Train_accy 93.97, Test_accy 99.19:  75%|███████▌  | 15/20 [01:43<00:33,  6.69s/it]Task 0, Epoch 16/20 => Loss 0.742, Train_accy 94.40, Test_accy 99.19:  75%|███████▌  | 15/20 [01:50<00:33,  6.69s/it]Task 0, Epoch 16/20 => Loss 0.742, Train_accy 94.40, Test_accy 99.19:  80%|████████  | 16/20 [01:50<00:26,  6.72s/it]Task 0, Epoch 17/20 => Loss 0.765, Train_accy 93.97, Test_accy 99.19:  80%|████████  | 16/20 [01:57<00:26,  6.72s/it]Task 0, Epoch 17/20 => Loss 0.765, Train_accy 93.97, Test_accy 99.19:  85%|████████▌ | 17/20 [01:57<00:20,  6.75s/it]Task 0, Epoch 18/20 => Loss 0.724, Train_accy 93.23, Test_accy 99.19:  85%|████████▌ | 17/20 [02:03<00:20,  6.75s/it]Task 0, Epoch 18/20 => Loss 0.724, Train_accy 93.23, Test_accy 99.19:  90%|█████████ | 18/20 [02:03<00:13,  6.76s/it]Task 0, Epoch 19/20 => Loss 0.736, Train_accy 93.45, Test_accy 99.19:  90%|█████████ | 18/20 [02:11<00:13,  6.76s/it]Task 0, Epoch 19/20 => Loss 0.736, Train_accy 93.45, Test_accy 99.19:  95%|█████████▌| 19/20 [02:11<00:06,  6.85s/it]Task 0, Epoch 20/20 => Loss 0.720, Train_accy 93.23, Test_accy 99.19:  95%|█████████▌| 19/20 [02:17<00:06,  6.85s/it]Task 0, Epoch 20/20 => Loss 0.720, Train_accy 93.23, Test_accy 99.19: 100%|██████████| 20/20 [02:17<00:00,  6.82s/it]Task 0, Epoch 20/20 => Loss 0.720, Train_accy 93.23, Test_accy 99.19: 100%|██████████| 20/20 [02:17<00:00,  6.89s/it]
-2025-07-07 19:48:30,094 [adam_adapter.py] => Task 0, Epoch 20/20 => Loss 0.720, Train_accy 93.23, Test_accy 99.19
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-Clear the backbone in MultiBranchCosineIncrementalNet, since we are using self.backbones with dual branches
-pretrained_vit_b16_224_in21k
-Time for task 0: 152.49780011177063
-2025-07-07 19:48:46,275 [trainer.py] => No NME accuracy.
-2025-07-07 19:48:46,276 [trainer.py] => CNN: {'total': 97.98, '00-19': 97.98, 'old': 0, 'new': 97.98}
-2025-07-07 19:48:46,276 [trainer.py] => CNN top1 curve: [97.98]
-2025-07-07 19:48:46,276 [trainer.py] => CNN top5 curve: [100.0]
-
-Average Accuracy (CNN): 97.98
-2025-07-07 19:48:46,276 [trainer.py] => Average Accuracy (CNN): 97.98 
-
-2025-07-07 19:48:46,277 [trainer.py] => All params: 171821689
-2025-07-07 19:48:46,278 [trainer.py] => Trainable params: 86023033
-2025-07-07 19:48:46,279 [adam_adapter.py] => Learning on 20-40
-Time for task 1: 6.95532488822937
-2025-07-07 19:48:56,263 [trainer.py] => No NME accuracy.
-2025-07-07 19:48:56,264 [trainer.py] => CNN: {'total': 97.58, '00-19': 97.57, '20-39': 97.58, 'old': 97.57, 'new': 97.58}
-2025-07-07 19:48:56,264 [trainer.py] => CNN top1 curve: [97.98, 97.58]
-2025-07-07 19:48:56,264 [trainer.py] => CNN top5 curve: [100.0, 99.78]
-
-Average Accuracy (CNN): 97.78
-2025-07-07 19:48:56,265 [trainer.py] => Average Accuracy (CNN): 97.78 
-
-2025-07-07 19:48:56,269 [trainer.py] => All params: 171852409
-2025-07-07 19:48:56,273 [trainer.py] => Trainable params: 86053753
-2025-07-07 19:48:56,277 [adam_adapter.py] => Learning on 40-60
-Time for task 2: 6.360384941101074
-2025-07-07 19:49:06,941 [trainer.py] => No NME accuracy.
-2025-07-07 19:49:06,942 [trainer.py] => CNN: {'total': 94.64, '00-19': 94.33, '20-39': 97.1, '40-59': 92.66, 'old': 95.59, 'new': 92.66}
-2025-07-07 19:49:06,942 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64]
-2025-07-07 19:49:06,942 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26]
-
-Average Accuracy (CNN): 96.73
-2025-07-07 19:49:06,942 [trainer.py] => Average Accuracy (CNN): 96.73 
-
-2025-07-07 19:49:06,945 [trainer.py] => All params: 171883129
-2025-07-07 19:49:06,948 [trainer.py] => Trainable params: 86084473
-2025-07-07 19:49:06,951 [adam_adapter.py] => Learning on 60-80
-Time for task 3: 6.629112005233765
-2025-07-07 19:49:18,796 [trainer.py] => No NME accuracy.
-2025-07-07 19:49:18,797 [trainer.py] => CNN: {'total': 93.36, '00-19': 91.9, '20-39': 96.62, '40-59': 91.28, '60-79': 93.93, 'old': 93.15, 'new': 93.93}
-2025-07-07 19:49:18,797 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36]
-2025-07-07 19:49:18,797 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02]
-
-Average Accuracy (CNN): 95.89
-2025-07-07 19:49:18,797 [trainer.py] => Average Accuracy (CNN): 95.89 
-
-2025-07-07 19:49:18,798 [trainer.py] => All params: 171913849
-2025-07-07 19:49:18,800 [trainer.py] => Trainable params: 86115193
-2025-07-07 19:49:18,802 [adam_adapter.py] => Learning on 80-100
-Time for task 4: 6.293597936630249
-2025-07-07 19:49:31,936 [trainer.py] => No NME accuracy.
-2025-07-07 19:49:31,937 [trainer.py] => CNN: {'total': 92.17, '00-19': 91.09, '20-39': 94.2, '40-59': 91.28, '60-79': 93.52, '80-99': 91.08, 'old': 92.49, 'new': 91.08}
-2025-07-07 19:49:31,937 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17]
-2025-07-07 19:49:31,937 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07]
-
-Average Accuracy (CNN): 95.15
-2025-07-07 19:49:31,937 [trainer.py] => Average Accuracy (CNN): 95.15 
-
-2025-07-07 19:49:31,938 [trainer.py] => All params: 171944569
-2025-07-07 19:49:31,940 [trainer.py] => Trainable params: 86145913
-2025-07-07 19:49:31,942 [adam_adapter.py] => Learning on 100-120
-Time for task 5: 6.454798460006714
-2025-07-07 19:49:46,178 [trainer.py] => No NME accuracy.
-2025-07-07 19:49:46,179 [trainer.py] => CNN: {'total': 90.4, '00-19': 90.28, '20-39': 94.2, '40-59': 91.28, '60-79': 88.66, '80-99': 90.33, '100-119': 88.16, 'old': 90.82, 'new': 88.16}
-2025-07-07 19:49:46,179 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17, 90.4]
-2025-07-07 19:49:46,179 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07, 98.94]
-
-Average Accuracy (CNN): 94.36
-2025-07-07 19:49:46,179 [trainer.py] => Average Accuracy (CNN): 94.36 
-
-2025-07-07 19:49:46,180 [trainer.py] => All params: 171975289
-2025-07-07 19:49:46,182 [trainer.py] => Trainable params: 86176633
-2025-07-07 19:49:46,184 [adam_adapter.py] => Learning on 120-140
-Time for task 6: 6.468977212905884
-2025-07-07 19:50:01,592 [trainer.py] => No NME accuracy.
-2025-07-07 19:50:01,592 [trainer.py] => CNN: {'total': 89.15, '00-19': 89.47, '20-39': 93.24, '40-59': 89.45, '60-79': 88.26, '80-99': 89.96, '100-119': 88.16, '120-139': 85.78, 'old': 89.69, 'new': 85.78}
-2025-07-07 19:50:01,593 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17, 90.4, 89.15]
-2025-07-07 19:50:01,593 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07, 98.94, 98.78]
-
-Average Accuracy (CNN): 93.61
-2025-07-07 19:50:01,593 [trainer.py] => Average Accuracy (CNN): 93.61 
-
-2025-07-07 19:50:01,597 [trainer.py] => All params: 172006009
-2025-07-07 19:50:01,601 [trainer.py] => Trainable params: 86207353
-2025-07-07 19:50:01,608 [adam_adapter.py] => Learning on 140-160
-Time for task 7: 6.342602014541626
-2025-07-07 19:50:18,244 [trainer.py] => No NME accuracy.
-2025-07-07 19:50:18,244 [trainer.py] => CNN: {'total': 88.47, '00-19': 88.26, '20-39': 91.79, '40-59': 89.45, '60-79': 87.85, '80-99': 89.59, '100-119': 85.96, '120-139': 85.78, '140-159': 89.2, 'old': 88.36, 'new': 89.2}
-2025-07-07 19:50:18,244 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17, 90.4, 89.15, 88.47]
-2025-07-07 19:50:18,244 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07, 98.94, 98.78, 98.68]
-
-Average Accuracy (CNN): 92.97
-2025-07-07 19:50:18,244 [trainer.py] => Average Accuracy (CNN): 92.97 
-
-2025-07-07 19:50:18,246 [trainer.py] => All params: 172036729
-2025-07-07 19:50:18,247 [trainer.py] => Trainable params: 86238073
-2025-07-07 19:50:18,249 [adam_adapter.py] => Learning on 160-180
-Time for task 8: 6.428945779800415
-2025-07-07 19:50:36,208 [trainer.py] => No NME accuracy.
-2025-07-07 19:50:36,208 [trainer.py] => CNN: {'total': 87.97, '00-19': 87.45, '20-39': 91.3, '40-59': 88.07, '60-79': 87.45, '80-99': 89.22, '100-119': 85.96, '120-139': 84.89, '140-159': 87.6, '160-179': 89.87, 'old': 87.73, 'new': 89.87}
-2025-07-07 19:50:36,209 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17, 90.4, 89.15, 88.47, 87.97]
-2025-07-07 19:50:36,209 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07, 98.94, 98.78, 98.68, 98.5]
-
-Average Accuracy (CNN): 92.41
-2025-07-07 19:50:36,209 [trainer.py] => Average Accuracy (CNN): 92.41 
-
-2025-07-07 19:50:36,213 [trainer.py] => All params: 172067449
-2025-07-07 19:50:36,217 [trainer.py] => Trainable params: 86268793
-2025-07-07 19:50:36,225 [adam_adapter.py] => Learning on 180-200
-Time for task 9: 6.475187301635742
-2025-07-07 19:50:55,459 [trainer.py] => No NME accuracy.
-2025-07-07 19:50:55,459 [trainer.py] => CNN: {'total': 86.85, '00-19': 87.04, '20-39': 89.86, '40-59': 87.61, '60-79': 85.43, '80-99': 89.22, '100-119': 85.96, '120-139': 84.0, '140-159': 87.6, '160-179': 88.61, '180-199': 83.04, 'old': 87.27, 'new': 83.04}
-2025-07-07 19:50:55,459 [trainer.py] => CNN top1 curve: [97.98, 97.58, 94.64, 93.36, 92.17, 90.4, 89.15, 88.47, 87.97, 86.85]
-2025-07-07 19:50:55,459 [trainer.py] => CNN top5 curve: [100.0, 99.78, 99.26, 99.02, 99.07, 98.94, 98.78, 98.68, 98.5, 98.26]
-
-Average Accuracy (CNN): 91.86
-2025-07-07 19:50:55,459 [trainer.py] => Average Accuracy (CNN): 91.86 
-
-Finished cub_init20_inc20: pretrained_vit_b16_224_in21k_adapter  
-----------------------------------------------------------------------------------------------------
-Accuracy Matrix (CNN):
-[[97.98 97.57 94.33 91.9  91.09 90.28 89.47 88.26 87.45 87.04]
- [ 0.   97.58 97.1  96.62 94.2  94.2  93.24 91.79 91.3  89.86]
- [ 0.    0.   92.66 91.28 91.28 91.28 89.45 89.45 88.07 87.61]
- [ 0.    0.    0.   93.93 93.52 88.66 88.26 87.85 87.45 85.43]
- [ 0.    0.    0.    0.   91.08 90.33 89.96 89.59 89.22 89.22]
- [ 0.    0.    0.    0.    0.   88.16 88.16 85.96 85.96 85.96]
- [ 0.    0.    0.    0.    0.    0.   85.78 85.78 84.89 84.  ]
- [ 0.    0.    0.    0.    0.    0.    0.   89.2  87.6  87.6 ]
- [ 0.    0.    0.    0.    0.    0.    0.    0.   89.87 88.61]
- [ 0.    0.    0.    0.    0.    0.    0.    0.    0.   83.04]]
-2025-07-07 19:50:55,460 [trainer.py] => Forgetting (CNN): 4.5455555555555565
-2025-07-07 19:51:13,697 [trainer.py] => config: ./scripts/aper/aper_adapter_inr_B0_Inc40.json
-2025-07-07 19:51:13,713 [trainer.py] => prefix: exp
-2025-07-07 19:51:13,713 [trainer.py] => dataset: imagenetr
-2025-07-07 19:51:13,713 [trainer.py] => memory_size: 0
-2025-07-07 19:51:13,713 [trainer.py] => memory_per_class: 0
-2025-07-07 19:51:13,713 [trainer.py] => fixed_memory: False
-2025-07-07 19:51:13,713 [trainer.py] => shuffle: True
-2025-07-07 19:51:13,714 [trainer.py] => init_cls: 40
-2025-07-07 19:51:13,714 [trainer.py] => increment: 40
-2025-07-07 19:51:13,714 [trainer.py] => model_name: adam_adapter
-2025-07-07 19:51:13,714 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
-2025-07-07 19:51:13,714 [trainer.py] => weight_decay: 0.005
-2025-07-07 19:51:13,714 [trainer.py] => prompt_token_num: 30
-2025-07-07 19:51:13,714 [trainer.py] => ffn_num: 10
-2025-07-07 19:51:13,715 [trainer.py] => optimizer: sgd
-2025-07-07 19:51:13,715 [trainer.py] => min_lr: 0
-2025-07-07 19:51:13,715 [trainer.py] => device: [device(type='cuda', index=3)]
-2025-07-07 19:51:13,715 [trainer.py] => seed: 1993
-2025-07-07 19:51:13,715 [trainer.py] => tuned_epoch: 20
-2025-07-07 19:51:13,715 [trainer.py] => init_lr: 0.05
-2025-07-07 19:51:13,715 [trainer.py] => batch_size: 24
-2025-07-07 19:51:14,550 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-2025-07-07 19:51:22,601 [trainer.py] => All params: 85992312
-2025-07-07 19:51:22,602 [trainer.py] => Trainable params: 193656
-2025-07-07 19:51:22,872 [adam_adapter.py] => Learning on 0-40
-86,023,033 total parameters.
-224,377 training parameters.
-backbone.blocks.0.adaptmlp.down_proj.weight 7680
-backbone.blocks.0.adaptmlp.down_proj.bias 10
-backbone.blocks.0.adaptmlp.up_proj.weight 7680
-backbone.blocks.0.adaptmlp.up_proj.bias 768
-backbone.blocks.1.adaptmlp.down_proj.weight 7680
-backbone.blocks.1.adaptmlp.down_proj.bias 10
-backbone.blocks.1.adaptmlp.up_proj.weight 7680
-backbone.blocks.1.adaptmlp.up_proj.bias 768
-backbone.blocks.2.adaptmlp.down_proj.weight 7680
-backbone.blocks.2.adaptmlp.down_proj.bias 10
-backbone.blocks.2.adaptmlp.up_proj.weight 7680
-backbone.blocks.2.adaptmlp.up_proj.bias 768
-backbone.blocks.3.adaptmlp.down_proj.weight 7680
-backbone.blocks.3.adaptmlp.down_proj.bias 10
-backbone.blocks.3.adaptmlp.up_proj.weight 7680
-backbone.blocks.3.adaptmlp.up_proj.bias 768
-backbone.blocks.4.adaptmlp.down_proj.weight 7680
-backbone.blocks.4.adaptmlp.down_proj.bias 10
-backbone.blocks.4.adaptmlp.up_proj.weight 7680
-backbone.blocks.4.adaptmlp.up_proj.bias 768
-backbone.blocks.5.adaptmlp.down_proj.weight 7680
-backbone.blocks.5.adaptmlp.down_proj.bias 10
-backbone.blocks.5.adaptmlp.up_proj.weight 7680
-backbone.blocks.5.adaptmlp.up_proj.bias 768
-backbone.blocks.6.adaptmlp.down_proj.weight 7680
-backbone.blocks.6.adaptmlp.down_proj.bias 10
-backbone.blocks.6.adaptmlp.up_proj.weight 7680
-backbone.blocks.6.adaptmlp.up_proj.bias 768
-backbone.blocks.7.adaptmlp.down_proj.weight 7680
-backbone.blocks.7.adaptmlp.down_proj.bias 10
-backbone.blocks.7.adaptmlp.up_proj.weight 7680
-backbone.blocks.7.adaptmlp.up_proj.bias 768
-backbone.blocks.8.adaptmlp.down_proj.weight 7680
-backbone.blocks.8.adaptmlp.down_proj.bias 10
-backbone.blocks.8.adaptmlp.up_proj.weight 7680
-backbone.blocks.8.adaptmlp.up_proj.bias 768
-backbone.blocks.9.adaptmlp.down_proj.weight 7680
-backbone.blocks.9.adaptmlp.down_proj.bias 10
-backbone.blocks.9.adaptmlp.up_proj.weight 7680
-backbone.blocks.9.adaptmlp.up_proj.bias 768
-backbone.blocks.10.adaptmlp.down_proj.weight 7680
-backbone.blocks.10.adaptmlp.down_proj.bias 10
-backbone.blocks.10.adaptmlp.up_proj.weight 7680
-backbone.blocks.10.adaptmlp.up_proj.bias 768
-backbone.blocks.11.adaptmlp.down_proj.weight 7680
-backbone.blocks.11.adaptmlp.down_proj.bias 10
-backbone.blocks.11.adaptmlp.up_proj.weight 7680
-backbone.blocks.11.adaptmlp.up_proj.bias 768
-fc.weight 30720
-fc.sigma 1
-  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.213, Train_accy 55.57, Test_accy 84.48:   0%|          | 0/20 [00:37<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.213, Train_accy 55.57, Test_accy 84.48:   5%|▌         | 1/20 [00:37<12:00, 37.90s/it]Task 0, Epoch 2/20 => Loss 0.923, Train_accy 78.21, Test_accy 85.24:   5%|▌         | 1/20 [01:12<12:00, 37.90s/it]Task 0, Epoch 2/20 => Loss 0.923, Train_accy 78.21, Test_accy 85.24:  10%|█         | 2/20 [01:12<10:51, 36.17s/it]Task 0, Epoch 3/20 => Loss 0.868, Train_accy 79.31, Test_accy 87.13:  10%|█         | 2/20 [01:47<10:51, 36.17s/it]Task 0, Epoch 3/20 => Loss 0.868, Train_accy 79.31, Test_accy 87.13:  15%|█▌        | 3/20 [01:47<10:04, 35.56s/it]Task 0, Epoch 4/20 => Loss 0.844, Train_accy 79.50, Test_accy 86.83:  15%|█▌        | 3/20 [02:22<10:04, 35.56s/it]Task 0, Epoch 4/20 => Loss 0.844, Train_accy 79.50, Test_accy 86.83:  20%|██        | 4/20 [02:22<09:24, 35.28s/it]Task 0, Epoch 5/20 => Loss 0.840, Train_accy 79.11, Test_accy 87.66:  20%|██        | 4/20 [02:57<09:24, 35.28s/it]Task 0, Epoch 5/20 => Loss 0.840, Train_accy 79.11, Test_accy 87.66:  25%|██▌       | 5/20 [02:57<08:46, 35.13s/it]Task 0, Epoch 6/20 => Loss 0.816, Train_accy 80.41, Test_accy 87.06:  25%|██▌       | 5/20 [03:32<08:46, 35.13s/it]Task 0, Epoch 6/20 => Loss 0.816, Train_accy 80.41, Test_accy 87.06:  30%|███       | 6/20 [03:32<08:13, 35.25s/it]Task 0, Epoch 7/20 => Loss 0.828, Train_accy 79.31, Test_accy 86.60:  30%|███       | 6/20 [04:08<08:13, 35.25s/it]Task 0, Epoch 7/20 => Loss 0.828, Train_accy 79.31, Test_accy 86.60:  35%|███▌      | 7/20 [04:08<07:39, 35.32s/it]Task 0, Epoch 8/20 => Loss 0.811, Train_accy 80.62, Test_accy 86.98:  35%|███▌      | 7/20 [04:44<07:39, 35.32s/it]Task 0, Epoch 8/20 => Loss 0.811, Train_accy 80.62, Test_accy 86.98:  40%|████      | 8/20 [04:44<07:05, 35.42s/it]Task 0, Epoch 9/20 => Loss 0.813, Train_accy 80.47, Test_accy 88.12:  40%|████      | 8/20 [05:19<07:05, 35.42s/it]Task 0, Epoch 9/20 => Loss 0.813, Train_accy 80.47, Test_accy 88.12:  45%|████▌     | 9/20 [05:19<06:28, 35.31s/it]Task 0, Epoch 10/20 => Loss 0.766, Train_accy 81.22, Test_accy 87.74:  45%|████▌     | 9/20 [05:54<06:28, 35.31s/it]Task 0, Epoch 10/20 => Loss 0.766, Train_accy 81.22, Test_accy 87.74:  50%|█████     | 10/20 [05:54<05:53, 35.32s/it]Task 0, Epoch 11/20 => Loss 0.771, Train_accy 81.27, Test_accy 88.95:  50%|█████     | 10/20 [06:29<05:53, 35.32s/it]Task 0, Epoch 11/20 => Loss 0.771, Train_accy 81.27, Test_accy 88.95:  55%|█████▌    | 11/20 [06:29<05:18, 35.34s/it]Task 0, Epoch 12/20 => Loss 0.761, Train_accy 81.46, Test_accy 88.12:  55%|█████▌    | 11/20 [07:05<05:18, 35.34s/it]Task 0, Epoch 12/20 => Loss 0.761, Train_accy 81.46, Test_accy 88.12:  60%|██████    | 12/20 [07:05<04:42, 35.31s/it]Task 0, Epoch 13/20 => Loss 0.761, Train_accy 81.64, Test_accy 89.25:  60%|██████    | 12/20 [07:40<04:42, 35.31s/it]Task 0, Epoch 13/20 => Loss 0.761, Train_accy 81.64, Test_accy 89.25:  65%|██████▌   | 13/20 [07:40<04:06, 35.23s/it]Task 0, Epoch 14/20 => Loss 0.730, Train_accy 82.52, Test_accy 87.96:  65%|██████▌   | 13/20 [08:15<04:06, 35.23s/it]Task 0, Epoch 14/20 => Loss 0.730, Train_accy 82.52, Test_accy 87.96:  70%|███████   | 14/20 [08:15<03:31, 35.27s/it]Task 0, Epoch 15/20 => Loss 0.680, Train_accy 83.23, Test_accy 89.48:  70%|███████   | 14/20 [08:50<03:31, 35.27s/it]Task 0, Epoch 15/20 => Loss 0.680, Train_accy 83.23, Test_accy 89.48:  75%|███████▌  | 15/20 [08:50<02:55, 35.19s/it]Task 0, Epoch 16/20 => Loss 0.708, Train_accy 82.84, Test_accy 89.86:  75%|███████▌  | 15/20 [09:25<02:55, 35.19s/it]Task 0, Epoch 16/20 => Loss 0.708, Train_accy 82.84, Test_accy 89.86:  80%|████████  | 16/20 [09:25<02:20, 35.15s/it]Task 0, Epoch 17/20 => Loss 0.675, Train_accy 83.67, Test_accy 89.78:  80%|████████  | 16/20 [10:00<02:20, 35.15s/it]Task 0, Epoch 17/20 => Loss 0.675, Train_accy 83.67, Test_accy 89.78:  85%|████████▌ | 17/20 [10:00<01:45, 35.19s/it]Task 0, Epoch 18/20 => Loss 0.655, Train_accy 84.31, Test_accy 89.63:  85%|████████▌ | 17/20 [10:35<01:45, 35.19s/it]Task 0, Epoch 18/20 => Loss 0.655, Train_accy 84.31, Test_accy 89.63:  90%|█████████ | 18/20 [10:35<01:10, 35.13s/it]Task 0, Epoch 19/20 => Loss 0.653, Train_accy 84.42, Test_accy 89.55:  90%|█████████ | 18/20 [11:10<01:10, 35.13s/it]Task 0, Epoch 19/20 => Loss 0.653, Train_accy 84.42, Test_accy 89.55:  95%|█████████▌| 19/20 [11:10<00:35, 35.11s/it]Task 0, Epoch 20/20 => Loss 0.631, Train_accy 85.11, Test_accy 89.70:  95%|█████████▌| 19/20 [11:46<00:35, 35.11s/it]Task 0, Epoch 20/20 => Loss 0.631, Train_accy 85.11, Test_accy 89.70: 100%|██████████| 20/20 [11:46<00:00, 35.29s/it]Task 0, Epoch 20/20 => Loss 0.631, Train_accy 85.11, Test_accy 89.70: 100%|██████████| 20/20 [11:46<00:00, 35.33s/it]
-2025-07-07 20:03:09,509 [adam_adapter.py] => Task 0, Epoch 20/20 => Loss 0.631, Train_accy 85.11, Test_accy 89.70
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-Clear the backbone in MultiBranchCosineIncrementalNet, since we are using self.backbones with dual branches
-pretrained_vit_b16_224_in21k
-Time for task 0: 748.0343852043152
-2025-07-07 20:03:58,188 [trainer.py] => No NME accuracy.
-2025-07-07 20:03:58,189 [trainer.py] => CNN: {'total': 85.84, '00-39': 85.84, 'old': 0, 'new': 85.84}
-2025-07-07 20:03:58,189 [trainer.py] => CNN top1 curve: [85.84]
-2025-07-07 20:03:58,189 [trainer.py] => CNN top5 curve: [96.97]
-
-Average Accuracy (CNN): 85.84
-2025-07-07 20:03:58,190 [trainer.py] => Average Accuracy (CNN): 85.84 
-
-2025-07-07 20:03:58,194 [trainer.py] => All params: 171852409
-2025-07-07 20:03:58,198 [trainer.py] => Trainable params: 86053753
-2025-07-07 20:03:58,215 [adam_adapter.py] => Learning on 40-80
-Time for task 1: 30.026163816452026
-2025-07-07 20:04:42,220 [trainer.py] => No NME accuracy.
-2025-07-07 20:04:42,221 [trainer.py] => CNN: {'total': 78.5, '00-39': 82.21, '40-79': 74.34, 'old': 82.21, 'new': 74.34}
-2025-07-07 20:04:42,221 [trainer.py] => CNN top1 curve: [85.84, 78.5]
-2025-07-07 20:04:42,221 [trainer.py] => CNN top5 curve: [96.97, 92.63]
-
-Average Accuracy (CNN): 82.17
-2025-07-07 20:04:42,222 [trainer.py] => Average Accuracy (CNN): 82.17 
-
-2025-07-07 20:04:42,226 [trainer.py] => All params: 171913849
-2025-07-07 20:04:42,230 [trainer.py] => Trainable params: 86115193
-2025-07-07 20:04:42,236 [adam_adapter.py] => Learning on 80-120
-Time for task 2: 29.543624877929688
-2025-07-07 20:05:31,977 [trainer.py] => No NME accuracy.
-2025-07-07 20:05:31,980 [trainer.py] => CNN: {'total': 73.09, '00-39': 80.09, '40-79': 69.75, '80-119': 68.44, 'old': 75.22, 'new': 68.44}
-2025-07-07 20:05:31,980 [trainer.py] => CNN top1 curve: [85.84, 78.5, 73.09]
-2025-07-07 20:05:31,980 [trainer.py] => CNN top5 curve: [96.97, 92.63, 89.33]
-
-Average Accuracy (CNN): 79.14
-2025-07-07 20:05:31,980 [trainer.py] => Average Accuracy (CNN): 79.14 
-
-2025-07-07 20:05:31,982 [trainer.py] => All params: 171975289
-2025-07-07 20:05:31,983 [trainer.py] => Trainable params: 86176633
-2025-07-07 20:05:31,991 [adam_adapter.py] => Learning on 120-160
-Time for task 3: 30.77577805519104
-2025-07-07 20:06:30,218 [trainer.py] => No NME accuracy.
-2025-07-07 20:06:30,236 [trainer.py] => CNN: {'total': 71.05, '00-39': 78.43, '40-79': 67.71, '80-119': 66.87, '120-159': 70.26, 'old': 71.33, 'new': 70.26}
-2025-07-07 20:06:30,236 [trainer.py] => CNN top1 curve: [85.84, 78.5, 73.09, 71.05]
-2025-07-07 20:06:30,236 [trainer.py] => CNN top5 curve: [96.97, 92.63, 89.33, 87.34]
-
-Average Accuracy (CNN): 77.12
-2025-07-07 20:06:30,236 [trainer.py] => Average Accuracy (CNN): 77.12 
-
-2025-07-07 20:06:30,238 [trainer.py] => All params: 172036729
-2025-07-07 20:06:30,239 [trainer.py] => Trainable params: 86238073
-2025-07-07 20:06:30,253 [adam_adapter.py] => Learning on 160-200
-Time for task 4: 26.375788927078247
-2025-07-07 20:07:29,867 [trainer.py] => No NME accuracy.
-2025-07-07 20:07:29,867 [trainer.py] => CNN: {'total': 68.27, '00-39': 76.46, '40-79': 65.0, '80-119': 64.6, '120-159': 68.8, '160-199': 65.0, 'old': 68.97, 'new': 65.0}
-2025-07-07 20:07:29,867 [trainer.py] => CNN top1 curve: [85.84, 78.5, 73.09, 71.05, 68.27]
-2025-07-07 20:07:29,867 [trainer.py] => CNN top5 curve: [96.97, 92.63, 89.33, 87.34, 85.23]
-
-Average Accuracy (CNN): 75.35
-2025-07-07 20:07:29,867 [trainer.py] => Average Accuracy (CNN): 75.35 
-
-Finished imagenetr_init40_inc40: pretrained_vit_b16_224_in21k_adapter  
-----------------------------------------------------------------------------------------------------
-Accuracy Matrix (CNN):
-[[85.84 82.21 80.09 78.43 76.46]
- [ 0.   74.34 69.75 67.71 65.  ]
- [ 0.    0.   68.44 66.87 64.6 ]
- [ 0.    0.    0.   70.26 68.8 ]
- [ 0.    0.    0.    0.   65.  ]]
-2025-07-07 20:07:29,868 [trainer.py] => Forgetting (CNN): 6.005000000000006
-2025-07-07 20:07:49,202 [trainer.py] => config: ./scripts/aper/aper_adapter_omn_B0_Inc30.json
-2025-07-07 20:07:49,204 [trainer.py] => prefix: exp
-2025-07-07 20:07:49,204 [trainer.py] => dataset: omnibenchmark
-2025-07-07 20:07:49,204 [trainer.py] => memory_size: 0
-2025-07-07 20:07:49,204 [trainer.py] => memory_per_class: 0
-2025-07-07 20:07:49,204 [trainer.py] => fixed_memory: False
-2025-07-07 20:07:49,204 [trainer.py] => shuffle: True
-2025-07-07 20:07:49,204 [trainer.py] => init_cls: 30
-2025-07-07 20:07:49,204 [trainer.py] => increment: 30
-2025-07-07 20:07:49,205 [trainer.py] => model_name: adam_adapter
-2025-07-07 20:07:49,205 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
-2025-07-07 20:07:49,205 [trainer.py] => weight_decay: 0.0005
-2025-07-07 20:07:49,205 [trainer.py] => prompt_token_num: 30
-2025-07-07 20:07:49,205 [trainer.py] => ffn_num: 10
-2025-07-07 20:07:49,205 [trainer.py] => optimizer: sgd
-2025-07-07 20:07:49,205 [trainer.py] => min_lr: 0
-2025-07-07 20:07:49,205 [trainer.py] => device: [device(type='cuda', index=3)]
-2025-07-07 20:07:49,205 [trainer.py] => seed: 1993
-2025-07-07 20:07:49,205 [trainer.py] => tuned_epoch: 20
-2025-07-07 20:07:49,205 [trainer.py] => init_lr: 0.01
-2025-07-07 20:07:49,205 [trainer.py] => batch_size: 48
-2025-07-07 20:07:50,640 [data_manager.py] => [169, 221, 146, 296, 92, 229, 49, 70, 126, 77, 243, 57, 120, 223, 27, 217, 154, 8, 101, 182, 54, 50, 97, 162, 28, 193, 79, 6, 151, 0, 173, 187, 44, 277, 157, 16, 257, 122, 35, 9, 171, 176, 134, 4, 87, 255, 112, 153, 246, 286, 147, 186, 107, 98, 10, 7, 266, 214, 36, 165, 139, 254, 103, 269, 59, 23, 298, 39, 73, 208, 135, 299, 102, 20, 12, 268, 11, 209, 161, 210, 74, 42, 56, 99, 235, 133, 159, 189, 145, 238, 215, 241, 138, 195, 233, 279, 88, 199, 64, 280, 26, 203, 17, 245, 174, 236, 137, 252, 80, 68, 181, 150, 118, 94, 75, 2, 109, 119, 232, 15, 69, 184, 201, 261, 55, 287, 273, 66, 175, 32, 142, 136, 116, 76, 179, 1, 91, 248, 275, 240, 290, 170, 132, 106, 265, 270, 85, 19, 284, 43, 259, 293, 228, 200, 104, 227, 51, 224, 163, 297, 216, 260, 93, 46, 100, 272, 105, 72, 131, 3, 156, 256, 249, 48, 113, 82, 172, 213, 62, 53, 271, 168, 253, 226, 183, 180, 276, 283, 78, 61, 143, 278, 30, 141, 196, 264, 231, 52, 222, 40, 125, 219, 65, 166, 192, 289, 45, 205, 89, 267, 90, 71, 167, 262, 281, 212, 96, 84, 127, 67, 294, 178, 288, 197, 21, 18, 111, 108, 58, 230, 188, 31, 110, 291, 129, 24, 204, 83, 81, 251, 60, 13, 128, 14, 86, 63, 117, 198, 274, 5, 22, 144, 258, 121, 38, 207, 148, 292, 41, 234, 237, 114, 202, 37, 149, 206, 155, 29, 130, 177, 194, 152, 34, 33, 239, 160, 140, 47, 244, 25, 282, 158, 211, 123, 190, 218, 164, 247, 263, 191, 220, 115, 242, 250, 124, 295, 95, 285, 225, 185]
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-2025-07-07 20:07:57,330 [trainer.py] => All params: 85992312
-2025-07-07 20:07:57,331 [trainer.py] => Trainable params: 193656
-2025-07-07 20:07:57,581 [adam_adapter.py] => Learning on 0-30
-86,015,353 total parameters.
-216,697 training parameters.
-backbone.blocks.0.adaptmlp.down_proj.weight 7680
-backbone.blocks.0.adaptmlp.down_proj.bias 10
-backbone.blocks.0.adaptmlp.up_proj.weight 7680
-backbone.blocks.0.adaptmlp.up_proj.bias 768
-backbone.blocks.1.adaptmlp.down_proj.weight 7680
-backbone.blocks.1.adaptmlp.down_proj.bias 10
-backbone.blocks.1.adaptmlp.up_proj.weight 7680
-backbone.blocks.1.adaptmlp.up_proj.bias 768
-backbone.blocks.2.adaptmlp.down_proj.weight 7680
-backbone.blocks.2.adaptmlp.down_proj.bias 10
-backbone.blocks.2.adaptmlp.up_proj.weight 7680
-backbone.blocks.2.adaptmlp.up_proj.bias 768
-backbone.blocks.3.adaptmlp.down_proj.weight 7680
-backbone.blocks.3.adaptmlp.down_proj.bias 10
-backbone.blocks.3.adaptmlp.up_proj.weight 7680
-backbone.blocks.3.adaptmlp.up_proj.bias 768
-backbone.blocks.4.adaptmlp.down_proj.weight 7680
-backbone.blocks.4.adaptmlp.down_proj.bias 10
-backbone.blocks.4.adaptmlp.up_proj.weight 7680
-backbone.blocks.4.adaptmlp.up_proj.bias 768
-backbone.blocks.5.adaptmlp.down_proj.weight 7680
-backbone.blocks.5.adaptmlp.down_proj.bias 10
-backbone.blocks.5.adaptmlp.up_proj.weight 7680
-backbone.blocks.5.adaptmlp.up_proj.bias 768
-backbone.blocks.6.adaptmlp.down_proj.weight 7680
-backbone.blocks.6.adaptmlp.down_proj.bias 10
-backbone.blocks.6.adaptmlp.up_proj.weight 7680
-backbone.blocks.6.adaptmlp.up_proj.bias 768
-backbone.blocks.7.adaptmlp.down_proj.weight 7680
-backbone.blocks.7.adaptmlp.down_proj.bias 10
-backbone.blocks.7.adaptmlp.up_proj.weight 7680
-backbone.blocks.7.adaptmlp.up_proj.bias 768
-backbone.blocks.8.adaptmlp.down_proj.weight 7680
-backbone.blocks.8.adaptmlp.down_proj.bias 10
-backbone.blocks.8.adaptmlp.up_proj.weight 7680
-backbone.blocks.8.adaptmlp.up_proj.bias 768
-backbone.blocks.9.adaptmlp.down_proj.weight 7680
-backbone.blocks.9.adaptmlp.down_proj.bias 10
-backbone.blocks.9.adaptmlp.up_proj.weight 7680
-backbone.blocks.9.adaptmlp.up_proj.bias 768
-backbone.blocks.10.adaptmlp.down_proj.weight 7680
-backbone.blocks.10.adaptmlp.down_proj.bias 10
-backbone.blocks.10.adaptmlp.up_proj.weight 7680
-backbone.blocks.10.adaptmlp.up_proj.bias 768
-backbone.blocks.11.adaptmlp.down_proj.weight 7680
-backbone.blocks.11.adaptmlp.down_proj.bias 10
-backbone.blocks.11.adaptmlp.up_proj.weight 7680
-backbone.blocks.11.adaptmlp.up_proj.bias 768
-fc.weight 23040
-fc.sigma 1
-  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.727, Train_accy 62.70, Test_accy 81.83:   0%|          | 0/20 [00:55<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.727, Train_accy 62.70, Test_accy 81.83:   5%|▌         | 1/20 [00:55<17:37, 55.66s/it]Task 0, Epoch 2/20 => Loss 0.853, Train_accy 83.00, Test_accy 86.00:   5%|▌         | 1/20 [01:46<17:37, 55.66s/it]Task 0, Epoch 2/20 => Loss 0.853, Train_accy 83.00, Test_accy 86.00:  10%|█         | 2/20 [01:46<15:54, 53.00s/it]Task 0, Epoch 3/20 => Loss 0.561, Train_accy 84.83, Test_accy 87.33:  10%|█         | 2/20 [02:37<15:54, 53.00s/it]Task 0, Epoch 3/20 => Loss 0.561, Train_accy 84.83, Test_accy 87.33:  15%|█▌        | 3/20 [02:37<14:44, 52.00s/it]Task 0, Epoch 4/20 => Loss 0.494, Train_accy 85.74, Test_accy 88.83:  15%|█▌        | 3/20 [03:28<14:44, 52.00s/it]Task 0, Epoch 4/20 => Loss 0.494, Train_accy 85.74, Test_accy 88.83:  20%|██        | 4/20 [03:28<13:46, 51.68s/it]Task 0, Epoch 5/20 => Loss 0.458, Train_accy 87.29, Test_accy 89.83:  20%|██        | 4/20 [04:19<13:46, 51.68s/it]Task 0, Epoch 5/20 => Loss 0.458, Train_accy 87.29, Test_accy 89.83:  25%|██▌       | 5/20 [04:19<12:52, 51.47s/it]Task 0, Epoch 6/20 => Loss 0.438, Train_accy 87.28, Test_accy 90.83:  25%|██▌       | 5/20 [05:11<12:52, 51.47s/it]Task 0, Epoch 6/20 => Loss 0.438, Train_accy 87.28, Test_accy 90.83:  30%|███       | 6/20 [05:11<11:59, 51.37s/it]Task 0, Epoch 7/20 => Loss 0.412, Train_accy 88.21, Test_accy 92.00:  30%|███       | 6/20 [06:01<11:59, 51.37s/it]Task 0, Epoch 7/20 => Loss 0.412, Train_accy 88.21, Test_accy 92.00:  35%|███▌      | 7/20 [06:01<11:05, 51.16s/it]Task 0, Epoch 8/20 => Loss 0.396, Train_accy 88.67, Test_accy 91.33:  35%|███▌      | 7/20 [06:53<11:05, 51.16s/it]Task 0, Epoch 8/20 => Loss 0.396, Train_accy 88.67, Test_accy 91.33:  40%|████      | 8/20 [06:53<10:14, 51.23s/it]Task 0, Epoch 9/20 => Loss 0.384, Train_accy 88.80, Test_accy 91.67:  40%|████      | 8/20 [07:44<10:14, 51.23s/it]Task 0, Epoch 9/20 => Loss 0.384, Train_accy 88.80, Test_accy 91.67:  45%|████▌     | 9/20 [07:44<09:22, 51.12s/it]Task 0, Epoch 10/20 => Loss 0.387, Train_accy 88.76, Test_accy 91.00:  45%|████▌     | 9/20 [08:34<09:22, 51.12s/it]Task 0, Epoch 10/20 => Loss 0.387, Train_accy 88.76, Test_accy 91.00:  50%|█████     | 10/20 [08:34<08:29, 51.00s/it]Task 0, Epoch 11/20 => Loss 0.382, Train_accy 89.04, Test_accy 91.17:  50%|█████     | 10/20 [09:25<08:29, 51.00s/it]Task 0, Epoch 11/20 => Loss 0.382, Train_accy 89.04, Test_accy 91.17:  55%|█████▌    | 11/20 [09:25<07:38, 50.92s/it]Task 0, Epoch 12/20 => Loss 0.366, Train_accy 89.56, Test_accy 92.33:  55%|█████▌    | 11/20 [10:16<07:38, 50.92s/it]Task 0, Epoch 12/20 => Loss 0.366, Train_accy 89.56, Test_accy 92.33:  60%|██████    | 12/20 [10:16<06:47, 50.95s/it]Task 0, Epoch 13/20 => Loss 0.368, Train_accy 89.45, Test_accy 91.83:  60%|██████    | 12/20 [11:07<06:47, 50.95s/it]Task 0, Epoch 13/20 => Loss 0.368, Train_accy 89.45, Test_accy 91.83:  65%|██████▌   | 13/20 [11:07<05:56, 50.89s/it]Task 0, Epoch 14/20 => Loss 0.355, Train_accy 89.91, Test_accy 92.33:  65%|██████▌   | 13/20 [11:58<05:56, 50.89s/it]Task 0, Epoch 14/20 => Loss 0.355, Train_accy 89.91, Test_accy 92.33:  70%|███████   | 14/20 [11:58<05:05, 50.90s/it]Task 0, Epoch 15/20 => Loss 0.348, Train_accy 90.01, Test_accy 92.33:  70%|███████   | 14/20 [12:49<05:05, 50.90s/it]Task 0, Epoch 15/20 => Loss 0.348, Train_accy 90.01, Test_accy 92.33:  75%|███████▌  | 15/20 [12:49<04:14, 50.97s/it]Task 0, Epoch 16/20 => Loss 0.354, Train_accy 90.29, Test_accy 92.17:  75%|███████▌  | 15/20 [13:40<04:14, 50.97s/it]Task 0, Epoch 16/20 => Loss 0.354, Train_accy 90.29, Test_accy 92.17:  80%|████████  | 16/20 [13:40<03:24, 51.04s/it]Task 0, Epoch 17/20 => Loss 0.350, Train_accy 89.92, Test_accy 91.83:  80%|████████  | 16/20 [14:31<03:24, 51.04s/it]Task 0, Epoch 17/20 => Loss 0.350, Train_accy 89.92, Test_accy 91.83:  85%|████████▌ | 17/20 [14:31<02:33, 51.07s/it]Task 0, Epoch 18/20 => Loss 0.345, Train_accy 90.43, Test_accy 91.83:  85%|████████▌ | 17/20 [15:23<02:33, 51.07s/it]Task 0, Epoch 18/20 => Loss 0.345, Train_accy 90.43, Test_accy 91.83:  90%|█████████ | 18/20 [15:23<01:42, 51.16s/it]Task 0, Epoch 19/20 => Loss 0.341, Train_accy 90.60, Test_accy 91.83:  90%|█████████ | 18/20 [16:14<01:42, 51.16s/it]Task 0, Epoch 19/20 => Loss 0.341, Train_accy 90.60, Test_accy 91.83:  95%|█████████▌| 19/20 [16:14<00:51, 51.15s/it]Task 0, Epoch 20/20 => Loss 0.344, Train_accy 90.40, Test_accy 91.83:  95%|█████████▌| 19/20 [17:05<00:51, 51.15s/it]Task 0, Epoch 20/20 => Loss 0.344, Train_accy 90.40, Test_accy 91.83: 100%|██████████| 20/20 [17:05<00:00, 51.16s/it]Task 0, Epoch 20/20 => Loss 0.344, Train_accy 90.40, Test_accy 91.83: 100%|██████████| 20/20 [17:05<00:00, 51.27s/it]
-2025-07-07 20:25:03,055 [adam_adapter.py] => Task 0, Epoch 20/20 => Loss 0.344, Train_accy 90.40, Test_accy 91.83
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-Clear the backbone in MultiBranchCosineIncrementalNet, since we are using self.backbones with dual branches
-pretrained_vit_b16_224_in21k
-Time for task 0: 1085.1991984844208
-2025-07-07 20:26:07,164 [trainer.py] => No NME accuracy.
-2025-07-07 20:26:07,164 [trainer.py] => CNN: {'total': 89.33, '00-29': 89.33, 'old': 0, 'new': 89.33}
-2025-07-07 20:26:07,164 [trainer.py] => CNN top1 curve: [89.33]
-2025-07-07 20:26:07,164 [trainer.py] => CNN top5 curve: [99.0]
-
-Average Accuracy (CNN): 89.33
-2025-07-07 20:26:07,164 [trainer.py] => Average Accuracy (CNN): 89.33 
-
-2025-07-07 20:26:07,166 [trainer.py] => All params: 171837049
-2025-07-07 20:26:07,167 [trainer.py] => Trainable params: 86038393
-2025-07-07 20:26:07,171 [adam_adapter.py] => Learning on 30-60
-Time for task 1: 53.264564752578735
-2025-07-07 20:27:07,728 [trainer.py] => No NME accuracy.
-2025-07-07 20:27:07,728 [trainer.py] => CNN: {'total': 89.07, '00-29': 86.5, '30-59': 91.65, 'old': 86.5, 'new': 91.65}
-2025-07-07 20:27:07,728 [trainer.py] => CNN top1 curve: [89.33, 89.07]
-2025-07-07 20:27:07,728 [trainer.py] => CNN top5 curve: [99.0, 98.75]
-
-Average Accuracy (CNN): 89.2
-2025-07-07 20:27:07,728 [trainer.py] => Average Accuracy (CNN): 89.2 
-
-2025-07-07 20:27:07,730 [trainer.py] => All params: 171883129
-2025-07-07 20:27:07,731 [trainer.py] => Trainable params: 86084473
-2025-07-07 20:27:07,743 [adam_adapter.py] => Learning on 60-90
-Time for task 2: 51.88278818130493
-2025-07-07 20:28:09,910 [trainer.py] => No NME accuracy.
-2025-07-07 20:28:09,911 [trainer.py] => CNN: {'total': 86.37, '00-29': 82.67, '30-59': 89.65, '60-89': 86.81, 'old': 86.16, 'new': 86.81}
-2025-07-07 20:28:09,911 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37]
-2025-07-07 20:28:09,911 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61]
-
-Average Accuracy (CNN): 88.26
-2025-07-07 20:28:09,911 [trainer.py] => Average Accuracy (CNN): 88.26 
-
-2025-07-07 20:28:09,912 [trainer.py] => All params: 171929209
-2025-07-07 20:28:09,913 [trainer.py] => Trainable params: 86130553
-2025-07-07 20:28:09,928 [adam_adapter.py] => Learning on 90-120
-Time for task 3: 54.07389163970947
-2025-07-07 20:29:17,765 [trainer.py] => No NME accuracy.
-2025-07-07 20:29:17,783 [trainer.py] => CNN: {'total': 82.55, '00-29': 81.17, '30-59': 86.14, '60-89': 82.97, '90-119': 79.9, 'old': 83.43, 'new': 79.9}
-2025-07-07 20:29:17,783 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55]
-2025-07-07 20:29:17,783 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66]
-
-Average Accuracy (CNN): 86.83
-2025-07-07 20:29:17,784 [trainer.py] => Average Accuracy (CNN): 86.83 
-
-2025-07-07 20:29:17,785 [trainer.py] => All params: 171975289
-2025-07-07 20:29:17,786 [trainer.py] => Trainable params: 86176633
-2025-07-07 20:29:17,830 [adam_adapter.py] => Learning on 120-150
-Time for task 4: 51.74295258522034
-2025-07-07 20:30:26,703 [trainer.py] => No NME accuracy.
-2025-07-07 20:30:26,703 [trainer.py] => CNN: {'total': 80.49, '00-29': 79.67, '30-59': 82.8, '60-89': 81.3, '90-119': 76.72, '120-149': 81.97, 'old': 80.13, 'new': 81.97}
-2025-07-07 20:30:26,703 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49]
-2025-07-07 20:30:26,703 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22]
-
-Average Accuracy (CNN): 85.56
-2025-07-07 20:30:26,703 [trainer.py] => Average Accuracy (CNN): 85.56 
-
-2025-07-07 20:30:26,705 [trainer.py] => All params: 172021369
-2025-07-07 20:30:26,706 [trainer.py] => Trainable params: 86222713
-2025-07-07 20:30:26,711 [adam_adapter.py] => Learning on 150-180
-Time for task 5: 50.79200005531311
-2025-07-07 20:31:37,040 [trainer.py] => No NME accuracy.
-2025-07-07 20:31:37,040 [trainer.py] => CNN: {'total': 77.59, '00-29': 76.83, '30-59': 80.13, '60-89': 78.96, '90-119': 75.38, '120-149': 80.8, '150-179': 73.41, 'old': 78.42, 'new': 73.41}
-2025-07-07 20:31:37,040 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49, 77.59]
-2025-07-07 20:31:37,040 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22, 94.07]
-
-Average Accuracy (CNN): 84.23
-2025-07-07 20:31:37,040 [trainer.py] => Average Accuracy (CNN): 84.23 
-
-2025-07-07 20:31:37,042 [trainer.py] => All params: 172067449
-2025-07-07 20:31:37,043 [trainer.py] => Trainable params: 86268793
-2025-07-07 20:31:37,051 [adam_adapter.py] => Learning on 180-210
-Time for task 6: 50.44742131233215
-2025-07-07 20:32:50,554 [trainer.py] => No NME accuracy.
-2025-07-07 20:32:50,554 [trainer.py] => CNN: {'total': 76.75, '00-29': 76.5, '30-59': 79.47, '60-89': 77.96, '90-119': 73.03, '120-149': 80.47, '150-179': 72.07, '180-209': 77.72, 'old': 76.59, 'new': 77.72}
-2025-07-07 20:32:50,555 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49, 77.59, 76.75]
-2025-07-07 20:32:50,555 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22, 94.07, 93.6]
-
-Average Accuracy (CNN): 83.16
-2025-07-07 20:32:50,555 [trainer.py] => Average Accuracy (CNN): 83.16 
-
-2025-07-07 20:32:50,556 [trainer.py] => All params: 172113529
-2025-07-07 20:32:50,557 [trainer.py] => Trainable params: 86314873
-2025-07-07 20:32:50,572 [adam_adapter.py] => Learning on 210-240
-Time for task 7: 53.816341400146484
-2025-07-07 20:34:10,807 [trainer.py] => No NME accuracy.
-2025-07-07 20:34:10,821 [trainer.py] => CNN: {'total': 75.17, '00-29': 75.0, '30-59': 78.96, '60-89': 77.8, '90-119': 70.52, '120-149': 79.3, '150-179': 71.24, '180-209': 76.55, '210-239': 71.95, 'old': 75.63, 'new': 71.95}
-2025-07-07 20:34:10,821 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49, 77.59, 76.75, 75.17]
-2025-07-07 20:34:10,821 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22, 94.07, 93.6, 92.21]
-
-Average Accuracy (CNN): 82.16
-2025-07-07 20:34:10,821 [trainer.py] => Average Accuracy (CNN): 82.16 
-
-2025-07-07 20:34:10,823 [trainer.py] => All params: 172159609
-2025-07-07 20:34:10,824 [trainer.py] => Trainable params: 86360953
-2025-07-07 20:34:10,831 [adam_adapter.py] => Learning on 240-270
-Time for task 8: 51.81727194786072
-2025-07-07 20:35:33,102 [trainer.py] => No NME accuracy.
-2025-07-07 20:35:33,104 [trainer.py] => CNN: {'total': 74.42, '00-29': 75.0, '30-59': 78.63, '60-89': 76.79, '90-119': 68.51, '120-149': 76.29, '150-179': 70.4, '180-209': 75.21, '210-239': 71.79, '240-269': 77.13, 'old': 74.08, 'new': 77.13}
-2025-07-07 20:35:33,104 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49, 77.59, 76.75, 75.17, 74.42]
-2025-07-07 20:35:33,104 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22, 94.07, 93.6, 92.21, 92.35]
-
-Average Accuracy (CNN): 81.3
-2025-07-07 20:35:33,104 [trainer.py] => Average Accuracy (CNN): 81.3 
-
-2025-07-07 20:35:33,106 [trainer.py] => All params: 172205689
-2025-07-07 20:35:33,108 [trainer.py] => Trainable params: 86407033
-2025-07-07 20:35:33,146 [adam_adapter.py] => Learning on 270-300
-Time for task 9: 50.48211860656738
-2025-07-07 20:36:55,916 [trainer.py] => No NME accuracy.
-2025-07-07 20:36:55,916 [trainer.py] => CNN: {'total': 74.39, '00-29': 74.83, '30-59': 77.63, '60-89': 76.79, '90-119': 66.83, '120-149': 75.96, '150-179': 69.4, '180-209': 74.54, '210-239': 71.29, '240-269': 75.63, '270-299': 80.94, 'old': 73.66, 'new': 80.94}
-2025-07-07 20:36:55,916 [trainer.py] => CNN top1 curve: [89.33, 89.07, 86.37, 82.55, 80.49, 77.59, 76.75, 75.17, 74.42, 74.39]
-2025-07-07 20:36:55,916 [trainer.py] => CNN top5 curve: [99.0, 98.75, 97.61, 96.66, 95.22, 94.07, 93.6, 92.21, 92.35, 92.35]
-
-Average Accuracy (CNN): 80.61
-2025-07-07 20:36:55,917 [trainer.py] => Average Accuracy (CNN): 80.61 
-
-Finished omnibenchmark_init30_inc30: pretrained_vit_b16_224_in21k_adapter  
-----------------------------------------------------------------------------------------------------
-Accuracy Matrix (CNN):
-[[89.33 86.5  82.67 81.17 79.67 76.83 76.5  75.   75.   74.83]
- [ 0.   91.65 89.65 86.14 82.8  80.13 79.47 78.96 78.63 77.63]
- [ 0.    0.   86.81 82.97 81.3  78.96 77.96 77.8  76.79 76.79]
- [ 0.    0.    0.   79.9  76.72 75.38 73.03 70.52 68.51 66.83]
- [ 0.    0.    0.    0.   81.97 80.8  80.47 79.3  76.29 75.96]
- [ 0.    0.    0.    0.    0.   73.41 72.07 71.24 70.4  69.4 ]
- [ 0.    0.    0.    0.    0.    0.   77.72 76.55 75.21 74.54]
- [ 0.    0.    0.    0.    0.    0.    0.   71.95 71.79 71.29]
- [ 0.    0.    0.    0.    0.    0.    0.    0.   77.13 75.63]
- [ 0.    0.    0.    0.    0.    0.    0.    0.    0.   80.94]]
-2025-07-07 20:36:55,917 [trainer.py] => Forgetting (CNN): 7.441111111111111
-2025-07-07 20:37:14,996 [trainer.py] => config: ./scripts/aper/aper_adapter_vtab_B0_Inc10.json
-2025-07-07 20:37:15,006 [trainer.py] => prefix: exp
-2025-07-07 20:37:15,007 [trainer.py] => dataset: vtab
-2025-07-07 20:37:15,007 [trainer.py] => memory_size: 0
-2025-07-07 20:37:15,007 [trainer.py] => memory_per_class: 0
-2025-07-07 20:37:15,007 [trainer.py] => fixed_memory: False
-2025-07-07 20:37:15,007 [trainer.py] => shuffle: False
-2025-07-07 20:37:15,007 [trainer.py] => init_cls: 10
-2025-07-07 20:37:15,008 [trainer.py] => increment: 10
-2025-07-07 20:37:15,008 [trainer.py] => model_name: adam_adapter
-2025-07-07 20:37:15,008 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
-2025-07-07 20:37:15,008 [trainer.py] => weight_decay: 0.0005
-2025-07-07 20:37:15,008 [trainer.py] => prompt_token_num: 30
-2025-07-07 20:37:15,008 [trainer.py] => ffn_num: 10
-2025-07-07 20:37:15,008 [trainer.py] => optimizer: sgd
-2025-07-07 20:37:15,008 [trainer.py] => min_lr: 0
-2025-07-07 20:37:15,009 [trainer.py] => device: [device(type='cuda', index=3)]
-2025-07-07 20:37:15,009 [trainer.py] => seed: 1993
-2025-07-07 20:37:15,009 [trainer.py] => tuned_epoch: 20
-2025-07-07 20:37:15,009 [trainer.py] => init_lr: 0.01
-2025-07-07 20:37:15,009 [trainer.py] => batch_size: 48
-{'10': 0, '11': 1, '12': 2, '13': 3, '14': 4, '15': 5, '16': 6, '17': 7, '18': 8, '19': 9, '20': 10, '21': 11, '22': 12, '23': 13, '24': 14, '25': 15, '26': 16, '27': 17, '28': 18, '29': 19, '30': 20, '31': 21, '32': 22, '33': 23, '34': 24, '35': 25, '36': 26, '37': 27, '38': 28, '39': 29, '40': 30, '41': 31, '42': 32, '43': 33, '44': 34, '45': 35, '46': 36, '47': 37, '48': 38, '49': 39, '50': 40, '51': 41, '52': 42, '53': 43, '54': 44, '55': 45, '56': 46, '57': 47, '58': 48, '59': 49}
-{'10': 0, '11': 1, '12': 2, '13': 3, '14': 4, '15': 5, '16': 6, '17': 7, '18': 8, '19': 9, '20': 10, '21': 11, '22': 12, '23': 13, '24': 14, '25': 15, '26': 16, '27': 17, '28': 18, '29': 19, '30': 20, '31': 21, '32': 22, '33': 23, '34': 24, '35': 25, '36': 26, '37': 27, '38': 28, '39': 29, '40': 30, '41': 31, '42': 32, '43': 33, '44': 34, '45': 35, '46': 36, '47': 37, '48': 38, '49': 39, '50': 40, '51': 41, '52': 42, '53': 43, '54': 44, '55': 45, '56': 46, '57': 47, '58': 48, '59': 49}
-2025-07-07 20:37:15,367 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-2025-07-07 20:37:23,193 [trainer.py] => All params: 85992312
-2025-07-07 20:37:23,194 [trainer.py] => Trainable params: 193656
-2025-07-07 20:37:23,523 [adam_adapter.py] => Learning on 0-10
-85,999,993 total parameters.
-201,337 training parameters.
-backbone.blocks.0.adaptmlp.down_proj.weight 7680
-backbone.blocks.0.adaptmlp.down_proj.bias 10
-backbone.blocks.0.adaptmlp.up_proj.weight 7680
-backbone.blocks.0.adaptmlp.up_proj.bias 768
-backbone.blocks.1.adaptmlp.down_proj.weight 7680
-backbone.blocks.1.adaptmlp.down_proj.bias 10
-backbone.blocks.1.adaptmlp.up_proj.weight 7680
-backbone.blocks.1.adaptmlp.up_proj.bias 768
-backbone.blocks.2.adaptmlp.down_proj.weight 7680
-backbone.blocks.2.adaptmlp.down_proj.bias 10
-backbone.blocks.2.adaptmlp.up_proj.weight 7680
-backbone.blocks.2.adaptmlp.up_proj.bias 768
-backbone.blocks.3.adaptmlp.down_proj.weight 7680
-backbone.blocks.3.adaptmlp.down_proj.bias 10
-backbone.blocks.3.adaptmlp.up_proj.weight 7680
-backbone.blocks.3.adaptmlp.up_proj.bias 768
-backbone.blocks.4.adaptmlp.down_proj.weight 7680
-backbone.blocks.4.adaptmlp.down_proj.bias 10
-backbone.blocks.4.adaptmlp.up_proj.weight 7680
-backbone.blocks.4.adaptmlp.up_proj.bias 768
-backbone.blocks.5.adaptmlp.down_proj.weight 7680
-backbone.blocks.5.adaptmlp.down_proj.bias 10
-backbone.blocks.5.adaptmlp.up_proj.weight 7680
-backbone.blocks.5.adaptmlp.up_proj.bias 768
-backbone.blocks.6.adaptmlp.down_proj.weight 7680
-backbone.blocks.6.adaptmlp.down_proj.bias 10
-backbone.blocks.6.adaptmlp.up_proj.weight 7680
-backbone.blocks.6.adaptmlp.up_proj.bias 768
-backbone.blocks.7.adaptmlp.down_proj.weight 7680
-backbone.blocks.7.adaptmlp.down_proj.bias 10
-backbone.blocks.7.adaptmlp.up_proj.weight 7680
-backbone.blocks.7.adaptmlp.up_proj.bias 768
-backbone.blocks.8.adaptmlp.down_proj.weight 7680
-backbone.blocks.8.adaptmlp.down_proj.bias 10
-backbone.blocks.8.adaptmlp.up_proj.weight 7680
-backbone.blocks.8.adaptmlp.up_proj.bias 768
-backbone.blocks.9.adaptmlp.down_proj.weight 7680
-backbone.blocks.9.adaptmlp.down_proj.bias 10
-backbone.blocks.9.adaptmlp.up_proj.weight 7680
-backbone.blocks.9.adaptmlp.up_proj.bias 768
-backbone.blocks.10.adaptmlp.down_proj.weight 7680
-backbone.blocks.10.adaptmlp.down_proj.bias 10
-backbone.blocks.10.adaptmlp.up_proj.weight 7680
-backbone.blocks.10.adaptmlp.up_proj.bias 768
-backbone.blocks.11.adaptmlp.down_proj.weight 7680
-backbone.blocks.11.adaptmlp.down_proj.bias 10
-backbone.blocks.11.adaptmlp.up_proj.weight 7680
-backbone.blocks.11.adaptmlp.up_proj.bias 768
-fc.weight 7680
-fc.sigma 1
-  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.295, Train_accy 14.03, Test_accy 15.90:   0%|          | 0/20 [00:08<?, ?it/s]Task 0, Epoch 1/20 => Loss 2.295, Train_accy 14.03, Test_accy 15.90:   5%|▌         | 1/20 [00:08<02:44,  8.66s/it]Task 0, Epoch 2/20 => Loss 2.286, Train_accy 17.19, Test_accy 23.20:   5%|▌         | 1/20 [00:13<02:44,  8.66s/it]Task 0, Epoch 2/20 => Loss 2.286, Train_accy 17.19, Test_accy 23.20:  10%|█         | 2/20 [00:13<01:53,  6.31s/it]Task 0, Epoch 3/20 => Loss 2.270, Train_accy 28.51, Test_accy 36.20:  10%|█         | 2/20 [00:17<01:53,  6.31s/it]Task 0, Epoch 3/20 => Loss 2.270, Train_accy 28.51, Test_accy 36.20:  15%|█▌        | 3/20 [00:17<01:34,  5.53s/it]Task 0, Epoch 4/20 => Loss 2.250, Train_accy 43.89, Test_accy 47.70:  15%|█▌        | 3/20 [00:22<01:34,  5.53s/it]Task 0, Epoch 4/20 => Loss 2.250, Train_accy 43.89, Test_accy 47.70:  20%|██        | 4/20 [00:22<01:22,  5.15s/it]Task 0, Epoch 5/20 => Loss 2.229, Train_accy 52.49, Test_accy 53.00:  20%|██        | 4/20 [00:27<01:22,  5.15s/it]Task 0, Epoch 5/20 => Loss 2.229, Train_accy 52.49, Test_accy 53.00:  25%|██▌       | 5/20 [00:27<01:16,  5.07s/it]Task 0, Epoch 6/20 => Loss 2.208, Train_accy 57.01, Test_accy 55.50:  25%|██▌       | 5/20 [00:32<01:16,  5.07s/it]Task 0, Epoch 6/20 => Loss 2.208, Train_accy 57.01, Test_accy 55.50:  30%|███       | 6/20 [00:32<01:09,  4.96s/it]Task 0, Epoch 7/20 => Loss 2.184, Train_accy 57.01, Test_accy 57.30:  30%|███       | 6/20 [00:37<01:09,  4.96s/it]Task 0, Epoch 7/20 => Loss 2.184, Train_accy 57.01, Test_accy 57.30:  35%|███▌      | 7/20 [00:37<01:04,  4.97s/it]Task 0, Epoch 8/20 => Loss 2.161, Train_accy 65.16, Test_accy 58.70:  35%|███▌      | 7/20 [00:41<01:04,  4.97s/it]Task 0, Epoch 8/20 => Loss 2.161, Train_accy 65.16, Test_accy 58.70:  40%|████      | 8/20 [00:41<00:58,  4.85s/it]Task 0, Epoch 9/20 => Loss 2.144, Train_accy 63.80, Test_accy 59.40:  40%|████      | 8/20 [00:46<00:58,  4.85s/it]Task 0, Epoch 9/20 => Loss 2.144, Train_accy 63.80, Test_accy 59.40:  45%|████▌     | 9/20 [00:46<00:53,  4.89s/it]Task 0, Epoch 10/20 => Loss 2.120, Train_accy 64.25, Test_accy 60.60:  45%|████▌     | 9/20 [00:51<00:53,  4.89s/it]Task 0, Epoch 10/20 => Loss 2.120, Train_accy 64.25, Test_accy 60.60:  50%|█████     | 10/20 [00:51<00:48,  4.82s/it]Task 0, Epoch 11/20 => Loss 2.098, Train_accy 66.06, Test_accy 61.70:  50%|█████     | 10/20 [00:56<00:48,  4.82s/it]Task 0, Epoch 11/20 => Loss 2.098, Train_accy 66.06, Test_accy 61.70:  55%|█████▌    | 11/20 [00:56<00:43,  4.85s/it]Task 0, Epoch 12/20 => Loss 2.078, Train_accy 70.59, Test_accy 62.30:  55%|█████▌    | 11/20 [01:00<00:43,  4.85s/it]Task 0, Epoch 12/20 => Loss 2.078, Train_accy 70.59, Test_accy 62.30:  60%|██████    | 12/20 [01:00<00:37,  4.75s/it]Task 0, Epoch 13/20 => Loss 2.071, Train_accy 67.87, Test_accy 62.50:  60%|██████    | 12/20 [01:05<00:37,  4.75s/it]Task 0, Epoch 13/20 => Loss 2.071, Train_accy 67.87, Test_accy 62.50:  65%|██████▌   | 13/20 [01:05<00:33,  4.84s/it]Task 0, Epoch 14/20 => Loss 2.062, Train_accy 67.42, Test_accy 62.90:  65%|██████▌   | 13/20 [01:10<00:33,  4.84s/it]Task 0, Epoch 14/20 => Loss 2.062, Train_accy 67.42, Test_accy 62.90:  70%|███████   | 14/20 [01:10<00:28,  4.76s/it]Task 0, Epoch 15/20 => Loss 2.048, Train_accy 70.14, Test_accy 63.20:  70%|███████   | 14/20 [01:15<00:28,  4.76s/it]Task 0, Epoch 15/20 => Loss 2.048, Train_accy 70.14, Test_accy 63.20:  75%|███████▌  | 15/20 [01:15<00:23,  4.80s/it]Task 0, Epoch 16/20 => Loss 2.044, Train_accy 67.42, Test_accy 63.40:  75%|███████▌  | 15/20 [01:19<00:23,  4.80s/it]Task 0, Epoch 16/20 => Loss 2.044, Train_accy 67.42, Test_accy 63.40:  80%|████████  | 16/20 [01:19<00:18,  4.71s/it]Task 0, Epoch 17/20 => Loss 2.047, Train_accy 65.61, Test_accy 63.40:  80%|████████  | 16/20 [01:24<00:18,  4.71s/it]Task 0, Epoch 17/20 => Loss 2.047, Train_accy 65.61, Test_accy 63.40:  85%|████████▌ | 17/20 [01:24<00:14,  4.80s/it]Task 0, Epoch 18/20 => Loss 2.034, Train_accy 70.59, Test_accy 63.40:  85%|████████▌ | 17/20 [01:29<00:14,  4.80s/it]Task 0, Epoch 18/20 => Loss 2.034, Train_accy 70.59, Test_accy 63.40:  90%|█████████ | 18/20 [01:29<00:09,  4.73s/it]Task 0, Epoch 19/20 => Loss 2.023, Train_accy 71.04, Test_accy 63.30:  90%|█████████ | 18/20 [01:34<00:09,  4.73s/it]Task 0, Epoch 19/20 => Loss 2.023, Train_accy 71.04, Test_accy 63.30:  95%|█████████▌| 19/20 [01:34<00:04,  4.78s/it]Task 0, Epoch 20/20 => Loss 2.035, Train_accy 67.87, Test_accy 63.30:  95%|█████████▌| 19/20 [01:38<00:04,  4.78s/it]Task 0, Epoch 20/20 => Loss 2.035, Train_accy 67.87, Test_accy 63.30: 100%|██████████| 20/20 [01:38<00:00,  4.75s/it]Task 0, Epoch 20/20 => Loss 2.035, Train_accy 67.87, Test_accy 63.30: 100%|██████████| 20/20 [01:38<00:00,  4.95s/it]
-2025-07-07 20:39:02,597 [adam_adapter.py] => Task 0, Epoch 20/20 => Loss 2.035, Train_accy 67.87, Test_accy 63.30
-This is for the BaseNet initialization.
-I'm using ViT with adapters.
-After BaseNet initialization.
-Clear the backbone in MultiBranchCosineIncrementalNet, since we are using self.backbones with dual branches
-pretrained_vit_b16_224_in21k
-Time for task 0: 110.32647156715393
-2025-07-07 20:39:19,061 [trainer.py] => No NME accuracy.
-2025-07-07 20:39:19,061 [trainer.py] => CNN: {'total': 88.0, '00-09': 88.0, 'old': 0, 'new': 88.0}
-2025-07-07 20:39:19,062 [trainer.py] => CNN top1 curve: [88.0]
-2025-07-07 20:39:19,062 [trainer.py] => CNN top5 curve: [98.8]
-
-Average Accuracy (CNN): 88.0
-2025-07-07 20:39:19,062 [trainer.py] => Average Accuracy (CNN): 88.0 
-
-2025-07-07 20:39:19,063 [trainer.py] => All params: 171806329
-2025-07-07 20:39:19,064 [trainer.py] => Trainable params: 86007673
-2025-07-07 20:39:19,065 [adam_adapter.py] => Learning on 10-20
-Time for task 1: 2.1485414505004883
-2025-07-07 20:39:28,659 [trainer.py] => No NME accuracy.
-2025-07-07 20:39:28,660 [trainer.py] => CNN: {'total': 86.64, '00-09': 88.0, '10-19': 83.25, 'old': 88.0, 'new': 83.25}
-2025-07-07 20:39:28,660 [trainer.py] => CNN top1 curve: [88.0, 86.64]
-2025-07-07 20:39:28,660 [trainer.py] => CNN top5 curve: [98.8, 98.14]
-
-Average Accuracy (CNN): 87.32
-2025-07-07 20:39:28,660 [trainer.py] => Average Accuracy (CNN): 87.32 
-
-2025-07-07 20:39:28,661 [trainer.py] => All params: 171821689
-2025-07-07 20:39:28,662 [trainer.py] => Trainable params: 86023033
-2025-07-07 20:39:28,664 [adam_adapter.py] => Learning on 20-30
-Time for task 2: 2.3431859016418457
-2025-07-07 20:39:43,561 [trainer.py] => No NME accuracy.
-2025-07-07 20:39:43,562 [trainer.py] => CNN: {'total': 89.56, '00-09': 88.0, '10-19': 82.0, '20-29': 94.21, 'old': 86.29, 'new': 94.21}
-2025-07-07 20:39:43,562 [trainer.py] => CNN top1 curve: [88.0, 86.64, 89.56]
-2025-07-07 20:39:43,562 [trainer.py] => CNN top5 curve: [98.8, 98.14, 98.7]
-
-Average Accuracy (CNN): 88.07
-2025-07-07 20:39:43,562 [trainer.py] => Average Accuracy (CNN): 88.07 
-
-2025-07-07 20:39:43,563 [trainer.py] => All params: 171837049
-2025-07-07 20:39:43,565 [trainer.py] => Trainable params: 86038393
-2025-07-07 20:39:43,566 [adam_adapter.py] => Learning on 30-40
-Time for task 3: 6.078449249267578
-2025-07-07 20:40:30,271 [trainer.py] => No NME accuracy.
-2025-07-07 20:40:30,271 [trainer.py] => CNN: {'total': 82.81, '00-09': 87.8, '10-19': 81.75, '20-29': 94.21, '30-39': 79.89, 'old': 89.43, 'new': 79.89}
-2025-07-07 20:40:30,271 [trainer.py] => CNN top1 curve: [88.0, 86.64, 89.56, 82.81]
-2025-07-07 20:40:30,271 [trainer.py] => CNN top5 curve: [98.8, 98.14, 98.7, 98.15]
-
-Average Accuracy (CNN): 86.75
-2025-07-07 20:40:30,271 [trainer.py] => Average Accuracy (CNN): 86.75 
-
-2025-07-07 20:40:30,273 [trainer.py] => All params: 171852409
-2025-07-07 20:40:30,274 [trainer.py] => Trainable params: 86053753
-2025-07-07 20:40:30,275 [adam_adapter.py] => Learning on 40-50
-Time for task 4: 1.3204004764556885
-2025-07-07 20:41:16,675 [trainer.py] => No NME accuracy.
-2025-07-07 20:41:16,676 [trainer.py] => CNN: {'total': 84.45, '00-09': 87.8, '10-19': 81.5, '20-29': 94.21, '30-39': 79.89, '40-49': 99.88, 'old': 82.8, 'new': 99.88}
-2025-07-07 20:41:16,676 [trainer.py] => CNN top1 curve: [88.0, 86.64, 89.56, 82.81, 84.45]
-2025-07-07 20:41:16,676 [trainer.py] => CNN top5 curve: [98.8, 98.14, 98.7, 98.15, 98.31]
-
-Average Accuracy (CNN): 86.29
-2025-07-07 20:41:16,676 [trainer.py] => Average Accuracy (CNN): 86.29 
-
-Finished vtab_init10_inc10: pretrained_vit_b16_224_in21k_adapter  
-----------------------------------------------------------------------------------------------------
-Accuracy Matrix (CNN):
-[[88.   88.   88.   87.8  87.8 ]
- [ 0.   83.25 82.   81.75 81.5 ]
- [ 0.    0.   94.21 94.21 94.21]
- [ 0.    0.    0.   79.89 79.89]
- [ 0.    0.    0.    0.   99.88]]
-2025-07-07 20:41:16,676 [trainer.py] => Forgetting (CNN): 0.4875000000000007

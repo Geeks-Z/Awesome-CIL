@@ -1,7 +1,7 @@
 # Awesome-CIL
 
 <p align="center">
-  <img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" alt="Awesome-CIL" width="360" />
+  <img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" alt="Awesome-CIL" width="240" />
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@ Awesome-CIL collects resources, reference implementations, and reproducible resu
 
 For paper reading notes, see [Paper Reading Notes](https://www.zhihu.com/people/icode1024/columns).
 
-## Surveys
+## 🎉Surveys
 
 | Title | Venue | Year | Code |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ For paper reading notes, see [Paper Reading Notes](https://www.zhihu.com/people/
 | [Continual Learning with Pre-Trained Models: A Survey](http://arxiv.org/abs/2401.16386) | IJCAI | 2024 | [Official](https://github.com/sun-hailong/LAMDA-PILOT) |
 | [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) | — | — | [Official](https://github.com/G-U-N/PyCIL) |
 
-## Reproduced Methods
+## 🚀 Reproduced Methods
 
 | Title | Method | Venue | Year | Category | Reference implementation |
 | --- | --- | --- | --- | --- | --- |
@@ -44,18 +44,16 @@ For paper reading notes, see [Paper Reading Notes](https://www.zhihu.com/people/
 | [MOS: Model Surgery for Pre-Trained Model-Based Class-Incremental Learning](http://arxiv.org/abs/2412.09441) | MOS | AAAI | 2025 | PEFT / adapter | [Official](https://github.com/sun-hailong/AAAI25-MOS) |
 | [SD-LoRA: Scalable Decoupled Low-Rank Adaptation for Class Incremental Learning](https://openreview.net/forum?id=5U1rlpX68A) | SD-LoRA | ICLR | 2025 | PEFT / LoRA | [Official](https://github.com/WuYichen-97/SD-Lora-CL) |
 
-## Getting Started
+## 🌟 Getting Started
 
-### Clone
+### 🕹️ Clone
 
 ```bash
 git clone https://github.com/hongwei-zhao/Awesome-CIL.git
 cd Awesome-CIL
 ```
 
-### Dependencies
-
-The current experiments are validated in the `peft` Conda environment on Python 3.10.13. The exact core package versions are:
+### 🗂️ Dependencies
 
 - `torch==2.0.1+cu118`
 - `torchvision==0.15.2+cu118`
@@ -67,14 +65,7 @@ The current experiments are validated in the `peft` Conda environment on Python 
 - `PyYAML==6.0.1`
 - `tqdm==4.66.2`
 
-Method-specific packages available in the same environment are `POT==0.9.5` (COIL) and `open-clip-torch==2.30.0` with `ftfy==6.3.1` and `regex==2023.12.25`. Install `openpyxl` only when maintaining the result workbook or running the result-log audit script; it is not required for model training.
-
-```bash
-conda activate peft
-pip install openpyxl  # optional: workbook and result-log maintenance
-```
-
-### Run an Experiment
+### 🔑 Run an Experiment
 
 Select a JSON file in `configs/<method>/`, set the dataset path, GPU IDs, class order seed, initial classes, increment, and method-specific hyperparameters, then run:
 
@@ -123,7 +114,7 @@ Common configuration fields:
 - `backbone_type`: The PTM-CIL comparisons typically use ViT-B/16-IN21K (`vit_base_patch16_224_in21k` or `pretrained_vit_b16_224_in21k`).
 - `fixed_memory`, `memory_size`, and `memory_per_class`: Exemplar-memory controls for methods that use rehearsal.
 
-## Datasets
+## 📚 Datasets
 
 | Dataset | Training examples | Test examples | Classes |
 | --- | ---: | ---: | ---: |
@@ -135,7 +126,7 @@ Common configuration fields:
 | OmniBenchmark | 89,697 | 5,983 | 300 |
 | VTAB | 1,796 | 8,619 | 50 |
 
-### Pre-trained Models
+### ☄️ Pre-trained Models
 
 - **ViT-B/16-IN1K** — Pre-trained on ImageNet-21K and fine-tuned on ImageNet-1K; create it with `timm.create_model("vit_base_patch16_224", pretrained=True)`.
 - **ViT-B/16-IN21K** — Pre-trained on ImageNet-21K without ImageNet-1K fine-tuning; create it with `timm.create_model("vit_base_patch16_224_in21k", pretrained=True)`.
@@ -146,7 +137,7 @@ Common configuration fields:
 - **ViT-B/16-CLIP** — Vision Transformer trained with CLIP on large-scale image-text data.
 - **ResNet-18 / ResNet-50 / ResNet-152** — ImageNet-1K pre-trained convolutional baselines.
 
-## Reproduced Results
+## 📊 Reproduced Results
 
 The [result workbook](CIL_Results.xlsx) is the single source of truth for reproduced metrics. It contains the following result sheets:
 
@@ -161,7 +152,7 @@ The [result-log mapping](result_log_mapping.csv) records the workbook cells, exp
 
 This repository is distributed under the existing [MIT License](LICENSE). The original copyright notice is retained. Pre-trained weights, datasets, and incorporated third-party components remain subject to their respective licenses.
 
-## Acknowledgments
+## 🤗 Acknowledgments
 
 - [LAMDA-PILOT](https://github.com/sun-hailong/LAMDA-PILOT)
 - [Awesome-Incremental-Learning](https://github.com/xialeiliu/Awesome-Incremental-Learning)
