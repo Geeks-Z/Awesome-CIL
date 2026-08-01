@@ -705,9 +705,10 @@ def _create_vision_transformer(variant, pretrained=False, **kwargs):
     if kwargs.get('features_only', None):
         raise RuntimeError('features_only not implemented for Vision Transformer models.')
 
-    # NOTE this extra code to support handling of repr size for in21k pretrained models
-    # pretrained_cfg = resolve_pretrained_cfg(variant, kwargs=kwargs)
-    pretrained_cfg = resolve_pretrained_cfg(variant)
+    # timm>=0.6 passes ``pretrained_cfg`` through the registered model
+    # factory.  Consume it here before forwarding ``kwargs`` so it is not
+    # supplied twice to build_model_with_cfg.
+    pretrained_cfg = kwargs.pop('pretrained_cfg', None) or resolve_pretrained_cfg(variant)
     default_num_classes = pretrained_cfg['num_classes']
     num_classes = kwargs.get('num_classes', default_num_classes)
     repr_size = kwargs.pop('representation_size', None)

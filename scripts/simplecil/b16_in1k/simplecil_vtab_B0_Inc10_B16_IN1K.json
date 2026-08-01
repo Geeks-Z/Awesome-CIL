@@ -1,0 +1,23 @@
+{
+  "prefix": " ",
+  "dataset": "vtab",
+  "memory_size": 0,
+  "memory_per_class": 0,
+  "fixed_memory": false,
+  "shuffle": true,
+  "init_cls": 10,
+  "increment": 10,
+  "model_name": "simplecil",
+  "backbone_type": "vit_base_patch16_224",
+  "device": ["5"],
+  "seed": [42, 1993, 1994],
+  "tuned_epoch": 0,
+  "init_lr": 0.02,
+  "batch_size": 48,
+  "weight_decay": 0.005,
+  "min_lr": 0,
+  "optimizer": "sgd",
+  "scheduler": "cosine",
+  "init_milestones": [10],
+  "init_lr_decay": 0.1
+}

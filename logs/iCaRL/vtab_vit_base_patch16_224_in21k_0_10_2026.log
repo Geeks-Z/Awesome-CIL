@@ -1,0 +1,26 @@
+2026-07-30 06:57:17,949 [trainer.py] => prefix: reproduce
+2026-07-30 06:57:17,949 [trainer.py] => dataset: vtab
+2026-07-30 06:57:17,949 [trainer.py] => memory_size: 350
+2026-07-30 06:57:17,949 [trainer.py] => memory_per_class: 7
+2026-07-30 06:57:17,949 [trainer.py] => fixed_memory: True
+2026-07-30 06:57:17,949 [trainer.py] => shuffle: True
+2026-07-30 06:57:17,949 [trainer.py] => init_cls: 10
+2026-07-30 06:57:17,949 [trainer.py] => increment: 10
+2026-07-30 06:57:17,949 [trainer.py] => model_name: icarl
+2026-07-30 06:57:17,949 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-07-30 06:57:17,949 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-07-30 06:57:17,949 [trainer.py] => seed: 2026
+2026-07-30 06:57:17,949 [trainer.py] => init_epoch: 20
+2026-07-30 06:57:17,950 [trainer.py] => init_lr: 0.001
+2026-07-30 06:57:17,950 [trainer.py] => init_milestones: [60, 120, 170]
+2026-07-30 06:57:17,950 [trainer.py] => init_lr_decay: 0.1
+2026-07-30 06:57:17,950 [trainer.py] => init_weight_decay: 0.0005
+2026-07-30 06:57:17,950 [trainer.py] => epochs: 20
+2026-07-30 06:57:17,950 [trainer.py] => lrate: 0.001
+2026-07-30 06:57:17,950 [trainer.py] => milestones: [80, 120]
+2026-07-30 06:57:17,950 [trainer.py] => lrate_decay: 0.1
+2026-07-30 06:57:17,950 [trainer.py] => batch_size: 48
+2026-07-30 06:57:17,950 [trainer.py] => weight_decay: 0.0002
+2026-07-30 06:57:17,950 [trainer.py] => T: 2
+2026-07-30 06:57:17,950 [trainer.py] => data_path: /home/team/zhaohongwei/Dataset/vtab
+2026-07-30 06:57:17,977 [data_manager.py] => [18, 38, 10, 11, 40, 33, 39, 14, 41, 24, 47, 42, 31, 37, 3, 22, 0, 8, 44, 23, 21, 15, 34, 9, 17, 30, 19, 4, 25, 48, 16, 49, 20, 35, 36, 7, 32, 27, 45, 2, 43, 12, 5, 28, 29, 46, 13, 26, 6, 1]

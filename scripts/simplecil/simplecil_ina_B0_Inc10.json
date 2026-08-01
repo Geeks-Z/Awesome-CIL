@@ -1,0 +1,22 @@
+{
+  "prefix": " ",
+  "dataset": "imageneta",
+  "memory_size": 0,
+  "memory_per_class": 0,
+  "fixed_memory": false,
+  "shuffle": true,
+  "init_cls": 10,
+  "increment": 10,
+  "model_name": "simplecil",
+  "backbone_type": "pretrained_vit_b16_224_in21k",
+  "device": ["4"],
+  "seed": [42, 1993, 1994],
+  "tuned_epoch": 0,
+  "init_lr": 0.01,
+  "batch_size": 48,
+  "weight_decay": 0.05,
+  "min_lr": 1e-08,
+  "optimizer": "sgd",
+  "vpt_type": "shallow",
+  "prompt_token_num": 3
+}

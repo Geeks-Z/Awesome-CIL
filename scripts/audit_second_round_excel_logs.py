@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Map every CIL result-cell pair to its valid 第二轮A800 experiment log.
+"""Map every CIL result-cell pair to its valid second-round A800 log.
 
 The workbook headers define the number of tasks.  For a B0 experiment the
 filename suffix is therefore derived from `total_classes / task_count`, not
@@ -20,7 +20,7 @@ from openpyxl import load_workbook
 
 WORKBOOK = "CIL_Results.xlsx"
 LOG_ROOT = os.path.join("logs", "第二轮A800")
-CSV_REPORT = "日志_结果_对应表.csv"
+CSV_REPORT = "result_log_mapping.csv"
 
 DATASETS = [
     # (dataset display name, workbook columns, filename-prefix aliases, classes, T)
@@ -60,18 +60,18 @@ def parse_log(path, expected_tasks):
     curves = CURVE_RE.findall(text)
     averages = AVERAGE_RE.findall(text)
     if not curves:
-        return {"status": "无CNN曲线", "al": "", "average": "", "curve_len": 0}
+        return {"status": "Missing CNN curve", "al": "", "average": "", "curve_len": 0}
 
     try:
         curve = ast.literal_eval(curves[-1])
     except (SyntaxError, ValueError):
-        return {"status": "CNN曲线无法解析", "al": "", "average": "", "curve_len": 0}
+        return {"status": "Unparseable CNN curve", "al": "", "average": "", "curve_len": 0}
 
     curve_len = len(curve)
     if curve_len != expected_tasks:
-        status = "不完整：曲线{0}/{1}任务".format(curve_len, expected_tasks)
+        status = "Incomplete: {0}/{1} tasks".format(curve_len, expected_tasks)
     else:
-        status = "完整"
+        status = "Complete"
     return {
         "status": status,
         "al": curve[-1] if curve else "",
@@ -95,17 +95,17 @@ def find_candidates(folder, prefixes, init, increment, seed):
 
 
 def compare_excel_to_log(excel_al, excel_average, details):
-    if len(details) != 1 or details[0]["status"] != "完整":
-        return "日志未完整，无法核验"
+    if len(details) != 1 or details[0]["status"] != "Complete":
+        return "Log is incomplete; cannot verify"
     detail = details[0]
     if excel_al == "" and excel_average == "":
-        return "Excel缺失；可由日志补充"
+        return "Workbook values missing; can be filled from log"
     try:
         same_al = abs(float(excel_al) - float(detail["al"])) < 0.005
         same_average = abs(float(excel_average) - float(detail["average"])) < 0.005
     except (TypeError, ValueError):
-        return "Excel或日志值不可比较"
-    return "一致" if same_al and same_average else "数值不一致"
+        return "Workbook and log values are not comparable"
+    return "Match" if same_al and same_average else "Mismatch"
 
 
 def main():
@@ -127,11 +127,11 @@ def main():
                 log_details = [parse_log(path, task_count) for path in candidates]
 
                 if not candidates:
-                    status = "目录中无匹配日志"
+                    status = "No matching log in method directory"
                 elif len(candidates) == 1:
                     status = log_details[0]["status"]
                 else:
-                    status = "多个候选：" + "; ".join(
+                    status = "Multiple candidates: " + "; ".join(
                         detail["status"] for detail in log_details
                     )
 
@@ -144,7 +144,7 @@ def main():
                     "excel_al": compact_value(sheet["{0}{1}".format(columns[0], row_number)].value),
                     "excel_average": compact_value(sheet["{0}{1}".format(columns[1], row_number)].value),
                     "expected": "{0}|{1}_{2}_{3}.log".format("/".join(prefixes), init, increment, seed),
-                    "schedule": "T={0}; B0/Inc{1}（文件名 _0_{1}_{2}）".format(task_count, increment, seed),
+                    "schedule": "T={0}; B0/Inc{1} (filename _0_{1}_{2})".format(task_count, increment, seed),
                     "logs": [os.path.relpath(path) for path in candidates],
                     "details": log_details,
                     "status": status,
@@ -156,8 +156,8 @@ def main():
                 })
 
     # This sheet is an ImageNet-R task-count ablation and does not identify a
-    # seed.  Only its non-empty result pairs are included; all seed candidates
-    # in 第二轮A800 are shown instead of inferring one.
+    # seed. Only its non-empty result pairs are included; all second-round A800
+    # candidates are shown instead of inferring a seed.
     ablation_sheet = workbook["ImageNet-R"]
     ablation_columns = [(("C", "D"), 5), (("E", "F"), 10), (("G", "H"), 20), (("I", "J"), 40)]
     for row_number in range(3, ablation_sheet.max_row + 1):
@@ -178,33 +178,34 @@ def main():
             candidates = sorted(candidates)
             log_details = [parse_log(path, task_count) for path in candidates]
             if not candidates:
-                status = "目录中无匹配日志"
+                status = "No matching log in method directory"
             elif len(candidates) == 1:
                 status = log_details[0]["status"]
             else:
-                status = "多个候选：" + "; ".join(detail["status"] for detail in log_details)
+                status = "Multiple candidates: " + "; ".join(detail["status"] for detail in log_details)
             rows.append({
                 "sheet": "ImageNet-R",
-                "seed": "未注明",
+                "seed": "not specified",
                 "method": method,
                 "dataset": "ImageNet-R T={0}".format(task_count),
                 "cells": "{0}{1}:{2}{1}".format(columns[0], row_number, columns[1]),
                 "excel_al": excel_al,
                 "excel_average": excel_average,
                 "expected": "imagenetr/imagenet_r_0_{0}_<seed>.log".format(increment),
-                "schedule": "T={0}; B0/Inc{1}（该Sheet未注明seed）".format(task_count, increment),
+                "schedule": "T={0}; B0/Inc{1} (seed not specified by this sheet)".format(task_count, increment),
                 "logs": [os.path.relpath(path) for path in candidates],
                 "details": log_details,
                 "status": status,
-                "comparison": "该Sheet未注明seed，不能唯一映射",
+                "comparison": "Seed is not specified by this sheet; no unique mapping is possible",
             })
 
-    with open(CSV_REPORT, "w") as handle:
+    with open(CSV_REPORT, "w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
         writer.writerow([
-            "sheet", "seed", "method", "dataset", "cells", "excel_A_L",
-            "excel_A_bar", "expected_filename", "schedule", "log_paths",
-            "log_A_L", "log_A_bar", "status", "excel_log_comparison",
+            "workbook_sheet", "class_order_seed", "method", "dataset", "workbook_cells",
+            "workbook_A_L", "workbook_A_avg", "expected_log_filename", "protocol",
+            "candidate_log_paths", "log_A_L", "log_A_avg", "log_status",
+            "workbook_log_comparison",
         ])
         for row in rows:
             writer.writerow([
@@ -216,18 +217,24 @@ def main():
                 row["status"], row["comparison"],
             ])
 
-    summary = {"完整": 0, "不完整": 0, "无日志": 0, "无曲线": 0, "多个候选": 0}
+    summary = {
+        "complete": 0,
+        "incomplete": 0,
+        "missing_log": 0,
+        "missing_curve": 0,
+        "multiple_candidates": 0,
+    }
     for row in rows:
-        if row["status"] == "完整":
-            summary["完整"] += 1
-        elif row["status"].startswith("不完整"):
-            summary["不完整"] += 1
-        elif row["status"] == "目录中无匹配日志":
-            summary["无日志"] += 1
-        elif row["status"] == "无CNN曲线":
-            summary["无曲线"] += 1
-        elif row["status"].startswith("多个候选"):
-            summary["多个候选"] += 1
+        if row["status"] == "Complete":
+            summary["complete"] += 1
+        elif row["status"].startswith("Incomplete"):
+            summary["incomplete"] += 1
+        elif row["status"] == "No matching log in method directory":
+            summary["missing_log"] += 1
+        elif row["status"] == "Missing CNN curve":
+            summary["missing_curve"] += 1
+        elif row["status"].startswith("Multiple candidates"):
+            summary["multiple_candidates"] += 1
 
     print("wrote", CSV_REPORT)
     print("summary", summary)
