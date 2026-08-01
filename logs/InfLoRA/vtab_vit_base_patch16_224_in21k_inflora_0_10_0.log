@@ -1,0 +1,89 @@
+2026-07-30 04:06:16,618 [trainer.py] => prefix: reproduce
+2026-07-30 04:06:16,618 [trainer.py] => dataset: vtab
+2026-07-30 04:06:16,618 [trainer.py] => data_path: /home/team/zhaohongwei/Dataset/vtab
+2026-07-30 04:06:16,618 [trainer.py] => memory_size: 0
+2026-07-30 04:06:16,618 [trainer.py] => memory_per_class: 0
+2026-07-30 04:06:16,618 [trainer.py] => fixed_memory: True
+2026-07-30 04:06:16,618 [trainer.py] => shuffle: True
+2026-07-30 04:06:16,618 [trainer.py] => init_cls: 10
+2026-07-30 04:06:16,618 [trainer.py] => increment: 10
+2026-07-30 04:06:16,618 [trainer.py] => model_name: inflora
+2026-07-30 04:06:16,618 [trainer.py] => net_type: sip
+2026-07-30 04:06:16,618 [trainer.py] => embd_dim: 768
+2026-07-30 04:06:16,618 [trainer.py] => num_heads: 12
+2026-07-30 04:06:16,618 [trainer.py] => total_sessions: 5
+2026-07-30 04:06:16,618 [trainer.py] => seed: 0
+2026-07-30 04:06:16,618 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-07-30 04:06:16,618 [trainer.py] => EPSILON: 1e-08
+2026-07-30 04:06:16,618 [trainer.py] => init_epoch: 20
+2026-07-30 04:06:16,618 [trainer.py] => optim: adam
+2026-07-30 04:06:16,618 [trainer.py] => init_lr: 0.0005
+2026-07-30 04:06:16,619 [trainer.py] => init_lr_decay: 0.1
+2026-07-30 04:06:16,619 [trainer.py] => init_weight_decay: 0.0
+2026-07-30 04:06:16,619 [trainer.py] => epochs: 20
+2026-07-30 04:06:16,619 [trainer.py] => lrate: 0.0005
+2026-07-30 04:06:16,619 [trainer.py] => lrate_decay: 0.1
+2026-07-30 04:06:16,619 [trainer.py] => batch_size: 128
+2026-07-30 04:06:16,619 [trainer.py] => weight_decay: 0.0
+2026-07-30 04:06:16,619 [trainer.py] => rank: 10
+2026-07-30 04:06:16,619 [trainer.py] => lamb: 0.95
+2026-07-30 04:06:16,619 [trainer.py] => lame: 1.0
+2026-07-30 04:06:16,619 [trainer.py] => num_workers: 16
+2026-07-30 04:06:16,619 [trainer.py] => backbone_type: vit_base_patch16_224_in21k_inflora
+2026-07-30 04:06:16,619 [trainer.py] => pretrained: True
+2026-07-30 04:06:16,659 [data_manager.py] => [28, 11, 10, 41, 2, 27, 38, 31, 22, 4, 33, 35, 26, 34, 18, 7, 14, 45, 48, 29, 15, 30, 32, 16, 42, 20, 43, 8, 13, 25, 5, 17, 40, 49, 1, 12, 37, 24, 6, 23, 36, 21, 19, 9, 39, 46, 3, 0, 47, 44]
+2026-07-30 04:06:25,072 [trainer.py] => All params: 92477284
+2026-07-30 04:06:25,074 [trainer.py] => Trainable params: 92477284
+2026-07-30 04:06:25,074 [inflora.py] => Learning on 0-10
+2026-07-30 04:08:01,849 [inflora.py] => Task 0, Epoch 20/20 => Loss 0.088, Train_accy 98.20
+2026-07-30 04:08:20,191 [trainer.py] => Timing Task 0 => Train 106.29s, Epochs 20, Train 5.3144s/epoch, Inference 8.83s, Images 1718, Inference 5.1393ms/image
+2026-07-30 04:08:20,191 [inflora.py] => Exemplar size: 0
+2026-07-30 04:08:20,191 [trainer.py] => No NME accuracy.
+2026-07-30 04:08:20,192 [trainer.py] => CNN: {'total': 97.44, '00-09': 97.44, 'old': 0, 'new': 97.44}
+2026-07-30 04:08:20,192 [trainer.py] => CNN top1 curve: [97.44]
+2026-07-30 04:08:20,192 [trainer.py] => CNN top5 curve: [97.44]
+2026-07-30 04:08:20,192 [trainer.py] => Average Accuracy (CNN): 97.44
+2026-07-30 04:08:20,196 [trainer.py] => All params: 92477284
+2026-07-30 04:08:20,199 [trainer.py] => Trainable params: 192010
+2026-07-30 04:08:20,199 [inflora.py] => Learning on 10-20
+2026-07-30 04:09:57,402 [inflora.py] => Task 1, Epoch 20/20 => Loss 0.095, Train_accy 96.82
+2026-07-30 04:10:26,373 [trainer.py] => Timing Task 1 => Train 108.84s, Epochs 20, Train 5.4420s/epoch, Inference 17.33s, Images 3636, Inference 4.7674ms/image
+2026-07-30 04:10:26,373 [inflora.py] => Exemplar size: 0
+2026-07-30 04:10:26,373 [trainer.py] => No NME accuracy.
+2026-07-30 04:10:26,373 [trainer.py] => CNN: {'total': 87.1, '00-09': 85.33, '10-19': 88.69, 'old': 85.33, 'new': 88.69}
+2026-07-30 04:10:26,373 [trainer.py] => CNN top1 curve: [97.44, 87.1]
+2026-07-30 04:10:26,374 [trainer.py] => CNN top5 curve: [97.44, 87.1]
+2026-07-30 04:10:26,374 [trainer.py] => Average Accuracy (CNN): 92.27
+2026-07-30 04:10:26,375 [trainer.py] => All params: 92477284
+2026-07-30 04:10:26,376 [trainer.py] => Trainable params: 192010
+2026-07-30 04:10:26,376 [inflora.py] => Learning on 20-30
+2026-07-30 04:12:07,926 [inflora.py] => Task 2, Epoch 20/20 => Loss 0.028, Train_accy 98.68
+2026-07-30 04:12:44,597 [trainer.py] => Timing Task 2 => Train 113.12s, Epochs 20, Train 5.6559s/epoch, Inference 25.10s, Images 5362, Inference 4.6815ms/image
+2026-07-30 04:12:44,597 [inflora.py] => Exemplar size: 0
+2026-07-30 04:12:44,597 [trainer.py] => No NME accuracy.
+2026-07-30 04:12:44,598 [trainer.py] => CNN: {'total': 80.19, '00-09': 79.39, '10-19': 70.33, '20-29': 91.95, 'old': 74.61, 'new': 91.95}
+2026-07-30 04:12:44,598 [trainer.py] => CNN top1 curve: [97.44, 87.1, 80.19]
+2026-07-30 04:12:44,598 [trainer.py] => CNN top5 curve: [97.44, 87.1, 80.19]
+2026-07-30 04:12:44,598 [trainer.py] => Average Accuracy (CNN): 88.24
+2026-07-30 04:12:44,600 [trainer.py] => All params: 92477284
+2026-07-30 04:12:44,602 [trainer.py] => Trainable params: 192010
+2026-07-30 04:12:44,602 [inflora.py] => Learning on 30-40
+2026-07-30 04:14:16,224 [inflora.py] => Task 3, Epoch 20/20 => Loss 0.038, Train_accy 99.34
+2026-07-30 04:14:59,358 [trainer.py] => Timing Task 3 => Train 102.67s, Epochs 20, Train 5.1334s/epoch, Inference 32.09s, Images 6877, Inference 4.6659ms/image
+2026-07-30 04:14:59,358 [inflora.py] => Exemplar size: 0
+2026-07-30 04:14:59,358 [trainer.py] => No NME accuracy.
+2026-07-30 04:14:59,359 [trainer.py] => CNN: {'total': 72.01, '00-09': 57.28, '10-19': 61.84, '20-29': 84.24, '30-39': 87.66, 'old': 67.59, 'new': 87.66}
+2026-07-30 04:14:59,359 [trainer.py] => CNN top1 curve: [97.44, 87.1, 80.19, 72.01]
+2026-07-30 04:14:59,359 [trainer.py] => CNN top5 curve: [97.44, 87.1, 80.19, 72.01]
+2026-07-30 04:14:59,359 [trainer.py] => Average Accuracy (CNN): 84.18
+2026-07-30 04:14:59,360 [trainer.py] => All params: 92477284
+2026-07-30 04:14:59,361 [trainer.py] => Trainable params: 192010
+2026-07-30 04:14:59,361 [inflora.py] => Learning on 40-50
+2026-07-30 04:16:39,023 [inflora.py] => Task 4, Epoch 20/20 => Loss 0.021, Train_accy 99.71
+2026-07-30 04:17:30,609 [trainer.py] => Timing Task 4 => Train 111.76s, Epochs 20, Train 5.5882s/epoch, Inference 39.48s, Images 8619, Inference 4.5810ms/image
+2026-07-30 04:17:30,609 [inflora.py] => Exemplar size: 0
+2026-07-30 04:17:30,610 [trainer.py] => No NME accuracy.
+2026-07-30 04:17:30,610 [trainer.py] => CNN: {'total': 71.95, '00-09': 45.58, '10-19': 64.03, '20-29': 81.46, '30-39': 86.2, '40-49': 84.85, 'old': 68.68, 'new': 84.85}
+2026-07-30 04:17:30,610 [trainer.py] => CNN top1 curve: [97.44, 87.1, 80.19, 72.01, 71.95]
+2026-07-30 04:17:30,610 [trainer.py] => CNN top5 curve: [97.44, 87.1, 80.19, 72.01, 71.95]
+2026-07-30 04:17:30,610 [trainer.py] => Average Accuracy (CNN): 81.74

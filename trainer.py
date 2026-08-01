@@ -6,6 +6,7 @@ import time
 import torch
 from utils import factory
 from utils.data_manager import DataManager
+from utils.logging_utils import canonical_log_dir
 from utils.toolkit import count_parameters
 import os
 import random
@@ -80,13 +81,14 @@ def _train(args):
     if backbone_name.startswith("pretrained_"):
         backbone_name = backbone_name[len("pretrained_") :]
 
-    logs_name = "logs/{}".format(args["model_name"])
+    log_dir = canonical_log_dir(args["model_name"])
+    logs_name = "logs/{}".format(log_dir)
 
     if not os.path.exists(logs_name):
         os.makedirs(logs_name)
 
     logfilename = "logs/{}/{}_{}_{}_{}_{}".format(
-        args["model_name"],
+        log_dir,
         args["dataset"],
         backbone_name,
         init_cls,

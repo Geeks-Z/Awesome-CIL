@@ -1,0 +1,101 @@
+2026-07-29 18:15:58,463 [trainer.py] => prefix: reproduce
+2026-07-29 18:15:58,464 [trainer.py] => dataset: imagenetr
+2026-07-29 18:15:58,465 [trainer.py] => memory_size: 6000
+2026-07-29 18:15:58,465 [trainer.py] => memory_per_class: 20
+2026-07-29 18:15:58,465 [trainer.py] => fixed_memory: True
+2026-07-29 18:15:58,465 [trainer.py] => shuffle: True
+2026-07-29 18:15:58,465 [trainer.py] => init_cls: 40
+2026-07-29 18:15:58,465 [trainer.py] => increment: 40
+2026-07-29 18:15:58,465 [trainer.py] => model_name: icarl
+2026-07-29 18:15:58,465 [trainer.py] => backbone_type: vit_base_patch16_224_in21k
+2026-07-29 18:15:58,466 [trainer.py] => device: [device(type='cuda', index=1)]
+2026-07-29 18:15:58,466 [trainer.py] => seed: 1993
+2026-07-29 18:15:58,466 [trainer.py] => init_epoch: 20
+2026-07-29 18:15:58,466 [trainer.py] => init_lr: 0.001
+2026-07-29 18:15:58,466 [trainer.py] => init_milestones: [60, 120, 170]
+2026-07-29 18:15:58,466 [trainer.py] => init_lr_decay: 0.1
+2026-07-29 18:15:58,466 [trainer.py] => init_weight_decay: 0.0005
+2026-07-29 18:15:58,466 [trainer.py] => epochs: 20
+2026-07-29 18:15:58,466 [trainer.py] => lrate: 0.001
+2026-07-29 18:15:58,467 [trainer.py] => milestones: [80, 120]
+2026-07-29 18:15:58,467 [trainer.py] => lrate_decay: 0.1
+2026-07-29 18:15:58,467 [trainer.py] => batch_size: 48
+2026-07-29 18:15:58,467 [trainer.py] => weight_decay: 0.0002
+2026-07-29 18:15:58,467 [trainer.py] => T: 2
+2026-07-29 18:15:58,467 [trainer.py] => data_path: /home/team/zhaohongwei/Dataset/imagenet-r
+2026-07-29 18:15:58,566 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+2026-07-29 18:16:22,568 [trainer.py] => All params: 85798656
+2026-07-29 18:16:22,570 [trainer.py] => Trainable params: 85798656
+2026-07-29 18:16:22,958 [icarl.py] => Learning on 0-40
+2026-07-29 18:35:34,891 [icarl.py] => Task 0, Epoch 20/20 => Loss 0.332, Train_accy 91.02
+2026-07-29 18:35:34,893 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-29 18:36:42,361 [trainer.py] => Timing Task 0 => Train 1208.73s, Epochs 20, Train 60.4367s/epoch, Inference 10.67s, Images 1321, Inference 8.0758ms/image
+2026-07-29 18:36:42,378 [icarl.py] => Exemplar size: 800
+2026-07-29 18:36:42,378 [trainer.py] => CNN: {'total': 89.25, '00-39': 89.25, 'old': 0, 'new': 89.25}
+2026-07-29 18:36:42,378 [trainer.py] => NME: {'total': 89.78, '00-39': 89.78, 'old': 0, 'new': 89.78}
+2026-07-29 18:36:42,378 [trainer.py] => CNN top1 curve: [89.25]
+2026-07-29 18:36:42,379 [trainer.py] => CNN top5 curve: [97.5]
+2026-07-29 18:36:42,379 [trainer.py] => NME top1 curve: [89.78]
+2026-07-29 18:36:42,379 [trainer.py] => NME top5 curve: [97.43]
+2026-07-29 18:36:42,379 [trainer.py] => Average Accuracy (CNN): 89.25
+2026-07-29 18:36:42,379 [trainer.py] => Average Accuracy (NME): 89.78
+2026-07-29 18:36:42,379 [trainer.py] => All params: 85829416
+2026-07-29 18:36:42,380 [trainer.py] => Trainable params: 85829416
+2026-07-29 18:36:42,381 [icarl.py] => Learning on 40-80
+2026-07-29 19:02:57,866 [icarl.py] => Task 1, Epoch 20/20 => Loss 2.642, Train_accy 92.31
+2026-07-29 19:02:57,867 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-29 19:04:30,312 [trainer.py] => Timing Task 1 => Train 1646.45s, Epochs 20, Train 82.3223s/epoch, Inference 21.49s, Images 2498, Inference 8.6017ms/image
+2026-07-29 19:04:30,330 [icarl.py] => Exemplar size: 1600
+2026-07-29 19:04:30,330 [trainer.py] => CNN: {'total': 81.35, '00-39': 77.82, '40-79': 85.3, 'old': 77.82, 'new': 85.3}
+2026-07-29 19:04:30,330 [trainer.py] => NME: {'total': 85.51, '00-39': 86.98, '40-79': 83.86, 'old': 86.98, 'new': 83.86}
+2026-07-29 19:04:30,330 [trainer.py] => CNN top1 curve: [89.25, 81.35]
+2026-07-29 19:04:30,330 [trainer.py] => CNN top5 curve: [97.5, 93.55]
+2026-07-29 19:04:30,330 [trainer.py] => NME top1 curve: [89.78, 85.51]
+2026-07-29 19:04:30,330 [trainer.py] => NME top5 curve: [97.43, 95.2]
+2026-07-29 19:04:30,330 [trainer.py] => Average Accuracy (CNN): 85.3
+2026-07-29 19:04:30,330 [trainer.py] => Average Accuracy (NME): 87.65
+2026-07-29 19:04:30,331 [trainer.py] => All params: 85860176
+2026-07-29 19:04:30,331 [trainer.py] => Trainable params: 85860176
+2026-07-29 19:04:30,334 [icarl.py] => Learning on 80-120
+2026-07-29 19:35:45,268 [icarl.py] => Task 2, Epoch 20/20 => Loss 2.795, Train_accy 93.18
+2026-07-29 19:35:45,269 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-29 19:37:42,676 [trainer.py] => Timing Task 2 => Train 1962.05s, Epochs 20, Train 98.1024s/epoch, Inference 30.30s, Images 3645, Inference 8.3115ms/image
+2026-07-29 19:37:42,693 [icarl.py] => Exemplar size: 2400
+2026-07-29 19:37:42,693 [trainer.py] => CNN: {'total': 75.58, '00-39': 68.66, '40-79': 71.79, '80-119': 87.45, 'old': 70.14, 'new': 87.45}
+2026-07-29 19:37:42,694 [trainer.py] => NME: {'total': 80.96, '00-39': 82.44, '40-79': 78.59, '80-119': 81.69, 'old': 80.62, 'new': 81.69}
+2026-07-29 19:37:42,694 [trainer.py] => CNN top1 curve: [89.25, 81.35, 75.58]
+2026-07-29 19:37:42,694 [trainer.py] => CNN top5 curve: [97.5, 93.55, 89.74]
+2026-07-29 19:37:42,694 [trainer.py] => NME top1 curve: [89.78, 85.51, 80.96]
+2026-07-29 19:37:42,694 [trainer.py] => NME top5 curve: [97.43, 95.2, 93.03]
+2026-07-29 19:37:42,694 [trainer.py] => Average Accuracy (CNN): 82.06
+2026-07-29 19:37:42,694 [trainer.py] => Average Accuracy (NME): 85.42
+2026-07-29 19:37:42,694 [trainer.py] => All params: 85890936
+2026-07-29 19:37:42,695 [trainer.py] => Trainable params: 85890936
+2026-07-29 19:37:42,697 [icarl.py] => Learning on 120-160
+2026-07-29 20:13:38,927 [icarl.py] => Task 3, Epoch 20/20 => Loss 2.807, Train_accy 93.62
+2026-07-29 20:13:38,928 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-29 20:16:03,826 [trainer.py] => Timing Task 3 => Train 2259.54s, Epochs 20, Train 112.9770s/epoch, Inference 41.59s, Images 4943, Inference 8.4141ms/image
+2026-07-29 20:16:03,844 [icarl.py] => Exemplar size: 3200
+2026-07-29 20:16:03,845 [trainer.py] => CNN: {'total': 71.35, '00-39': 60.94, '40-79': 63.55, '80-119': 74.46, '120-159': 86.29, 'old': 66.04, 'new': 86.29}
+2026-07-29 20:16:03,845 [trainer.py] => NME: {'total': 78.17, '00-39': 77.82, '40-79': 75.7, '80-119': 76.37, '120-159': 82.36, 'old': 76.68, 'new': 82.36}
+2026-07-29 20:16:03,845 [trainer.py] => CNN top1 curve: [89.25, 81.35, 75.58, 71.35]
+2026-07-29 20:16:03,845 [trainer.py] => CNN top5 curve: [97.5, 93.55, 89.74, 86.69]
+2026-07-29 20:16:03,845 [trainer.py] => NME top1 curve: [89.78, 85.51, 80.96, 78.17]
+2026-07-29 20:16:03,845 [trainer.py] => NME top5 curve: [97.43, 95.2, 93.03, 90.98]
+2026-07-29 20:16:03,845 [trainer.py] => Average Accuracy (CNN): 79.38
+2026-07-29 20:16:03,845 [trainer.py] => Average Accuracy (NME): 83.6
+2026-07-29 20:16:03,846 [trainer.py] => All params: 85921696
+2026-07-29 20:16:03,846 [trainer.py] => Trainable params: 85921696
+2026-07-29 20:16:03,848 [icarl.py] => Learning on 160-200
+2026-07-29 20:52:33,865 [icarl.py] => Task 4, Epoch 20/20 => Loss 2.912, Train_accy 93.61
+2026-07-29 20:52:33,867 [base.py] => Constructing exemplars for new classes...(20 per classes)
+2026-07-29 20:55:20,748 [trainer.py] => Timing Task 4 => Train 2306.40s, Epochs 20, Train 115.3198s/epoch, Inference 50.51s, Images 6000, Inference 8.4176ms/image
+2026-07-29 20:55:20,765 [icarl.py] => Exemplar size: 4000
+2026-07-29 20:55:20,765 [trainer.py] => CNN: {'total': 67.75, '00-39': 55.64, '40-79': 57.18, '80-119': 63.64, '120-159': 78.27, '160-199': 86.19, 'old': 63.81, 'new': 86.19}
+2026-07-29 20:55:20,765 [trainer.py] => NME: {'total': 75.17, '00-39': 74.64, '40-79': 70.77, '80-119': 72.62, '120-159': 78.58, '160-199': 79.28, 'old': 74.29, 'new': 79.28}
+2026-07-29 20:55:20,765 [trainer.py] => CNN top1 curve: [89.25, 81.35, 75.58, 71.35, 67.75]
+2026-07-29 20:55:20,765 [trainer.py] => CNN top5 curve: [97.5, 93.55, 89.74, 86.69, 83.72]
+2026-07-29 20:55:20,765 [trainer.py] => NME top1 curve: [89.78, 85.51, 80.96, 78.17, 75.17]
+2026-07-29 20:55:20,765 [trainer.py] => NME top5 curve: [97.43, 95.2, 93.03, 90.98, 89.4]
+2026-07-29 20:55:20,765 [trainer.py] => Average Accuracy (CNN): 77.06
+2026-07-29 20:55:20,765 [trainer.py] => Average Accuracy (NME): 81.92

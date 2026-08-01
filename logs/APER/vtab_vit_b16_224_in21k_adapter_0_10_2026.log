@@ -1,0 +1,22 @@
+2026-07-30 04:45:36,858 [trainer.py] => prefix: exp
+2026-07-30 04:45:36,858 [trainer.py] => dataset: vtab
+2026-07-30 04:45:36,858 [trainer.py] => memory_size: 0
+2026-07-30 04:45:36,858 [trainer.py] => memory_per_class: 0
+2026-07-30 04:45:36,858 [trainer.py] => fixed_memory: False
+2026-07-30 04:45:36,858 [trainer.py] => shuffle: True
+2026-07-30 04:45:36,858 [trainer.py] => init_cls: 10
+2026-07-30 04:45:36,858 [trainer.py] => increment: 10
+2026-07-30 04:45:36,858 [trainer.py] => model_name: adam_adapter
+2026-07-30 04:45:36,858 [trainer.py] => backbone_type: pretrained_vit_b16_224_in21k_adapter
+2026-07-30 04:45:36,858 [trainer.py] => weight_decay: 0.0005
+2026-07-30 04:45:36,858 [trainer.py] => prompt_token_num: 30
+2026-07-30 04:45:36,858 [trainer.py] => ffn_num: 64
+2026-07-30 04:45:36,858 [trainer.py] => optimizer: sgd
+2026-07-30 04:45:36,858 [trainer.py] => min_lr: 0
+2026-07-30 04:45:36,858 [trainer.py] => device: [device(type='cuda', index=2)]
+2026-07-30 04:45:36,858 [trainer.py] => seed: 2026
+2026-07-30 04:45:36,858 [trainer.py] => tuned_epoch: 20
+2026-07-30 04:45:36,858 [trainer.py] => init_lr: 0.01
+2026-07-30 04:45:36,858 [trainer.py] => batch_size: 48
+2026-07-30 04:45:36,858 [trainer.py] => data_path: /home/team/zhaohongwei/Dataset/vtab
+2026-07-30 04:45:36,883 [data_manager.py] => [18, 38, 10, 11, 40, 33, 39, 14, 41, 24, 47, 42, 31, 37, 3, 22, 0, 8, 44, 23, 21, 15, 34, 9, 17, 30, 19, 4, 25, 48, 16, 49, 20, 35, 36, 7, 32, 27, 45, 2, 43, 12, 5, 28, 29, 46, 13, 26, 6, 1]
